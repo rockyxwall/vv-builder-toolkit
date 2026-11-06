@@ -1,0 +1,22 @@
+{
+  "name": "vv-builder-toolkit",
+  "version": "1.0.0",
+  "description": "High-efficiency data extraction, catalog generation, and build engine for VV Builder (VV Ultimatum).",
+  "main": "src/build_engine.js",
+  "scripts": {
+    "extract": "node extract.js",
+    "test": "node test_verify.js && node test_build_engine.js",
+    "generate-builds": "node scripts/generate_builds.js"
+  },
+  "keywords": [
+    "vv-builder",
+    "vv-ultimatum",
+    "scraper",
+    "extractor",
+    "build-engine",
+    "catalog",
+    "share-code"
+  ],
+  "author": "rockyxwall",
+  "license": "MIT"
+}

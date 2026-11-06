@@ -1,0 +1,266 @@
+{
+  "ultimates": [
+    {
+      "id": "kuro",
+      "name": "Kurohitsugi",
+      "sp": 9,
+      "req": {
+        "kido": 360
+      },
+      "race": "Shinigami",
+      "raceLabel": "Shinigami Only"
+    },
+    {
+      "id": "gran_ray",
+      "name": "Gran Ray Cero",
+      "sp": 9,
+      "req": {
+        "kido": 360
+      },
+      "race": "Hollow",
+      "raceLabel": "Hollow Only"
+    },
+    {
+      "id": "precision_slicer",
+      "name": "Precision Slicer",
+      "sp": 4,
+      "req": {
+        "speed": 275
+      },
+      "race": null
+    },
+    {
+      "id": "radiant_edge",
+      "name": "Radiant Edge",
+      "sp": 4,
+      "req": {
+        "kido": 125
+      },
+      "race": null
+    },
+    {
+      "id": "ensuing_heel",
+      "name": "Enduring Heel",
+      "sp": 0,
+      "req": {
+        "hakuda": 200
+      },
+      "race": null
+    },
+    {
+      "id": "raging_grasp",
+      "name": "Raging Grasp",
+      "sp": 0,
+      "req": {
+        "strength": 250
+      },
+      "race": null
+    },
+    {
+      "id": "slicing_dropkick",
+      "name": "Slicing Dropkick",
+      "sp": 4,
+      "req": {
+        "speed": 50,
+        "strength": 50
+      },
+      "race": null
+    },
+    {
+      "id": "splitting_standstill",
+      "name": "Splitting Standstill",
+      "sp": 4,
+      "req": {
+        "speed": 300
+      },
+      "race": null
+    },
+    {
+      "id": "one_inch_punch",
+      "name": "One Inch Punch",
+      "sp": 5,
+      "req": {
+        "hakuda": 160,
+        "strength": 55
+      },
+      "race": null
+    },
+    {
+      "id": "petal_flurry",
+      "name": "Petal Flurry",
+      "sp": 4,
+      "req": {
+        "speed": 135
+      },
+      "race": null
+    },
+    {
+      "id": "shunko_mode",
+      "name": "Shunko Mode (Tier 1 / Tier 2)",
+      "sp": 5,
+      "req": {
+        "hakuda": 150,
+        "speed": 150
+      },
+      "race": null,
+      "raceLabel": "All Races (Learned in Human World Factory)",
+      "desc": "Learned from the Human World factory trainer. Selected via Ability Tab -> Modes. Grants unique moveset: Windbreaker, Sweep Combination, and lingering invulnerability frames."
+    }
+  ],
+  "raceSkills": {
+    "Shinigami": [
+      {
+        "id": "sk_byakurai",
+        "name": "Byakurai",
+        "costSP": 6,
+        "costCash": 0,
+        "req": {
+          "kido": 28
+        },
+        "accentColor": "255,85,178",
+        "desc": "Blue kido beam.",
+        "upgradeNote": "Lvl 4: Applies an after-shock that deals a small % of the ability's damage when landed",
+        "stats": {
+          "reiCost": 24,
+          "reiCostPerLv": -1.1,
+          "cd": 27.5,
+          "cdPerLv": -0.4,
+          "dmg": null,
+          "dmgPerLv": null,
+          "posture": null,
+          "posturePerLv": null
+        }
+      },
+      {
+        "id": "sk_sai",
+        "name": "Sai",
+        "costSP": 7,
+        "costCash": 0,
+        "req": {
+          "kido": 56
+        },
+        "accentColor": "255,85,178",
+        "zStepIncompat": true,
+        "desc": "Lock an opponent's hands together preventing them from attacking. Ineffective against stronger opponents.",
+        "upgradeNote": "Lvl 7: Your Sai now ignores block",
+        "stats": {
+          "reiCost": 30,
+          "reiCostPerLv": -1.4,
+          "cd": 40,
+          "cdPerLv": -0.6,
+          "dmg": null,
+          "dmgPerLv": null,
+          "posture": null,
+          "posturePerLv": null
+        }
+      },
+      {
+        "id": "shunko_mode_skill",
+        "name": "Shunko Mode (Shinigami Variant)",
+        "costSP": 5,
+        "req": {
+          "hakuda": 150,
+          "speed": 150
+        },
+        "desc": "Unlocks first tier of shunko via Human World factory questline. Moves: Windbreaker, Sweep Combination. Race-specific damage and cooldown scalings.",
+        "upgradeNote": "Tier 2 progression adds advanced elemental manifestations."
+      }
+    ],
+    "Hollow": [
+      {
+        "id": "rc1",
+        "name": "Bala",
+        "costSP": 5,
+        "costCash": 0,
+        "req": {
+          "kido": 35
+        },
+        "zStepIncompat": true,
+        "desc": "A weaker blast-like counterpart to Cero.",
+        "upgradeNote": "Lvl 7: Bala tracks to nearest opponent"
+      },
+      {
+        "id": "rc2",
+        "name": "Cero",
+        "costSP": 8,
+        "costCash": 0,
+        "req": {
+          "kido": 50
+        },
+        "desc": "Concentrate your reiatsu into a charged beam that eviscerates anyone hit. Executes low health opponents.",
+        "upgradeNote": null
+      },
+      {
+        "id": "rc3",
+        "name": "Kido Node",
+        "costSP": 2,
+        "costCash": 0,
+        "req": {},
+        "passive": true,
+        "noLevel": true,
+        "desc": "Increase Kido scaling.",
+        "upgradeNote": null
+      },
+      {
+        "id": "shunko_mode_skill",
+        "name": "Shunko Mode (Hollow Variant)",
+        "costSP": 5,
+        "req": {
+          "hakuda": 150,
+          "speed": 150
+        },
+        "desc": "Unlocks first tier of shunko via Human World factory questline. Moves: Windbreaker, Sweep Combination. Race-specific damage and cooldown scalings.",
+        "upgradeNote": "Tier 2 progression adds advanced elemental manifestations."
+      }
+    ],
+    "Quincy": [
+      {
+        "id": "qrc1",
+        "name": "Conjure Weapon",
+        "costSP": 4,
+        "costCash": 0,
+        "req": {
+          "kido": 12
+        },
+        "passive": true,
+        "noLevel": true,
+        "zStepIncompat": true,
+        "desc": "Conjure a basic spirit bow by pressing E. (Passive —)",
+        "upgradeNote": null
+      },
+      {
+        "id": "qrc2",
+        "name": "Heilig Pfeil",
+        "costSP": 7,
+        "costCash": 0,
+        "req": {
+          "kido": 60
+        },
+        "desc": "Conjure an arrow and throw it.",
+        "upgradeNote": null
+      },
+      {
+        "id": "qrc3",
+        "name": "Kido Node",
+        "costSP": 2,
+        "costCash": 0,
+        "req": {},
+        "passive": true,
+        "noLevel": true,
+        "desc": "Increase Kido scaling.",
+        "upgradeNote": null
+      },
+      {
+        "id": "shunko_mode_skill",
+        "name": "Shunko Mode (Quincy Variant)",
+        "costSP": 5,
+        "req": {
+          "hakuda": 150,
+          "speed": 150
+        },
+        "desc": "Unlocks first tier of shunko via Human World factory questline. Moves: Windbreaker, Sweep Combination. Race-specific damage and cooldown scalings.",
+        "upgradeNote": "Tier 2 progression adds advanced elemental manifestations."
+      }
+    ]
+  }
+}

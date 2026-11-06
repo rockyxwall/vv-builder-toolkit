@@ -1,0 +1,808 @@
+[
+  {
+    "id": "charm_a_song_of_fire_and_thunder",
+    "title": "A Song of Fire and Thunder",
+    "tier": "Tier 4",
+    "desc": "I AM FIRE. I AM LIGHTNING. I AM FLAME GIVEN FORM!",
+    "buffs": [
+      "When above 1.25x AP, your melee attacks are imbued in flame, dealing more damage. If below 25% max hp, your high-damaging melee attacks have a chance to inflict scorch (10s CD)",
+      "When above 1.2x AP, your kido attacks are inflict thunder, dealing more stun. If below 25% max hp, your high-damaging kido attacks have a chance to inflict electroshock (10s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_aura_of_terror",
+    "title": "Aura Of Terror",
+    "tier": "Tier 3",
+    "desc": "Make them tremble in fear.",
+    "buffs": [
+      "Manual spiritual pressure is replaced with an AOE attack that inflicts a terrifying status effect on enemies hit and deal 3.5% [max HP] damage (50s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_adrenaline_junkie",
+    "title": "Adrenaline Junkie",
+    "tier": "Tier 3",
+    "desc": "Thrill-seeking taken to the extreme.",
+    "buffs": [
+      "Gain 1% output on hit up to 110% (not including multi hit techniques)",
+      "If you do not get hit/hit an enemy for 30 seconds, automatically return to 100%"
+    ],
+    "nerfs": [
+      "Lose 1% output when getting hit, down to 10%"
+    ]
+  },
+  {
+    "id": "charm_await_the_opening",
+    "title": "Await the Opening",
+    "tier": "Tier 3",
+    "desc": "Be patient, take every advantage.",
+    "buffs": [
+      "Your parries now posture break"
+    ],
+    "nerfs": [
+      "Your parries are worth 50% as much posture damage"
+    ]
+  },
+  {
+    "id": "charm_blazing_spirit",
+    "title": "Blazing Spirit",
+    "tier": "Tier 3",
+    "desc": "An eternal unwavering flame.",
+    "buffs": [
+      "Parrying a basic melee attack ignites your blade with spirit flames (5s CD, +10% damage)"
+    ],
+    "nerfs": [
+      "Basic melee attacks not ignited by flame deal reduced damage (-2% damage)"
+    ]
+  },
+  {
+    "id": "charm_rulers_gaze",
+    "title": "Ruler's Gaze",
+    "tier": "Tier 3",
+    "desc": "The world can not be changed with pretty words alone.",
+    "buffs": [
+      "Performing a manual rushdown activates \"Geass\"",
+      "Whilst \"Geass\" is active, issue a command to the opponent to halt, allowing for a free follow-up",
+      "Enemies affected by \"Geass\" have their damage taken reduced by 35%, additionally, if blade caught the cooldown will continue as normal",
+      "Being in \"Aura\" ignores the first restriction"
+    ],
+    "nerfs": [
+      "\"Geass\" cannot be used on the same target twice, and has a cooldown"
+    ]
+  },
+  {
+    "id": "charm_quick_grit",
+    "title": "Quick Grit",
+    "tier": "Tier 3",
+    "desc": "Finish them quickly, to fell foe after foe.",
+    "buffs": [
+      "Landing 3 different non-barrage attacks on the same person within 1s smites the opponent, granting a 40% damage buff on the most recent attack (40s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_blademaster",
+    "title": "Blademaster",
+    "tier": "Tier 3",
+    "desc": "An ancient charm, belonging to a blade master.",
+    "buffs": [
+      "Your bladed basic attacks inflict deep gash stacks on your opponent",
+      "Upon reaching 3 deep gash stacks, deal 110% of all of the damage you would have done normally"
+    ],
+    "nerfs": [
+      "Your bladed basic attacks deal 90% less damage"
+    ]
+  },
+  {
+    "id": "charm_curtain_call",
+    "title": "Curtain Call",
+    "tier": "Tier 3",
+    "desc": "The final curtain drops.",
+    "buffs": [
+      "As long as your reiatsu is at 100%, your basic attacks have percent lifesteal"
+    ],
+    "nerfs": [
+      "You no longer passively regenerate reiatsu"
+    ]
+  },
+  {
+    "id": "charm_flawless_swordsman",
+    "title": "Flawless Swordsman",
+    "tier": "Tier 3",
+    "desc": "It's clear that this charm's original owner was a cut above.",
+    "buffs": [
+      "Dealing damage without being hit will build \"Perfection\", whilst Perfection is building gain up to a 15% damage buff towards enemies, at half stacks or more all damage is fire damage"
+    ],
+    "nerfs": [
+      "Suffering a hit or leaving combat will extinguish your flame of ambition, losing all stocks. Leaving a cooldown of 10s before your next attempt"
+    ]
+  },
+  {
+    "id": "charm_heavenly_restriction",
+    "title": "Heavenly Restriction",
+    "tier": "Tier 3",
+    "desc": "It is recorded amongst seiretei notes that certain shinigami born thousands of years ago... could never utilize techniques... (Does not fully stack with Warrior's Spirit)",
+    "buffs": [
+      "Your physical attacks are up to 35% more potent, scaling with level",
+      "You gain up to 15% more movement speed, and up to 25% more kido defense each scaling with level",
+      "Your critical attacks now proc kill confirmed"
+    ],
+    "nerfs": [
+      "You cannot use abilities to any capacity"
+    ]
+  },
+  {
+    "id": "charm_haze_of_death",
+    "title": "Haze of Death",
+    "tier": "Tier 3",
+    "desc": "You're dead after this.",
+    "buffs": [
+      "Your critical attack applies Cursed status effect for 7s, increasing the damage your opponent takes by 30% (50s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_kill_confirmed",
+    "title": "Kill Confirmed",
+    "tier": "Tier 3",
+    "desc": "How many friends did you bring? Doesn't matter.",
+    "buffs": [
+      "Knocking on opponent will cause them to succumb to your spiritual pressure and cause their head to blow off"
+    ],
+    "nerfs": [
+      "Blowing their head off will reduce your output by 5% (Scaling with nearby enemies) temporarily"
+    ]
+  },
+  {
+    "id": "charm_last_man_standing",
+    "title": "Last Man Standing",
+    "tier": "Tier 3",
+    "desc": "JOJO! This is the last of my ham-... That's not the right shonen",
+    "buffs": [
+      "If an ally is to be knocked within 90 meters of you, siphon the enemies HP pack and gain a percent of it yourself"
+    ],
+    "nerfs": [
+      "Your regeneration from all sources is cut in half"
+    ]
+  },
+  {
+    "id": "charm_raid_boss",
+    "title": "Raid Boss",
+    "tier": "Tier 3",
+    "desc": "You don't feel your wounds then, or the ache in your back from the weight of the armour, or the sweat running down into your eyes. You stop feeling, you stop thinking, you stop being you, there is only the fight, the foe, this man and then the next and the next and the next, and you know they are afraid and tired but you're not, you're alive, and death is all around you but their swords move so slowly, and you can dance through them laughing. [Reworked: Synchronized with Anti-Gank system; PVP-only, does not apply to NPCs].",
+    "buffs": [
+      "For every nearby enemy gain a stack of battle fever, for every nearby ally lose a stack of battle fever, up to 10 stacks",
+      "For every stack of battle fever gain a 5% incoming defense, and 3% more damage, both increasing up to 3.5 times",
+      "At 3 stacks gain weaker Curtain Call, at 4 stacks become immune to movement slow, at 5 stacks your lifesteal doubles at 30%, finally at 7 stacks your m1s periodically proc Perfect Flash"
+    ],
+    "nerfs": [
+      "When your battle fever is empty and allies are nearby take 10% more damage"
+    ]
+  },
+  {
+    "id": "charm_shonen_syndrome",
+    "title": "Shonen Syndrome",
+    "tier": "Tier 3",
+    "desc": "Hmph. I'm an avenger.",
+    "buffs": [
+      "Yell out the move you are about to use",
+      "Upgrades the move by 2 levels (Does not work past level 6)"
+    ],
+    "nerfs": [
+      "25 second cooldown between upgrades"
+    ]
+  },
+  {
+    "id": "charm_strugglers_spirit",
+    "title": "Struggler's Spirit",
+    "tier": "Tier 3",
+    "desc": "Growth is often a lonely road.",
+    "buffs": [
+      "Landing three basic attacks when below 25% HP will bolster your strength (75s CD)",
+      "You take 20% less damage when your health is below 25%"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_soul_snatcher",
+    "title": "Soul Snatcher",
+    "tier": "Tier 3",
+    "desc": "I'm mister body catcher",
+    "buffs": [
+      "Landing any kido ability on a opponent who is less than 11% HP will activate “Soul Snatcher”",
+      "Enemies with “Soul Snatcher” activated on them will immediately be knocked after a short delay"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_the_incopable",
+    "title": "The Incopable",
+    "tier": "Tier 3",
+    "desc": "They think you're a monster? Prove them right.",
+    "buffs": [
+      "Your innate base output is up to 105% depending on level, this goes up to 120% based on missing HP",
+      "Gain access to a reliquary attached to your waist, this is the source of your power. It glows based on missing HP"
+    ],
+    "nerfs": [
+      "You can no longer use transformations or racial abilities, and effects of hollow traits are disabled",
+      "You can not access your racial progression boss fights"
+    ]
+  },
+  {
+    "id": "charm_undying_soul",
+    "title": "Undying Soul",
+    "tier": "Tier 3",
+    "desc": "Why don't I bleed...?",
+    "buffs": [
+      "Unleash a second wind when defeated"
+    ],
+    "nerfs": [
+      "Your death is certain when your health runs out"
+    ]
+  },
+  {
+    "id": "charm_ultimate_sacrifice",
+    "title": "Ultimate Sacrifice",
+    "tier": "Tier 3",
+    "desc": "I don't care... I'll use everything",
+    "buffs": [
+      "Break your current limits and go beyond when popping Aura",
+      "Your rage is born from deep within your heart. Nothing can stop it (Uncancellable Aura)"
+    ],
+    "nerfs": [
+      "You build aura more slowly",
+      "The ultimate sacrifice... has the ultimate price"
+    ]
+  },
+  {
+    "id": "charm_warriors_spirit",
+    "title": "Warrior's Spirit",
+    "tier": "Tier 3",
+    "desc": "Who needs flash step?",
+    "buffs": [
+      "17.5% melee damage increase on basic attacks"
+    ],
+    "nerfs": [
+      "You can no longer flash step",
+      "You can no longer use Manual Rushdown"
+    ]
+  },
+  {
+    "id": "charm_youre_in_my_range",
+    "title": "You're in my range",
+    "tier": "Tier 3",
+    "desc": "Crazy Diamond's range is 2 meters...",
+    "buffs": [
+      "35% defense towards gap-close abilities",
+      "Your next basic attack or critical is empowered after being attacked by a gap-close ability (45s CD)"
+    ],
+    "nerfs": [
+      "You take 15% more damage from attacks that hit you outside of a 25 stud range"
+    ]
+  },
+  {
+    "id": "charm_deep_hatred",
+    "title": "Deep Hatred",
+    "tier": "Tier 2",
+    "desc": "BASKA!",
+    "buffs": [
+      "When posture broken, or grabbed: Enter a fit of rage for 10s, boosting your output by 10% (30s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_marshland_king",
+    "title": "Marshland King",
+    "tier": "Tier 2",
+    "desc": "\"THIS MACE WILL MEND YOUR BONES TO DUST\"",
+    "buffs": [
+      "Build aura 35% faster, and unleash a menacing laugh when popping it"
+    ],
+    "nerfs": [
+      "Your aura is 25% shorter and the buffs are 10% weaker"
+    ]
+  },
+  {
+    "id": "charm_presence_of_mind",
+    "title": "Presence of Mind",
+    "tier": "Tier 2",
+    "desc": "Skill spam so soon?",
+    "buffs": [
+      "You have an increased 25% ability haste when below 30% your maximum HP"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_poison_touch",
+    "title": "Poison Touch",
+    "tier": "Tier 2",
+    "desc": "You're in it for the long run.",
+    "buffs": [
+      "Your critical attack applies poison"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_train_conductor",
+    "title": "Train Conductor",
+    "tier": "Tier 2",
+    "desc": "Tickets please!",
+    "buffs": [
+      "Steal a mission ticket when killing an enemy player who has one",
+      "Mission ticket cap increased by 1"
+    ],
+    "nerfs": [
+      "Dying will cause you to lose 2 mission tickets"
+    ]
+  },
+  {
+    "id": "charm_tooth_and_nail",
+    "title": "Tooth & Nail",
+    "tier": "Tier 2",
+    "desc": "Hang on! It isn't over yet...",
+    "buffs": [
+      "If an attack is about to kill you, lose all of your health down to 5% instead of dying"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_nowhere_to_hide",
+    "title": "Nowhere to Hide",
+    "tier": "Tier 2",
+    "desc": "The trail leads right up to you.",
+    "buffs": [
+      "Striking an opponent below 50% HP while you are above 50% HP will cause them to be revealed for 5s",
+      "Deal 7.5% more damage to those who are revealed"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_frugal",
+    "title": "Frugal",
+    "tier": "Tier 2",
+    "desc": "Wealth is quiet. Rich is loud. Poor is flashy.",
+    "buffs": [
+      "You lose 80% less cash from dying to players"
+    ],
+    "nerfs": [
+      "You don't gain cash from players"
+    ]
+  },
+  {
+    "id": "charm_golem",
+    "title": "Golem",
+    "tier": "Tier 2",
+    "desc": "Become a stone fortress.",
+    "buffs": [
+      "Taking 25% base damage within 2.5s will activate rock armor for 15s (45s CD)",
+      "While rock-armored, gain 7.5% damage resistance"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_heat_burst",
+    "title": "Heat Burst",
+    "tier": "Tier 2",
+    "desc": "HE POPPED HEAT?!",
+    "buffs": [
+      "Replaces your Aura with Heat",
+      "When Heat activates, automatically heal 37% of your maximum health and gain max AP"
+    ],
+    "nerfs": [
+      "Lose access to Aura based theme buff"
+    ]
+  },
+  {
+    "id": "charm_indomitable_spirit",
+    "title": "Indomitable Spirit",
+    "tier": "Tier 2",
+    "desc": "Confidence is key.",
+    "buffs": [
+      "Gain 5% of your health back from winning clashes"
+    ],
+    "nerfs": [
+      "Lose 5% of your health upon losing clashes"
+    ]
+  },
+  {
+    "id": "charm_lizards_spirit",
+    "title": "Lizard's Spirit",
+    "tier": "Tier 2",
+    "desc": "Shed some skin, regenerate some health.",
+    "buffs": [
+      "When your health reaches below 50%, heal 7.5% (9m CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_mysterious_stranger_him",
+    "title": "Mysterious Stranger (Him)",
+    "tier": "Tier 2",
+    "desc": "When the wind whistles, you know he's there.",
+    "buffs": [
+      "The mysterious stranger has a 8 percent chance to aid you when dealing physical melee damage (30s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_mysterious_stranger_her",
+    "title": "Mysterious Stranger (Her)",
+    "tier": "Tier 2",
+    "desc": "When the wind whistles, you know she's there.",
+    "buffs": [
+      "The mysterious stranger has a 8 percent chance to aid you when dealing ranged kido damage (30s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_perfect_flash",
+    "title": "Perfect Flash",
+    "tier": "Tier 2",
+    "desc": "The unseen blade is the deadliest.",
+    "buffs": [
+      "Landing a melee Basic/Critical attack out of combat deals 2.5x dmg, this also applies to full-hp opponents (60s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_ranged_warrior",
+    "title": "Ranged Warrior",
+    "tier": "Tier 2",
+    "desc": "Seems to try to keep distance from its current bearer.",
+    "buffs": [
+      "6% kido/ranged damage"
+    ],
+    "nerfs": [
+      "3% damage vulnerability"
+    ]
+  },
+  {
+    "id": "charm_relentless_hunter",
+    "title": "Relentless Hunter [DELETED - Made Baseline]",
+    "tier": "Tier 2",
+    "desc": "Deleted in game update: effect converted into baseline mission mechanic (invaders automatically prevent extraction).",
+    "buffs": [
+      "[BASELINE MECHANIC] Players cannot extract from missions while an invader is alive."
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_side_character",
+    "title": "Side Character",
+    "tier": "Tier 2",
+    "desc": "If you're already bad at PVP, you could always stick to PVE.",
+    "buffs": [
+      "Deal 7.5% more damage to NPCs"
+    ],
+    "nerfs": [
+      "Take 4% more damage from players"
+    ]
+  },
+  {
+    "id": "charm_silent_shadows",
+    "title": "Silent Shadows",
+    "tier": "Tier 2",
+    "desc": "Like a rat, sneaking around...",
+    "buffs": [
+      "Your visible aura is reduced by 60%."
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_superiority_complex",
+    "title": "Superiority Complex",
+    "tier": "Tier 2",
+    "desc": "Adversity breeds excellence...",
+    "buffs": [
+      "Blade-catching an opponent will cause you to mock them, increasing aura gain on the blade catch (30s CD)",
+      "Mocked opponents instantly lose 0.2x AP and take 15% increased posture damage for a short duration"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_surgeons_spirit",
+    "title": "Surgeon's Spirit",
+    "tier": "Tier 2",
+    "desc": "I feel rejuvenated...?",
+    "buffs": [
+      "All heals towards you are increased by 30%"
+    ],
+    "nerfs": [
+      "You no longer receive HP packs from knocking players"
+    ]
+  },
+  {
+    "id": "charm_swarm",
+    "title": "Swarm",
+    "tier": "Tier 2",
+    "desc": "You're dead after this.",
+    "buffs": [
+      "Landing your critical attack will spawn 1 friendly Dragonfly Hollow"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_tools_of_the_trade",
+    "title": "Tools of the Trade",
+    "tier": "Tier 2",
+    "desc": "The right tool for the wrong job.",
+    "buffs": [
+      "You have absolute mastery over your weaponry, your heavy attack is never red, gain riposte on the attack anyway (Does not work for heavy attacks that are never red to begin with)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_wraiths_spirit",
+    "title": "Wraith's Spirit",
+    "tier": "Tier 2",
+    "desc": "Though unknown, the shadows produced from this spirit surround you and protect you.",
+    "buffs": [
+      "Getting hit by 3 different attacks in quick succession will cause you to turn into a invincible wraith momentarily"
+    ],
+    "nerfs": [
+      "You take 5% more damage from melee attacks"
+    ]
+  },
+  {
+    "id": "charm_backline_buster",
+    "title": "Backline Buster",
+    "tier": "Tier 2",
+    "desc": "You just don't fit in with this crowd.",
+    "buffs": [
+      "Hitting an opponent then hitting a different opponent shortly after procs Perfect Flash (35s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_close_and_personal",
+    "title": "Close & Personal",
+    "tier": "Tier 2",
+    "desc": "Don't run!",
+    "buffs": [
+      "5% weapon/hakudo damage"
+    ],
+    "nerfs": [
+      "2% damage vulnerability"
+    ]
+  },
+  {
+    "id": "charm_factotums_spirit",
+    "title": "Factotum's Spirit",
+    "tier": "Tier 2",
+    "desc": "Determination surges through you",
+    "buffs": [
+      "5% increased EXP goin"
+    ],
+    "nerfs": [
+      "30% increased EXP loss"
+    ]
+  },
+  {
+    "id": "charm_frostwalker",
+    "title": "Frostwalker",
+    "tier": "Tier 2",
+    "desc": "This once belonged to a prestigious king, which commanded two armies in his lifetime, now it’s yours.",
+    "buffs": [
+      "Dealing a high-damage kido blow will embue you in frost, this effect lasts 12.5s or until consumed.",
+      "While frosted your next basic attack will freeze your opponent. (25s CD)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_hard_headed",
+    "title": "Hard Headed",
+    "tier": "Tier 1",
+    "desc": "Your skull is an impenetrable fortress.",
+    "buffs": [
+      "Gain immunity to concussion"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_at_the_ready",
+    "title": "At the Reedy",
+    "tier": "Tier 1",
+    "desc": "Always ready.",
+    "buffs": [
+      "Gain permanent 25% ability haste when invaded"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_battle_hardened",
+    "title": "Battle Hardened",
+    "tier": "Tier 1",
+    "desc": "A hundred scars. What is one more?",
+    "buffs": [
+      "You visually bleed on hits at lower health"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_critical_blows",
+    "title": "Critical Blows",
+    "tier": "Tier 1",
+    "desc": "Critically acclaimed.",
+    "buffs": [
+      "7.5% increased critical attack damage"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_defensive_regen",
+    "title": "Defensive Regen",
+    "tier": "Tier 1",
+    "desc": "Wait for your chance...",
+    "buffs": [
+      "You regenerate 25% more reiatsu from parries"
+    ],
+    "nerfs": [
+      "Your base reiatsu regeneration is reduced by 35%"
+    ]
+  },
+  {
+    "id": "charm_domination",
+    "title": "Domination",
+    "tier": "Tier 1",
+    "desc": "For fighters who rarely get hit.",
+    "buffs": [
+      "Max AP is increased by 0.15x"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_fortified_fighter",
+    "title": "Fortified Fighter",
+    "tier": "Tier 1",
+    "desc": "Secure on all fronts.",
+    "buffs": [
+      "Gain 15% defense when posture broken."
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_flashmaster",
+    "title": "Flashmaster",
+    "tier": "Tier 1",
+    "desc": "The will of Goji.",
+    "buffs": [
+      "+7.5 shunpo stamina"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_giant_fighter",
+    "title": "Giant Fighter",
+    "tier": "Tier 1",
+    "desc": "This charm belonged to a certain speedrunner...",
+    "buffs": [
+      "10% more domoge to Bosses"
+    ],
+    "nerfs": [
+      "2.5% less damage to non-boss NPCs"
+    ]
+  },
+  {
+    "id": "charm_head_hunter",
+    "title": "Head Hunter",
+    "tier": "Tier 1",
+    "desc": "THE LIST KEEPS ON GETTING BIGGER.",
+    "buffs": [
+      "Deal 5% more domoge towards players with active transformation/shikai if you have neither"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_prey_turned_predator",
+    "title": "Prey Turned Predator",
+    "tier": "Tier 1",
+    "desc": "They think I'm stuck here with them?",
+    "buffs": [
+      "If someone invades you while you are on a mission, they get combat tagged"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_resourceful_spirit",
+    "title": "Resourceful Spirit",
+    "tier": "Tier 1",
+    "desc": "No need to reinvent the wheel.",
+    "buffs": [
+      "Your aerial launcher is counted as a critical attack, dealing slightly more damage and applying all critical attack effects"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_trouble_in_paradise",
+    "title": "Trouble in Paradise",
+    "tier": "Tier 1",
+    "desc": "Home court advantage!",
+    "buffs": [
+      "Deal 10% more domoge when fighting in a Homeworld"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_bully",
+    "title": "Bully",
+    "tier": "Tier 3",
+    "desc": "Dominates weaker opponents without mercy.",
+    "buffs": [
+      "Findable in PVP / Hueco Mundo pool",
+      "Deals increased damage and posture damage against opponents with lower current health percentage"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_the_boogeyman",
+    "title": "The Boogeyman",
+    "tier": "Tier 3",
+    "desc": "A lurking nightmare striking from the dark.",
+    "buffs": [
+      "Findable in PVP / Hueco Mundo pool",
+      "Striking enemies from behind or from stealth applies Terror status and heightens critical damage"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_monster_slayer",
+    "title": "Monster Slayer",
+    "tier": "Tier 3",
+    "desc": "Honed specifically to slay titanic horrors.",
+    "buffs": [
+      "Drops from Lanza and Zatoichi boss encounters",
+      "Increases damage dealt and damage resistance against giant hollows, raid bosses, and world bosses"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_dead_man_walking",
+    "title": "Dead Man Walking",
+    "tier": "Tier 4 (HolloVVeen Limited)",
+    "desc": "Refuses to succumb to death without one final violent fury.",
+    "buffs": [
+      "HolloVVeen Event Charm (Grave Wars / HolloVVeen Chests)",
+      "Upon receiving fatal damage, enter a brief invulnerability window to retaliate before falling",
+      "Freely unequipped (Limited Charm)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_witches_brew",
+    "title": "Witches Brew",
+    "tier": "Tier 3 (HolloVVeen Limited)",
+    "desc": "A volatile concoction bubbling with eerie unpredictability.",
+    "buffs": [
+      "HolloVVeen Event Charm (Grave Wars / HolloVVeen Chests)",
+      "Casting skills periodically triggers erratic potion surges, applying random status effects or temporary stat surges",
+      "Freely unequipped (Limited Charm)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_jack_o_lantern",
+    "title": "Jack-o-Lantern",
+    "tier": "Tier 3 (HolloVVeen Limited)",
+    "desc": "Carved with a demonic grin and burning spectral fire.",
+    "buffs": [
+      "HolloVVeen Event Charm (Grave Wars / HolloVVeen Chests)",
+      "Attacks ignite targets in spectral hollow fire, causing damage over time and revealing cloaked targets",
+      "Freely unequipped (Limited Charm)"
+    ],
+    "nerfs": []
+  },
+  {
+    "id": "charm_draculas_fangs",
+    "title": "Dracula’s Fangs",
+    "tier": "Tier 4 (HolloVVeen Limited)",
+    "desc": "Insatiable thirst for the life essence of your prey.",
+    "buffs": [
+      "HolloVVeen Event Charm (Dracula Pack / Grave Wars)",
+      "Grants significant life steal on critical and heavy attacks against bleeding or maimed targets",
+      "Freely unequipped (Limited Charm)"
+    ],
+    "nerfs": []
+  }
+]

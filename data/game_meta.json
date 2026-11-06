@@ -1,0 +1,115 @@
+{
+  "codes": [
+    {
+      "code": "HOLLOVVEEN",
+      "reward": "Event Candy, Tickets & Rolls",
+      "status": "Active (v5.2)"
+    },
+    {
+      "code": "SHUNKOVASTO",
+      "reward": "Rerolls & Progression Tokens",
+      "status": "Active"
+    },
+    {
+      "code": "205KLIKES",
+      "reward": "Soul Tokens & EXP Boost",
+      "status": "Active"
+    },
+    {
+      "code": "200KLIKES",
+      "reward": "Soul Tokens & Accessory Rolls",
+      "status": "Active"
+    },
+    {
+      "code": "CLANS",
+      "reward": "Clan Reroll Tickets (Redeem at Fort Adams)",
+      "status": "Active"
+    },
+    {
+      "code": "BUILDPOINTS",
+      "reward": "Build Reset & Stat Points",
+      "status": "Active"
+    },
+    {
+      "code": "necromancerpoints",
+      "reward": "Necromancer Upgrade Points",
+      "status": "Active"
+    },
+    {
+      "code": "BANKAIONTHEWAY",
+      "reward": "EXP & Soul Tokens",
+      "status": "Active"
+    },
+    {
+      "code": "latenight",
+      "reward": "Nightly Bonus Tokens",
+      "status": "Limited"
+    }
+  ],
+  "worldBossSchedule": [
+    {
+      "name": "Junichiro",
+      "spawnTime": "Every hour at xx:20",
+      "drops": "Vampire Hunter's Set, Katana skins",
+      "note": "Notification 5m prior"
+    },
+    {
+      "name": "Nivis",
+      "spawnTime": "Every hour at xx:30",
+      "drops": "Pharaoh's Set",
+      "note": "Notification 5m prior"
+    },
+    {
+      "name": "Parasite Boss",
+      "spawnTime": "Every 2 hours at xx:40",
+      "drops": "HolloVVeen Event Chests, Raid Chests",
+      "note": "Infection boss"
+    },
+    {
+      "name": "Masked Warrior",
+      "spawnTime": "Every hour at xx:50",
+      "drops": "Screamer's Face Mask",
+      "note": "Notification 5m prior"
+    }
+  ],
+  "statInvestmentMilestones": {
+    "budget": "400 BP Total Cap",
+    "scaling": "Every 10 Build Points invested increases all other build points and stats by +1 (tested up to 50 BP).",
+    "passives": [
+      {
+        "stat": "Reserve, Haste, Potency, Mettle, Shunpo",
+        "threshold": "175 Points",
+        "effect": "Unlocks first tier unique passive."
+      },
+      {
+        "stat": "Reserve, Haste, Potency, Mettle, Shunpo",
+        "threshold": "400 Points",
+        "effect": "Unlocks second tier ultimate essence passive."
+      },
+      {
+        "stat": "Strength, Speed, Kido, Hakuda",
+        "threshold": "400 Points",
+        "effect": "Unlocks major specialization passive shifting away from hybrid meta."
+      }
+    ],
+    "resetPolicy": "Free Build Reset available once per account (level ceiling removed)."
+  },
+  "combatSystems": [
+    {
+      "name": "Traversing",
+      "desc": "Hold Q out of combat to rapidly traverse via flashstep / sonido / hirenkyaku at reduced resource cost."
+    },
+    {
+      "name": "Anti-Gank",
+      "desc": "Taking damage from non-allied enemies builds Anti-Gank stacks granting damage reduction, posture regen, and boosted aura heal."
+    },
+    {
+      "name": "Combo Falloff",
+      "desc": "Sustained true combos trigger severe damage falloff until the victim is released from stun."
+    },
+    {
+      "name": "Transmutation",
+      "desc": "Detransmutating accessories now safely refunds the transmutated accessory."
+    }
+  ]
+}

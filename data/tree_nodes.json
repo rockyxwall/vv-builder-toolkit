@@ -1,0 +1,3821 @@
+{
+  "magic": [
+    {
+      "id": "mcA1",
+      "name": "Spiritual Potential",
+      "spokeId": "misc",
+      "parent": "mc3",
+      "costSP": 0,
+      "costCash": 250,
+      "req": {},
+      "noLevel": true,
+      "desc": "Gain the ability to fill up your aura bar when fighting players. Once filled, you can unleash your spiritual pressure and gain a short-term buff.",
+      "upgradeNote": null,
+      "bx": 852,
+      "by": 1431
+    },
+    {
+      "id": "mcA2",
+      "name": "Spiritual Pressure",
+      "spokeId": "misc",
+      "parent": "mcA1",
+      "costSP": 0,
+      "costCash": 450,
+      "req": {},
+      "noLevel": true,
+      "desc": "Flex your spiritual power (keybind in settings), affecting weaker opponents to varying degrees.",
+      "upgradeNote": null,
+      "bx": 774,
+      "by": 1474
+    },
+    {
+      "id": "mcB1",
+      "name": "Manual Rushdown",
+      "spokeId": "misc",
+      "parent": "mc3",
+      "costSP": 0,
+      "costCash": 125,
+      "req": {},
+      "noLevel": true,
+      "desc": "Hold shift and flashstep to manually use rushdown on a target with added startup.",
+      "upgradeNote": null,
+      "bx": 932,
+      "by": 1516
+    },
+    {
+      "id": "mcB2",
+      "name": "Overhead Counter",
+      "spokeId": "misc",
+      "parent": "mcB1",
+      "mutexWith": "mcB4",
+      "costSP": 0,
+      "costCash": 300,
+      "req": {
+        "hakuda": 40
+      },
+      "noLevel": true,
+      "desc": "Counter weapon-based overheaded swings on deflect, increasing the enemies posture significantly.",
+      "upgradeNote": null,
+      "accentColor": "255,130,20",
+      "bx": 855,
+      "by": 1514
+    },
+    {
+      "id": "mcB3",
+      "name": "Slippery Fighter",
+      "spokeId": "misc",
+      "parent": "mcB1",
+      "costSP": 0,
+      "costCash": 250,
+      "req": {},
+      "noLevel": true,
+      "desc": "Press Counter after winning a clash to launch your opponent into the air.",
+      "upgradeNote": null,
+      "bx": 890,
+      "by": 1557
+    },
+    {
+      "id": "mcB4",
+      "name": "Advanced Counter 1",
+      "spokeId": "misc",
+      "parent": "mcB1",
+      "mutexWith": "mcB2",
+      "costSP": 0,
+      "costCash": 300,
+      "req": {
+        "strength": 40
+      },
+      "noLevel": true,
+      "desc": "Counter specific melee attacks with your foot, increasing the enemies posture significantly.",
+      "upgradeNote": null,
+      "accentColor": "255,60,80",
+      "bx": 960,
+      "by": 1592
+    },
+    {
+      "id": "mcB2a",
+      "name": "One Way Ticket to Hell",
+      "spokeId": "misc",
+      "parent": "mcB2",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "hakuda": 125
+      },
+      "noLevel": true,
+      "desc": "Winning a clash when the opponent is low on health and high on posture will cause you to impale them with your fist.",
+      "upgradeNote": null,
+      "accentColor": "255,130,20",
+      "bx": 796,
+      "by": 1556
+    },
+    {
+      "id": "mcB4a",
+      "name": "Clash Proficiency",
+      "spokeId": "misc",
+      "parent": "mcB4",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "strength": 80
+      },
+      "noLevel": true,
+      "desc": "Winning a clash when the opponent has low health and medium posture initiates an execution.",
+      "upgradeNote": null,
+      "accentColor": "255,60,80",
+      "bx": 908,
+      "by": 1636
+    },
+    {
+      "id": "sr_okasen",
+      "name": "SR Kido: Okasen",
+      "parent": "kido_base",
+      "costSP": 2,
+      "req": {
+        "kido": 120
+      },
+      "desc": "Fires a concentrated high-velocity crimson reishi laser beam."
+    },
+    {
+      "id": "sr_danku",
+      "name": "SR Kido: Danku",
+      "parent": "kido_base",
+      "costSP": 3,
+      "req": {
+        "kido": 200
+      },
+      "desc": "Advanced barrier kido completely blocking incoming projectiles. Cannot strike players in safe zones."
+    },
+    {
+      "id": "sr_hyapporankan",
+      "name": "SR Kido: Hyapporankan",
+      "parent": "kido_base",
+      "costSP": 3,
+      "req": {
+        "kido": 220
+      },
+      "desc": "Hundred Stepped Rails: hurls a barrage of glowing reishi rods, pinning and shredding target."
+    },
+    {
+      "id": "quincy_brenschwerter",
+      "name": "Quincy Kido: Brenschwerter",
+      "parent": "kido_base",
+      "costSP": 2,
+      "req": {
+        "kido": 140
+      },
+      "desc": "Conjures orbiting burning spirit swords that seek and pierce enemies."
+    },
+    {
+      "id": "quincy_klingenfallen",
+      "name": "Quincy Kido: Klingenfallen",
+      "parent": "kido_base",
+      "costSP": 3,
+      "req": {
+        "kido": 210
+      },
+      "desc": "Lays interconnected tripwire spirit blades across the battle zone inflicting severe posture crush."
+    }
+  ],
+  "strength": [
+    {
+      "id": "stA1",
+      "name": "Tenran",
+      "spokeId": "strength",
+      "parent": "st2",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "strength": 85,
+        "kido": 35
+      },
+      "desc": "Send out a whirlwind from the tip of your sword.",
+      "upgradeNote": "Lvl 3: Tenran sucks people in when blocked",
+      "accentColor": "220,60,140",
+      "bx": 1496,
+      "by": 1273
+    },
+    {
+      "id": "stA2",
+      "name": "Melee-Kido Specialist",
+      "spokeId": "strength",
+      "parent": "stA1",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "strength": 90,
+        "kido": 40
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Landing a basic attack shortly before a kido move buffs its damage.",
+      "upgradeNote": null,
+      "accentColor": "220,60,140",
+      "bx": 1459,
+      "by": 1361
+    },
+    {
+      "id": "stA3",
+      "name": "Kido Node",
+      "spokeId": "strength",
+      "parent": "stA1",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "220,60,140",
+      "bx": 1567,
+      "by": 1324
+    },
+    {
+      "id": "stA4",
+      "name": "Kinetic Force",
+      "spokeId": "strength",
+      "parent": "stA3",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "strength": 140,
+        "kido": 50
+      },
+      "desc": "Strike a pose, in which you gather reiatsu, and activate kido-enhancement for your next basic attack",
+      "upgradeNote": "Lvl 3: Gain extra reiatsu on completed cast·Lvl 4: Gain enhanced reiatsu regeneration for 2.5 seconds after completed cast·Lvl 5: Recasting Kinetic Force very quickly after a completed pose will slice out 2 energy slashes",
+      "accentColor": "220,60,140",
+      "bx": 1654,
+      "by": 1361
+    },
+    {
+      "id": "stA5",
+      "name": "Kido Node",
+      "spokeId": "strength",
+      "parent": "stA4",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "220,60,140",
+      "bx": 1731,
+      "by": 1403
+    },
+    {
+      "id": "stA6",
+      "name": "Blood Tax",
+      "spokeId": "strength",
+      "parent": "stA5",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "strength": 275,
+        "kido": 100
+      },
+      "zStepIncompat": true,
+      "desc": "Strengthen a powerful slash with impressive range using your own blood, does not require full ultimate bar. If cast with full ultimate bar, perform a 2nd equally devastating slash.",
+      "upgradeNote": "Lvl 5: Landing the move on an enemy with low health will auto execute them",
+      "accentColor": "220,60,140",
+      "bx": 1825,
+      "by": 1473
+    },
+    {
+      "id": "stB1",
+      "name": "Strength Node",
+      "spokeId": "strength",
+      "parent": "st2",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "bx": 1519,
+      "by": 1192
+    },
+    {
+      "id": "stB2",
+      "name": "Cyclone",
+      "spokeId": "strength",
+      "parent": "stB1",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "strength": 88
+      },
+      "desc": "A single AOE slash",
+      "upgradeNote": "Lvl 3: Hitting someone with the edge of the slash will deal more damage and cause bleed·Lvl 4: You can dash during the startup of",
+      "bx": 1597,
+      "by": 1165
+    },
+    {
+      "id": "stB3",
+      "name": "Vault Slash",
+      "spokeId": "strength",
+      "parent": "stB2",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "strength": 156
+      },
+      "desc": "Roll into an overhead slash",
+      "upgradeNote": "Lvl 6: You can now feint the slash·Lvl 7: Vault slash gives dodge frames at the start of the move",
+      "bx": 1689,
+      "by": 1179
+    },
+    {
+      "id": "stB1a",
+      "name": "Fell Crescent",
+      "spokeId": "strength",
+      "parent": "stB3",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "strength": 160,
+        "speed": 20
+      },
+      "desc": "Leap backwards and attack your previous position.",
+      "upgradeNote": "Lvl 3: Riposte frames on startup·Lvl 8: Execute low health enemies",
+      "accentColor": "80,120,255",
+      "bx": 1774,
+      "by": 1246
+    },
+    {
+      "id": "stB1b",
+      "name": "Speed Node",
+      "spokeId": "strength",
+      "parent": "stB1a",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "80,120,255",
+      "bx": 1850,
+      "by": 1220
+    },
+    {
+      "id": "stB1c",
+      "name": "Speed Node",
+      "spokeId": "strength",
+      "parent": "stB1a",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "80,120,255",
+      "bx": 1852,
+      "by": 1322
+    },
+    {
+      "id": "keroseneSlam",
+      "name": "Kerosene Slam",
+      "spokeId": "strength",
+      "parent": "stB1c",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "strength": 265,
+        "speed": 100
+      },
+      "desc": "Send two false afterimages to fool an opponent, then leap towards them and slam down with all your might, concussing enemies on impact",
+      "upgradeNote": "Lvl 3: \"Kerosene Slam\" hits crumpled opponents",
+      "accentColor": "80,120,255",
+      "bx": 1830,
+      "by": 1390
+    },
+    {
+      "id": "stB1d",
+      "name": "One Mind",
+      "spokeId": "strength",
+      "parent": "stB1c",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "strength": 275,
+        "speed": 95
+      },
+      "desc": "A onslaught of relentless slashes, with a powerful strike at the end.",
+      "upgradeNote": "Lvl 3: Gain riposte frames in One Mind",
+      "accentColor": "80,120,255",
+      "bx": 1938,
+      "by": 1363
+    },
+    {
+      "id": "stB2a",
+      "name": "Strength Node",
+      "spokeId": "strength",
+      "parent": "stB3",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "bx": 1773,
+      "by": 1146
+    },
+    {
+      "id": "stB2b",
+      "name": "Overwhelming Strength",
+      "spokeId": "strength",
+      "parent": "stB2a",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "strength": 195
+      },
+      "noLevel": true,
+      "desc": "Guardbreaking an opponent will wound them. While wounded, their posture damage taken is increased significantly.",
+      "upgradeNote": null,
+      "bx": 1777,
+      "by": 1061
+    },
+    {
+      "id": "stC1",
+      "name": "Overhead Strike",
+      "spokeId": "strength",
+      "parent": "stB2a",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "strength": 196
+      },
+      "desc": "An overhead strike with poor damage, but extremely high posture damage.",
+      "upgradeNote": "Lvl 3: Overhead Strike restores posture regardless of it being blocked or parried·Lvl 5: Gain hyperarmor for the first .75s of startup·Lvl 6: Overhead Strike inflicts bleed·Lvl 7: Overhead Strike deals 2x posture damage to enemies under 30% health",
+      "bx": 1883,
+      "by": 1126
+    },
+    {
+      "id": "stC2",
+      "name": "Trained Body",
+      "spokeId": "strength",
+      "parent": "stC1",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "strength": 230
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Actions that cancel posture regen will reduce the cancellation time.",
+      "upgradeNote": null,
+      "bx": 1970,
+      "by": 1089
+    },
+    {
+      "id": "stC3",
+      "name": "Blade Catch",
+      "spokeId": "strength",
+      "parent": "stC2",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "strength": 270
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your 'unblockable counter' is more posture-effective. Additionally, disrupt the aura of those weaker than you, or those at low HP.",
+      "upgradeNote": null,
+      "bx": 2054,
+      "by": 1035
+    },
+    {
+      "id": "stC3b",
+      "name": "Wall Specialist",
+      "spokeId": "strength",
+      "parent": "stC3",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "strength": 315
+      },
+      "passive": true,
+      "desc": "Pressing Counter while facing a wallbanged enemy will grab them and slam them into the ground.",
+      "upgradeNote": "Lvl 4: Apply concussion to enemies",
+      "bx": 2127,
+      "by": 1081
+    },
+    {
+      "id": "stC4",
+      "name": "Piercing Draw",
+      "spokeId": "strength",
+      "parent": "stC3",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "strength": 310
+      },
+      "desc": "Use your strength to cause a ripple effect via shockwaves erupting from the ground when you strike it. Can hit ragdolled and crumpled opponents.",
+      "upgradeNote": "Lvl 3: Your super armor from Piercing Draw lingers making it very difficult to whiff-punish·Lvl 6: You can rushdown from hit ragdolled opponents",
+      "bx": 2146,
+      "by": 976
+    },
+    {
+      "id": "stC5a",
+      "name": "Trained Body Mastery",
+      "spokeId": "strength",
+      "parent": "stC4",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "strength": 350
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Deflecting projectiles now reflects them towards the caster.",
+      "upgradeNote": null,
+      "bx": 2146,
+      "by": 895
+    },
+    {
+      "id": "stC5b",
+      "name": "Strength Node",
+      "spokeId": "strength",
+      "parent": "stC4",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "bx": 2242,
+      "by": 967
+    },
+    {
+      "id": "stC6",
+      "name": "Brute Force",
+      "spokeId": "strength",
+      "parent": "stC5b",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "strength": 375
+      },
+      "desc": "Guard your body with your blade, reducing all incoming damage by 90%, then reflect all damage back in a spinning hurl.",
+      "upgradeNote": "Lvl 3: Returned damage bypasses riposte frames·Lvl 8: Slice off low HP opponents heads if you absorb any damage at all",
+      "bx": 2310,
+      "by": 937
+    },
+    {
+      "id": "stD1",
+      "name": "Strength Node",
+      "spokeId": "strength",
+      "parent": "stC1",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "bx": 1954,
+      "by": 1178
+    },
+    {
+      "id": "stD2",
+      "name": "Heavy Hitter",
+      "spokeId": "strength",
+      "parent": "stD1",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "strength": 235
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Hitting someone's block reduces your posture slightly.",
+      "upgradeNote": null,
+      "bx": 2035,
+      "by": 1225
+    },
+    {
+      "id": "stD3",
+      "name": "Poise",
+      "spokeId": "strength",
+      "parent": "stD2",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "strength": 268
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase penetration through armor and armor-like techniques.",
+      "upgradeNote": null,
+      "bx": 2119,
+      "by": 1268
+    },
+    {
+      "id": "stD4",
+      "name": "Skyscraper",
+      "spokeId": "strength",
+      "parent": "stD3",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "strength": 280
+      },
+      "desc": "Strong attack that grants hyperarmor, has a lengthy wind-up.",
+      "upgradeNote": "Lvl 4: Gain riposte frames on startup·Lvl 5: Follow-up attack used by using shunpo after landing the move·Lvl 6: Follow-up becomes amped on-hit if opponent is below 40%",
+      "bx": 2208,
+      "by": 1307
+    },
+    {
+      "id": "stD5a",
+      "name": "Impale",
+      "spokeId": "strength",
+      "parent": "stD4",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "strength": 324
+      },
+      "desc": "Impale an opponent and slam them back down to the ground, inflicting bleed.",
+      "upgradeNote": "Lvl 6: Impale can automatically execute low HP opponents",
+      "bx": 2207,
+      "by": 1410
+    },
+    {
+      "id": "stD5a2",
+      "name": "Strength Node",
+      "spokeId": "strength",
+      "parent": "stD5a",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "bx": 2288,
+      "by": 1462
+    },
+    {
+      "id": "stD5b",
+      "name": "Berserker",
+      "spokeId": "strength",
+      "parent": "stD4",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "strength": 345
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Enter a state of rage caused by anguish when entering low HP. Increases melee damage dealt by 15%–30% based on missing HP.",
+      "upgradeNote": null,
+      "bx": 2300,
+      "by": 1282
+    },
+    {
+      "id": "stD6a",
+      "name": "Bloodlust",
+      "spokeId": "strength",
+      "parent": "stD5b",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {
+        "strength": 360
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Posture executing an enemy can trigger Berserker.",
+      "upgradeNote": null,
+      "bx": 2392,
+      "by": 1263
+    },
+    {
+      "id": "stD6b",
+      "name": "Guillotine Drop",
+      "spokeId": "strength",
+      "parent": "stD5b",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "strength": 380
+      },
+      "desc": "Jump high in the air towards your opponent before attacking them with an impactful slam.",
+      "upgradeNote": null,
+      "bx": 2279,
+      "by": 1194
+    },
+    {
+      "id": "strength_rending_tide",
+      "name": "Strength-Kido: Rending Tide",
+      "parent": "strength_base",
+      "costSP": 3,
+      "req": {
+        "strength": 160,
+        "kido": 120
+      },
+      "desc": "Hybrid cleave combining physical blade force with spiritual current (+ Level 4 upgrade)."
+    },
+    {
+      "id": "essence_flowing_gradient",
+      "name": "Essence: Flowing Gradient",
+      "parent": "strength_base",
+      "costSP": 2,
+      "req": {
+        "strength": 180
+      },
+      "desc": "Strength skill essence from Battle for Dangai vote. Empowers attacks with fluid, crushing momentum."
+    }
+  ],
+  "hakuda": [
+    {
+      "id": "hkP1",
+      "name": "Iron Guard",
+      "spokeId": "hakuda",
+      "parent": "hk2",
+      "costSP": 0,
+      "costCash": 0,
+      "req": {
+        "hakuda": 70
+      },
+      "noLevel": true,
+      "desc": "You no longer take chip damage from blocking.",
+      "upgradeNote": null,
+      "bx": 1272,
+      "by": 926
+    },
+    {
+      "id": "hkP2",
+      "name": "Side Switcher",
+      "spokeId": "hakuda",
+      "parent": "hkP1",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "hakuda": 90
+      },
+      "noLevel": true,
+      "desc": "Swapping between hakuda and your primary weapon is much faster.",
+      "upgradeNote": null,
+      "bx": 1346,
+      "by": 868
+    },
+    {
+      "id": "hkK0",
+      "name": "Kido Node",
+      "spokeId": "hakuda",
+      "parent": "hk3",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 1118,
+      "by": 830
+    },
+    {
+      "id": "hkK1",
+      "name": "Surge Fist",
+      "spokeId": "hakuda",
+      "parent": "hkK0",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "hakuda": 50,
+        "kido": 20
+      },
+      "desc": "Concentrate your reiatsu into a small pressurized blast projectile and release it.",
+      "upgradeNote": "Lvl 4: Unlock an air variant of Surge Fist when holding jump while casting. 35% Faster, however only aimed in a set direction·Lvl 6: Air variant hits crumpled opponents",
+      "accentColor": "255,110,190",
+      "bx": 1042,
+      "by": 787
+    },
+    {
+      "id": "hkK2",
+      "name": "Reiatsu Blasts",
+      "spokeId": "hakuda",
+      "parent": "hkK1",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 90,
+        "kido": 50
+      },
+      "desc": "Summon homing blasts of reiatsu from the ground.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 989,
+      "by": 834
+    },
+    {
+      "id": "hkK3",
+      "name": "Stagger Kicks",
+      "spokeId": "hakuda",
+      "parent": "hkK1",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 65,
+        "kido": 45
+      },
+      "desc": "Perform three advancing kicks.",
+      "upgradeNote": "Lvl 3: Landing all 3 kicks will apply Concussion on the third kick",
+      "accentColor": "255,110,190",
+      "bx": 985,
+      "by": 751
+    },
+    {
+      "id": "hkK4",
+      "name": "Hakudo Kai",
+      "spokeId": "hakuda",
+      "parent": "hkK3",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "hakuda": 73,
+        "kido": 55
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Every 3rd basic attack deals bonus Kido scaling damage.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 916,
+      "by": 754
+    },
+    {
+      "id": "hkK5",
+      "name": "Blast Punisher",
+      "spokeId": "hakuda",
+      "parent": "hkK4",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "hakuda": 100,
+        "kido": 70
+      },
+      "desc": "Shoot energy blasts from your hands. Lock onto an enemy if hit.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 847,
+      "by": 736
+    },
+    {
+      "id": "hkK6",
+      "name": "Kido Node",
+      "spokeId": "hakuda",
+      "parent": "hkK3",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 937,
+      "by": 686
+    },
+    {
+      "id": "hkK7",
+      "name": "Dragon Fist",
+      "spokeId": "hakuda",
+      "parent": "hkK6",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "hakuda": 136,
+        "kido": 76
+      },
+      "desc": "Perform a reiatsu-infused uppercut that ragdolls the opponent on the second hit.",
+      "upgradeNote": "Lvl 3: Gain Super Armor during the end-lag·Lvl 5: Perform \"Demon Flash\" during the 2nd hit·Lvl 7: \"Demon Flash\" can execute",
+      "accentColor": "255,110,190",
+      "bx": 895,
+      "by": 633
+    },
+    {
+      "id": "hkK8a",
+      "name": "Kido Node",
+      "spokeId": "hakuda",
+      "parent": "hkK7",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 889,
+      "by": 577
+    },
+    {
+      "id": "hkK9a",
+      "name": "God Fist",
+      "spokeId": "hakuda",
+      "parent": "hkK8a",
+      "costSP": 13,
+      "costCash": 0,
+      "req": {
+        "hakuda": 315,
+        "kido": 85
+      },
+      "desc": "I've been saving this! God Fist!",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 913,
+      "by": 501
+    },
+    {
+      "id": "hkK8b",
+      "name": "Kido Node",
+      "spokeId": "hakuda",
+      "parent": "hkK7",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 828,
+      "by": 631
+    },
+    {
+      "id": "hkK9b",
+      "name": "Burst Rush",
+      "spokeId": "hakuda",
+      "parent": "hkK8b",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "hakuda": 200,
+        "kido": 80
+      },
+      "desc": "YOU'RE THROUGH!",
+      "upgradeNote": null,
+      "accentColor": "255,110,190",
+      "bx": 791,
+      "by": 572
+    },
+    {
+      "id": "hkDL",
+      "name": "Dragon Lash",
+      "spokeId": "hakuda",
+      "parent": "hk3",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "hakuda": 56
+      },
+      "desc": "A mid range, high-stun aerial kick.",
+      "upgradeNote": null,
+      "bx": 1200,
+      "by": 790
+    },
+    {
+      "id": "hkS1",
+      "name": "Executioner",
+      "spokeId": "hakuda",
+      "parent": "hkDL",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "hakuda": 115,
+        "strength": 5
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Temporarily gain a 20% output boost after executing someone.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1297,
+      "by": 770
+    },
+    {
+      "id": "hkS2",
+      "name": "Strength Node",
+      "spokeId": "hakuda",
+      "parent": "hkS1",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1377,
+      "by": 746
+    },
+    {
+      "id": "hkS3",
+      "name": "Suplex",
+      "spokeId": "hakuda",
+      "parent": "hkS2",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 115,
+        "strength": 28
+      },
+      "desc": "Lunge a short distance forward, then attempt to perform a stylish suplex. Concusses opponents that are hit by the slam.",
+      "upgradeNote": "Lvl 3: Landing the grab on the first frame will cause your throw to do an additional 2% max health dmg, signified by blue sparks.·Lvl 6: After knocking an opponent with their theme active using Suplex, automatically cancel their theme and pop yours.",
+      "accentColor": "255,70,50",
+      "bx": 1453,
+      "by": 693
+    },
+    {
+      "id": "hkS4",
+      "name": "The Underdog",
+      "spokeId": "hakuda",
+      "parent": "hkS3",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "hakuda": 115,
+        "strength": 28
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "If there is a 30% HP gap between you and your opponent, your next basic attack deals +5 enemy health percent bonus damage (25s CD).",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1535,
+      "by": 645
+    },
+    {
+      "id": "hkS5a",
+      "name": "Swinging Throw",
+      "spokeId": "hakuda",
+      "parent": "hkS4",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 120,
+        "strength": 54
+      },
+      "desc": "Grab your opponent by the waist and violently swing them around, then throw them at full force to finish",
+      "upgradeNote": "Lvl 4: Landing the grab on the first frame will cause your throw to do an additional 2% enemy max health dmg, signified by blue sparks·Lvl 6: You can pick up ragdolled opponents",
+      "accentColor": "255,70,50",
+      "bx": 1663,
+      "by": 633
+    },
+    {
+      "id": "hkS6a",
+      "name": "Strength Node",
+      "spokeId": "hakuda",
+      "parent": "hkS5a",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1773,
+      "by": 626
+    },
+    {
+      "id": "hkS7a",
+      "name": "Death Fist",
+      "spokeId": "hakuda",
+      "parent": "hkS5a",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "hakuda": 200,
+        "strength": 100
+      },
+      "desc": "Secret technique of Death Kwon Do...",
+      "upgradeNote": "Lvl 8: Landing the move on an enemy with low health will auto execute them",
+      "accentColor": "255,70,50",
+      "bx": 1715,
+      "by": 559
+    },
+    {
+      "id": "hkS5b",
+      "name": "Strength Node",
+      "spokeId": "hakuda",
+      "parent": "hkS4",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1518,
+      "by": 552
+    },
+    {
+      "id": "hkS6b",
+      "name": "Muscle Up",
+      "spokeId": "hakuda",
+      "parent": "hkS5b",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "hakuda": 160,
+        "strength": 60
+      },
+      "desc": "Flex your muscle and gain 90% damage reduction. If you take more than 10 of pre-mitigation damage you gain an HP pack relative to damage taken, reduces 10% of posture.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1527,
+      "by": 459
+    },
+    {
+      "id": "hkS7b",
+      "name": "Grappler's Gambit",
+      "spokeId": "hakuda",
+      "parent": "hkS6b",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "hakuda": 188,
+        "strength": 60
+      },
+      "passive": true,
+      "desc": "Pressing Counter while near a ragdolled will mount you on top of opponent and beat them down (40s CD).",
+      "upgradeNote": "Lvl 8: Grappler's Gambit now works on crumpled opponents",
+      "accentColor": "255,70,50",
+      "bx": 1606,
+      "by": 427
+    },
+    {
+      "id": "hkS8b",
+      "name": "Jaguar Rush",
+      "spokeId": "hakuda",
+      "parent": "hkS6b",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "hakuda": 200,
+        "strength": 80
+      },
+      "zStepIncompat": true,
+      "desc": "Enter a sprint stance; once your dash is completed, if nearby an opponent, attempt a RKO.",
+      "upgradeNote": "Lvl 6: Concusses enemies",
+      "accentColor": "255,70,50",
+      "bx": 1543,
+      "by": 350
+    },
+    {
+      "id": "hkS9a",
+      "name": "Strength Node",
+      "spokeId": "hakuda",
+      "parent": "hkS8b",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength Scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1608,
+      "by": 268
+    },
+    {
+      "id": "hkS9b",
+      "name": "Screwdriver",
+      "spokeId": "hakuda",
+      "parent": "hkS9a",
+      "costSP": 13,
+      "costCash": 0,
+      "req": {
+        "hakuda": 300,
+        "strength": 100
+      },
+      "zStepIncompat": true,
+      "desc": "Thrash around your opponent.",
+      "upgradeNote": null,
+      "accentColor": "255,70,50",
+      "bx": 1677,
+      "by": 197
+    },
+    {
+      "id": "hkV1",
+      "name": "Aerial Flip",
+      "spokeId": "hakuda",
+      "parent": "hkDL",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "hakuda": 100,
+        "speed": 15
+      },
+      "desc": "Flip towards an airborne opponent, grab them out of the air and slam them to the ground with you.",
+      "upgradeNote": "Lvl 5: Apply concussion prone to enemies·Lvl 6: Aerial flip is now unblockable",
+      "accentColor": "60,160,255",
+      "bx": 1242,
+      "by": 664
+    },
+    {
+      "id": "hkV2",
+      "name": "Speed Node",
+      "spokeId": "hakuda",
+      "parent": "hkV1",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed Scaling.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1275,
+      "by": 583
+    },
+    {
+      "id": "hkV3",
+      "name": "Flash Kick",
+      "spokeId": "hakuda",
+      "parent": "hkV2",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "hakuda": 130,
+        "speed": 20
+      },
+      "desc": "Spin around and launch your opponent into the air with a powerful kick.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1306,
+      "by": 506
+    },
+    {
+      "id": "hkV4",
+      "name": "Speed Node",
+      "spokeId": "hakuda",
+      "parent": "hkV3",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed Scaling.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1248,
+      "by": 485
+    },
+    {
+      "id": "hkV5s",
+      "name": "Punisher Drive",
+      "spokeId": "hakuda",
+      "parent": "hkV4",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 185,
+        "speed": 50
+      },
+      "desc": "Think you can keep up? After a short startup turn briefly invisible and barrage your opponent with a flurry of attacks.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1224,
+      "by": 405
+    },
+    {
+      "id": "hkV5",
+      "name": "Flash Strike",
+      "spokeId": "hakuda",
+      "parent": "hkV3",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "hakuda": 155,
+        "speed": 65
+      },
+      "desc": "Focus and warp your enemies perception of you, then teleport to them and deliver a strong kick.",
+      "upgradeNote": "Lvl 6: Deal additional damage / posture damage when used right up close",
+      "accentColor": "60,160,255",
+      "bx": 1340,
+      "by": 432
+    },
+    {
+      "id": "hkV6s",
+      "name": "Blur",
+      "spokeId": "hakuda",
+      "parent": "hkV5",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "hakuda": 180,
+        "speed": 90
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Dealing basic hakuda damage will refill your shunpo stamina.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1412,
+      "by": 402
+    },
+    {
+      "id": "hkV6",
+      "name": "Speed Node",
+      "spokeId": "hakuda",
+      "parent": "hkV5",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed Scaling.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1363,
+      "by": 327
+    },
+    {
+      "id": "hkV7",
+      "name": "Fight Back",
+      "spokeId": "hakuda",
+      "parent": "hkV6",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "hakuda": 195,
+        "speed": 65
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Landing 3 consecutive attacks will empower your 4th.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1353,
+      "by": 252
+    },
+    {
+      "id": "hkV8a",
+      "name": "Flash Counter",
+      "spokeId": "hakuda",
+      "parent": "hkV7",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 250,
+        "speed": 100
+      },
+      "desc": "Enter a counter pose where you negate all incoming melee damage and retaliate with a spinning kick.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1315,
+      "by": 189
+    },
+    {
+      "id": "hkV8b",
+      "name": "Speed Node",
+      "spokeId": "hakuda",
+      "parent": "hkV7",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed Scaling.",
+      "upgradeNote": null,
+      "accentColor": "60,160,255",
+      "bx": 1411,
+      "by": 206
+    },
+    {
+      "id": "hkV9",
+      "name": "Incinerator",
+      "spokeId": "hakuda",
+      "parent": "hkV8b",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "hakuda": 250,
+        "speed": 100
+      },
+      "desc": "Do a rushing knee, on contact connect into a barrage of flaming kicks.",
+      "upgradeNote": "Lvl 4: Perform a flip instead of the traditional spinning kicks, increasing air time·Lvl 6: Scorch your opponents on the final hit, causing tick damage",
+      "accentColor": "60,160,255",
+      "bx": 1431,
+      "by": 123
+    },
+    {
+      "id": "hkH1",
+      "name": "Hard Pressure",
+      "spokeId": "hakuda",
+      "parent": "hkDL",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "hakuda": 76
+      },
+      "passive": true,
+      "noLevel": true,
+      "desc": "Landing a blunt attack off a flash step will increase the posture damage.",
+      "upgradeNote": null,
+      "bx": 1128,
+      "by": 744
+    },
+    {
+      "id": "hkH2",
+      "name": "Hakuda Node",
+      "spokeId": "hakuda",
+      "parent": "hkH1",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Hakuda Scaling.",
+      "upgradeNote": null,
+      "bx": 1090,
+      "by": 672
+    },
+    {
+      "id": "hkH3s",
+      "name": "Dust Kick",
+      "spokeId": "hakuda",
+      "parent": "hkH2",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 112
+      },
+      "desc": "Cloud your opponent's vision, landing this attack at close range will deal the damage of your kick itself",
+      "upgradeNote": "Lvl 3: Dust Kick ignores ragdoll",
+      "bx": 1024,
+      "by": 660
+    },
+    {
+      "id": "hkH4s",
+      "name": "Boxer's Footwork",
+      "spokeId": "hakuda",
+      "parent": "hkH3s",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "hakuda": 168
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Enter a state in which you dodge attacks instead of parrying for 12s after perfect parrying 3 times in quick succession, with no neutral parries. Dodges have 35% increased posture loss vs parries.",
+      "upgradeNote": null,
+      "bx": 996,
+      "by": 606
+    },
+    {
+      "id": "hkH5",
+      "name": "Drop Kick",
+      "spokeId": "hakuda",
+      "parent": "hkH2",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 144
+      },
+      "desc": "Lunge forwards dealing light posture damage.",
+      "upgradeNote": "Lvl 5: Drop Kick is fully rotatable·Lvl 6: Apply concussion on landed hits",
+      "bx": 1080,
+      "by": 591
+    },
+    {
+      "id": "hkH6",
+      "name": "Breaker Fist",
+      "spokeId": "hakuda",
+      "parent": "hkH5",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "hakuda": 200
+      },
+      "desc": "Rupture the ground, then cause it to burst — transfers up to 25% of your posture to your opponent if landed.",
+      "upgradeNote": "Lvl 4: The second strike of Breaker Fist hits ragdolled/crumpled opponents",
+      "bx": 1053,
+      "by": 494
+    },
+    {
+      "id": "hkH7s",
+      "name": "Shoulder Throw",
+      "spokeId": "hakuda",
+      "parent": "hkH6",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "hakuda": 240
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Pressing Counter while near a opponent who is posture broken will cause you to flip them over your shoulder, ragdolling them. This also replaces your default Red Counter. (30s CD)",
+      "upgradeNote": null,
+      "bx": 990,
+      "by": 468
+    },
+    {
+      "id": "hkH8",
+      "name": "Hakuda Node",
+      "spokeId": "hakuda",
+      "parent": "hkH6",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Hakuda Scaling.",
+      "upgradeNote": null,
+      "bx": 1058,
+      "by": 419
+    },
+    {
+      "id": "hkH9s",
+      "name": "Fighter's Tempo",
+      "spokeId": "hakuda",
+      "parent": "hkH8",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "hakuda": 240
+      },
+      "desc": "Strike a pose, reducing your posture and making all of your melee attacks reduce your posture.",
+      "upgradeNote": "Lvl 4: Fighter's Tempo becomes uncancellable",
+      "bx": 1121,
+      "by": 380
+    },
+    {
+      "id": "hkH9",
+      "name": "Sweep Kick",
+      "spokeId": "hakuda",
+      "parent": "hkH8",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "hakuda": 260
+      },
+      "desc": "Sweep kick which stuns the target in place.",
+      "upgradeNote": null,
+      "bx": 993,
+      "by": 356
+    },
+    {
+      "id": "hkH10",
+      "name": "Tempest Combo",
+      "spokeId": "hakuda",
+      "parent": "hkH9",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "hakuda": 300
+      },
+      "zStepIncompat": true,
+      "desc": "Enter a state of ferocity and unleash a barrage of strong left and rights. Once hit, the enemy cannot escape.",
+      "upgradeNote": null,
+      "bx": 1076,
+      "by": 282
+    },
+    {
+      "id": "hkH11a",
+      "name": "Spirit Breaker",
+      "spokeId": "hakuda",
+      "parent": "hkH10",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "hakuda": 340
+      },
+      "passive": true,
+      "desc": "Pressing Counter while facing a wallbanged enemy will grab them and slam them into the ground.",
+      "upgradeNote": "Lvl 4: Apply concussion to enemies",
+      "bx": 1136,
+      "by": 221
+    },
+    {
+      "id": "hkH12a",
+      "name": "Spirit Breaking Cannon",
+      "spokeId": "hakuda",
+      "parent": "hkH11a",
+      "costSP": 12,
+      "costCash": 0,
+      "req": {
+        "hakuda": 400
+      },
+      "desc": "Grab your opponent then drag them through the floor, if you meet a wall, perform a 2nd attack combo, failing to meet a wall allows an alternate combo route. Unblockable.",
+      "upgradeNote": null,
+      "bx": 1176,
+      "by": 159
+    },
+    {
+      "id": "hkH11b",
+      "name": "Hakuda Node",
+      "spokeId": "hakuda",
+      "parent": "hkH10",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Hakuda Scaling.",
+      "upgradeNote": null,
+      "bx": 994,
+      "by": 253
+    },
+    {
+      "id": "hkH12b",
+      "name": "Ground Slam",
+      "spokeId": "hakuda",
+      "parent": "hkH11b",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "hakuda": 375
+      },
+      "desc": "An aerial slam attack. Gain bonus damage based on landing height, ignores crumple.",
+      "upgradeNote": "Lvl 4: Your max height multiplier is changed from 1.2x → 1.3x",
+      "bx": 919,
+      "by": 209
+    }
+  ],
+  "speed": [
+    {
+      "id": "spK3",
+      "name": "Speed Node",
+      "spokeId": "speed",
+      "parent": "sp_clone",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1243,
+      "by": 1516
+    },
+    {
+      "id": "spK4",
+      "name": "Flash Surprise",
+      "spokeId": "speed",
+      "parent": "spK3",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 92
+      },
+      "desc": "Teleport behind your opponent for a slash attack.",
+      "upgradeNote": "Lvl 3: Gain riposte frames after the initial startup·Lvl 6: Knockback on hit and block",
+      "accentColor": "50,180,255",
+      "bx": 1225,
+      "by": 1629
+    },
+    {
+      "id": "spK5",
+      "name": "Kumo Kiri",
+      "spokeId": "speed",
+      "parent": "spK4",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "speed": 100,
+        "kido": 32
+      },
+      "desc": "Enter a stance where you counter ANY incoming attacks, then perform a kick if landed flash step infront of them and do a massive slash",
+      "upgradeNote": "Lvl 7: Countering a ranged attack will skip the kick portion, teleport you infront of them and slash",
+      "accentColor": "255,170,220",
+      "bx": 1117,
+      "by": 1643
+    },
+    {
+      "id": "spK6",
+      "name": "Kido Node",
+      "spokeId": "speed",
+      "parent": "spK5",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "220,130,190",
+      "bx": 1051,
+      "by": 1678
+    },
+    {
+      "id": "spK7",
+      "name": "Rapid Recovery",
+      "spokeId": "speed",
+      "parent": "spK6",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {
+        "speed": 140,
+        "kido": 40
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your reiatsu regeneration speed slightly scales with the speed stat.",
+      "upgradeNote": null,
+      "accentColor": "255,170,220",
+      "bx": 1000,
+      "by": 1740
+    },
+    {
+      "id": "spK8",
+      "name": "Dragon Cleaver",
+      "spokeId": "speed",
+      "parent": "spK7",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "speed": 210,
+        "kido": 50
+      },
+      "desc": "Commit to 2 wide area slashes, before kicking the opponent away.",
+      "upgradeNote": "Lvl 7: The attack becomes supercharged, draining reiatsu on connected hit",
+      "accentColor": "255,170,220",
+      "bx": 862,
+      "by": 1731
+    },
+    {
+      "id": "spK9",
+      "name": "Fireworks",
+      "spokeId": "speed",
+      "parent": "spK7",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 205,
+        "kido": 60
+      },
+      "desc": "Ignite flammable dust for a blinding attack.",
+      "upgradeNote": "Lvl 4: Fireworks cancels enemy ragdolls",
+      "accentColor": "255,170,220",
+      "bx": 990,
+      "by": 1835
+    },
+    {
+      "id": "spK10",
+      "name": "Kido Node",
+      "spokeId": "speed",
+      "parent": "spK9",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "220,130,190",
+      "bx": 886,
+      "by": 1861
+    },
+    {
+      "id": "spK11",
+      "name": "Flying Cyclone",
+      "spokeId": "speed",
+      "parent": "spK9",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "speed": 220,
+        "kido": 85
+      },
+      "desc": "A whirlwind projectile which shreds through enemies in its wake.",
+      "upgradeNote": "Lvl 3: You can rushdown to hit enemies·Lvl 4: Refreshes rushdown cooldown",
+      "accentColor": "255,170,220",
+      "bx": 959,
+      "by": 1936
+    },
+    {
+      "id": "spS1",
+      "name": "Hyperspeed",
+      "spokeId": "speed",
+      "parent": "spK3",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "speed": 108
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your dash's invincibility frames cooldown is reduced.",
+      "upgradeNote": null,
+      "accentColor": "220,40,50",
+      "bx": 1329,
+      "by": 1559
+    },
+    {
+      "id": "spS2",
+      "name": "Afterimage Slash",
+      "spokeId": "speed",
+      "parent": "spS1",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 124,
+        "strength": 10
+      },
+      "desc": "Leave a clone in your place to attack.",
+      "upgradeNote": "Lvl 3: Your afterimage's strike is no longer able to be advanced countered",
+      "accentColor": "220,40,50",
+      "bx": 1383,
+      "by": 1623
+    },
+    {
+      "id": "spS3",
+      "name": "Speed Node",
+      "spokeId": "speed",
+      "parent": "spS2",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "80,120,255",
+      "bx": 1422,
+      "by": 1686
+    },
+    {
+      "id": "spS4",
+      "name": "Judgement Cut",
+      "spokeId": "speed",
+      "parent": "spS3",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 165,
+        "strength": 30
+      },
+      "desc": "Flash forward in a straight line before attacking, tracks onto moving enemies.",
+      "upgradeNote": "Lvl 7: Landing this move on low HP opponents will dismember their arm",
+      "accentColor": "220,40,50",
+      "bx": 1462,
+      "by": 1758
+    },
+    {
+      "id": "spS5",
+      "name": "Strength Node",
+      "spokeId": "speed",
+      "parent": "spS4",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "accentColor": "170,30,40",
+      "bx": 1492,
+      "by": 1837
+    },
+    {
+      "id": "spS6",
+      "name": "Swift Fakeout",
+      "spokeId": "speed",
+      "parent": "spS5",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "speed": 210,
+        "strength": 40
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Cancelling your Shunpo quickly with a dash will make it take you further, and apply damage reduction for the duration of your dash",
+      "upgradeNote": null,
+      "accentColor": "180,35,45",
+      "bx": 1568,
+      "by": 1840
+    },
+    {
+      "id": "spS7",
+      "name": "Strength Node",
+      "spokeId": "speed",
+      "parent": "spS5",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Strength scaling.",
+      "upgradeNote": null,
+      "accentColor": "170,30,40",
+      "bx": 1486,
+      "by": 1919
+    },
+    {
+      "id": "spS8a",
+      "name": "Agile Body",
+      "spokeId": "speed",
+      "parent": "spS7",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "speed": 260,
+        "strength": 65
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "If you are about to be parry-executed mid battle, avoid the execution and regenerate posture.",
+      "upgradeNote": null,
+      "accentColor": "220,40,50",
+      "bx": 1577,
+      "by": 1982
+    },
+    {
+      "id": "spS9a",
+      "name": "Double Strike",
+      "spokeId": "speed",
+      "parent": "spS8a",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "speed": 290,
+        "strength": 70
+      },
+      "desc": "Advance forwards, awaiting enemy contact.",
+      "upgradeNote": null,
+      "accentColor": "220,40,50",
+      "bx": 1640,
+      "by": 2059
+    },
+    {
+      "id": "spS8b",
+      "name": "Whirlwind Cutter",
+      "spokeId": "speed",
+      "parent": "spS7",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "speed": 220,
+        "strength": 50
+      },
+      "desc": "Perform three soaring strikes; the third strike teleports you to the nearest opponent.",
+      "upgradeNote": "Lvl 3: Gain riposte frames after the first slash·Lvl 4: The second slash is true, provided you landed the first one",
+      "accentColor": "220,40,50",
+      "bx": 1427,
+      "by": 1981
+    },
+    {
+      "id": "spS9b",
+      "name": "Final Breath",
+      "spokeId": "speed",
+      "parent": "spS8b",
+      "costSP": 12,
+      "costCash": 0,
+      "req": {
+        "speed": 330,
+        "strength": 70
+      },
+      "desc": "Ashes to ashes.",
+      "upgradeNote": "Lvl 3: Auto execute low health opponents in your wake·Lvl 5: Refresh a random cooldown of a speed-strength skill when landed, fully rebuild ultimate bar as well.",
+      "accentColor": "220,40,50",
+      "bx": 1461,
+      "by": 2084
+    },
+    {
+      "id": "spP1",
+      "name": "Vortex Edge",
+      "spokeId": "speed",
+      "parent": "spK4",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "speed": 148
+      },
+      "desc": "Retreat before flashing forwards with a slash of your weapon.",
+      "upgradeNote": "Lvl 5: Pressing parry during startup will cause you to strike from above",
+      "accentColor": "50,180,255",
+      "bx": 1263,
+      "by": 1712
+    },
+    {
+      "id": "spP2",
+      "name": "Speed Node",
+      "spokeId": "speed",
+      "parent": "spP1",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1202,
+      "by": 1793
+    },
+    {
+      "id": "spP3",
+      "name": "False Cutter",
+      "spokeId": "speed",
+      "parent": "spP2",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 208
+      },
+      "desc": "Focus your blade forward, leading into a sliding thrust.",
+      "upgradeNote": "Lvl 3: Pressing \"Counter\" before the thrust will do a high ranged slash, which deals less damage but leads into rushdown faster",
+      "accentColor": "50,180,255",
+      "bx": 1234,
+      "by": 1870
+    },
+    {
+      "id": "spP4a",
+      "name": "Launcher",
+      "spokeId": "speed",
+      "parent": "spP3",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 250
+      },
+      "desc": "Launch an enemy into the air.",
+      "upgradeNote": null,
+      "accentColor": "50,180,255",
+      "bx": 1176,
+      "by": 1928
+    },
+    {
+      "id": "spP5a1",
+      "name": "Reiatsu Conservation",
+      "spokeId": "speed",
+      "parent": "spP4a",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "speed": 290
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Hitting someone directly after a flash step restores 75% of the shunpo bar spent.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1116,
+      "by": 1880
+    },
+    {
+      "id": "spP5a2",
+      "name": "Flash Execute",
+      "spokeId": "speed",
+      "parent": "spP4a",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "speed": 310
+      },
+      "desc": "Auto-execute opponents who have low HP.",
+      "upgradeNote": "Lvl 5: Using on a guardbroken opponent has a much higher kill threshold·Lvl 7: Flash Execute is useable on knocked people",
+      "accentColor": "50,180,255",
+      "bx": 1089,
+      "by": 1970
+    },
+    {
+      "id": "spP6a2",
+      "name": "Light Feet",
+      "spokeId": "speed",
+      "parent": "spP5a2",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "speed": 360
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Enter a state in which you dodge attacks instead of parrying for 12s after perfect parrying 3 times in quick succession, with no neutral parries. Dodges have 35% increased posture loss vs parries.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1057,
+      "by": 2063
+    },
+    {
+      "id": "spP4b",
+      "name": "Afterimage Clones",
+      "spokeId": "speed",
+      "parent": "spP3",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "speed": 255
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "While stunned, use Shunpo to create afterimages around you that let you escape stun.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1261,
+      "by": 1953
+    },
+    {
+      "id": "spP5b",
+      "name": "Speed Node",
+      "spokeId": "speed",
+      "parent": "spP4b",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1297,
+      "by": 2038
+    },
+    {
+      "id": "spP6b",
+      "name": "Compound Rush",
+      "spokeId": "speed",
+      "parent": "spP5b",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "speed": 295
+      },
+      "desc": "Lunge towards an opponent. If the hit lands, kick off them and fall backwards.",
+      "upgradeNote": "Lvl 4: Press Counter after hitting an enemy to do a 2-part attack",
+      "accentColor": "50,180,255",
+      "bx": 1265,
+      "by": 2118
+    },
+    {
+      "id": "spP7c",
+      "name": "Blade Flow",
+      "spokeId": "speed",
+      "parent": "spP6b",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "speed": 355
+      },
+      "desc": "While you were progging Hakuda, I studied the blade. While you were going full-strength, I mastered speed. While you were abusing kido I cultivated inner strength. Now outskirts is on fire, and you come to me for help?",
+      "upgradeNote": "Lvl 6: Inflict bleed",
+      "accentColor": "50,180,255",
+      "bx": 1184,
+      "by": 2188
+    },
+    {
+      "id": "spP8c",
+      "name": "Feint Mastery",
+      "spokeId": "speed",
+      "parent": "spP7c",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "speed": 380
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "You can cancel basic attacks by flash stepping.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1190,
+      "by": 2302
+    },
+    {
+      "id": "spP9c1",
+      "name": "Speed Node",
+      "spokeId": "speed",
+      "parent": "spP8c",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1138,
+      "by": 2391
+    },
+    {
+      "id": "spP9c2",
+      "name": "Phantom Trifecta ⚠︎ Unobtainable",
+      "spokeId": "speed",
+      "parent": "spP8c",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "speed": 420
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Landing 3 consecutive attacks on a single opponent causes an afterimage to strike them. [Speed 420 required — currently unobtainable in-game]",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1254,
+      "by": 2389
+    },
+    {
+      "id": "spP7d",
+      "name": "Flash Skewer",
+      "spokeId": "speed",
+      "parent": "spP6b",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "speed": 365
+      },
+      "desc": "Disappear briefly before reappearing to surprise your opponent with a lethal strike.",
+      "upgradeNote": "Lvl 2: Your skewer bypasses riposte frames",
+      "accentColor": "50,180,255",
+      "bx": 1352,
+      "by": 2162
+    },
+    {
+      "id": "spP8d",
+      "name": "Flash Trick",
+      "spokeId": "speed",
+      "parent": "spP7d",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "speed": 380
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Dashing before flash stepping creates a clone.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1326,
+      "by": 2233
+    },
+    {
+      "id": "spP9d",
+      "name": "Speed Node",
+      "spokeId": "speed",
+      "parent": "spP7d",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Speed scaling.",
+      "upgradeNote": null,
+      "accentColor": "30,130,200",
+      "bx": 1433,
+      "by": 2216
+    },
+    {
+      "id": "spP10d",
+      "name": "High-Speed Movement ⚠︎ Unobtainable",
+      "spokeId": "speed",
+      "parent": "spP9d",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "speed": 420
+      },
+      "desc": "Shunpo to your mouse position — windup scales with teleport distance. [Speed 420 required — currently unobtainable in-game]",
+      "upgradeNote": null,
+      "accentColor": "50,180,255",
+      "bx": 1490,
+      "by": 2310
+    },
+    {
+      "id": "essence_slaying_drive",
+      "name": "Essence: Slaying Drive",
+      "parent": "speed_base",
+      "costSP": 2,
+      "req": {
+        "speed": 180
+      },
+      "desc": "Speed skill essence introduced in v5.2. Drastically accelerates pursuit velocity and attack tempo."
+    }
+  ],
+  "race_quincy": [
+    {
+      "id": "qrc6",
+      "name": "Blut Arterie",
+      "spokeId": "race",
+      "parent": "qrc3",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 60
+      },
+      "zStepIncompat": true,
+      "desc": "The offensive form of Blut which grants the user inhuman attack power. Allows artery fortifying at a basic level, and increasing damage & posture damage slightly",
+      "upgradeNote": "Lvl 4: No longer passively saps Blut Bar during usage and increases weapon dmg by 4%·Lvl 5: Increases weapon dmg by 6%·Lvl 6: Increases weapon dmg by 8%·Lvl 7: Increases weapon dmg by 11%·Lvl 8: Increases weapon dmg by 15%",
+      "accentColor": "255,85,178",
+      "bx": 846,
+      "by": 1134
+    },
+    {
+      "id": "qrc7",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qrc6",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 806,
+      "by": 1094
+    },
+    {
+      "id": "qrc8",
+      "name": "Mondlicht",
+      "spokeId": "race",
+      "parent": "qrc7",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 220
+      },
+      "reqWeapon": true,
+      "desc": "Deliver a lethal moonlight strike.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 745,
+      "by": 1077
+    },
+    {
+      "id": "qrc4",
+      "name": "Blut Vene",
+      "spokeId": "race",
+      "parent": "qrc3",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 90
+      },
+      "zStepIncompat": true,
+      "desc": "The defensive form of Blut, which grants the user inhuman durability",
+      "upgradeNote": "Lvl 3: No longer passively saps Blut Bar during usage. Veins pulsate on your limbs.",
+      "accentColor": "255,85,178",
+      "bx": 848,
+      "by": 1255
+    },
+    {
+      "id": "qrc5",
+      "name": "Reishi Gather",
+      "spokeId": "race",
+      "parent": "qrc4",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 100
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Gather reiatsu from the atmosphere, increasing reiatsu regeneration rate by 7.5%.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 802,
+      "by": 1289
+    },
+    {
+      "id": "qb1",
+      "name": "Medallion Specialist",
+      "spokeId": "race",
+      "parent": "qrc3",
+      "costSP": 1,
+      "costCash": 0,
+      "req": {
+        "kido": 60
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "You have began specialization into your quincy medallion, allowing access to more advanced quincy spells, and you can switch between your bow at a faster rate",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 775,
+      "by": 1205
+    },
+    {
+      "id": "qb2",
+      "name": "Reishi Flash",
+      "spokeId": "race",
+      "parent": "qb1",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 100
+      },
+      "zStepIncompat": true,
+      "desc": "Throw up an energy ball that blinds surrounding opponents",
+      "upgradeNote": "Lvl 4: The first flare now burns your opponents retinas, causing excruciating pain, and stunning for a second",
+      "accentColor": "255,85,178",
+      "bx": 692,
+      "by": 1205
+    },
+    {
+      "id": "qb3a",
+      "name": "Heilig Pfeil - Speed Variant",
+      "spokeId": "race",
+      "parent": "qb2",
+      "mutexWith": "qb3b,qb3c",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {
+        "kido": 110
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Heilig Pfeil now fires a faster, weaker arrow. Only one variant can be picked.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 711,
+      "by": 1280
+    },
+    {
+      "id": "qb3b",
+      "name": "Heilig Pfeil - Power Variant",
+      "spokeId": "race",
+      "parent": "qb2",
+      "mutexWith": "qb3a,qb3c",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {
+        "kido": 110
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Heilig Pfeil's arrow is much bigger and deals more damage, however is slower. Only one variant can be picked.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 663,
+      "by": 1135
+    },
+    {
+      "id": "qb3c",
+      "name": "Heilig Pfeil - Multi-shot Variant",
+      "spokeId": "race",
+      "parent": "qb2",
+      "mutexWith": "qb3a,qb3b",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {
+        "kido": 110
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Heilig Pfeil now fires three weaker arrows at a slower rate. Only one variant can be picked.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 630,
+      "by": 1274
+    },
+    {
+      "id": "qb6",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qb2",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 612,
+      "by": 1205
+    },
+    {
+      "id": "qb7",
+      "name": "Beurteilung",
+      "spokeId": "race",
+      "parent": "qb6",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 140
+      },
+      "desc": "Summon a massive spirit greatsword above your opponents head and then cast judgement on them, hits ragdolled opponents",
+      "upgradeNote": "Lvl 6: Inflict bleed on enemies",
+      "accentColor": "255,85,178",
+      "bx": 530,
+      "by": 1205
+    },
+    {
+      "id": "qb8",
+      "name": "Reishigriff",
+      "spokeId": "race",
+      "parent": "qb7",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 195
+      },
+      "desc": "Thieve your opponents reiryoku with a deadly chokehold. Restores blut charge on hit",
+      "upgradeNote": "Lvl 3: Your chokehold steals a bit of reiatsu",
+      "accentColor": "255,85,178",
+      "bx": 466,
+      "by": 1143
+    },
+    {
+      "id": "qb9",
+      "name": "Feurige Säulen",
+      "spokeId": "race",
+      "parent": "qb8",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "kido": 330
+      },
+      "desc": "Summon forward pillars of holy fire.",
+      "upgradeNote": "Lvl 3: Feurige Säulen can hit ragdolled opponents",
+      "accentColor": "255,85,178",
+      "bx": 382,
+      "by": 1121
+    },
+    {
+      "id": "qb10",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qb7",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 473,
+      "by": 1270
+    },
+    {
+      "id": "qb11",
+      "name": "Schlagen",
+      "spokeId": "race",
+      "parent": "qb10",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "kido": 220
+      },
+      "desc": "Summon a raging thunderstorm, and then strike lightning on the blast zone.",
+      "upgradeNote": "Lvl 5: Standing in the strikes blast zone heals you for 3% max HP·Lvl 6: Create rushdown window on impact·Lvl 8: \"Schlagen\" electrocutes opponents",
+      "accentColor": "255,85,178",
+      "bx": 431,
+      "by": 1335
+    },
+    {
+      "id": "qb12",
+      "name": "Klingensturm",
+      "spokeId": "race",
+      "parent": "qb11",
+      "costSP": 13,
+      "costCash": 0,
+      "req": {
+        "kido": 400
+      },
+      "desc": "Summon various spirit weapons once used by your deceased comrades to rain down warfare on your target. Ultimate Skill.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 324,
+      "by": 1275
+    },
+    {
+      "id": "qa1",
+      "name": "Advanced Archery",
+      "spokeId": "race",
+      "parent": "qrc3",
+      "costSP": 1,
+      "costCash": 0,
+      "req": {
+        "kido": 60
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "You are more in tune with your bow, allowing you to conjure a stronger bow and allowing access to the archery path. Allows mouse aim with your bow.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 917,
+      "by": 1105
+    },
+    {
+      "id": "qa2",
+      "name": "Luftpfeile",
+      "spokeId": "race",
+      "parent": "qa1",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 96
+      },
+      "desc": "Rush at your opponent then leap into the air and unleash a volley of arrows.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 916,
+      "by": 1028
+    },
+    {
+      "id": "qa3",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qa2",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 846,
+      "by": 981
+    },
+    {
+      "id": "qa4",
+      "name": "Archer's Stratagem",
+      "spokeId": "race",
+      "parent": "qa3",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "kido": 120
+      },
+      "desc": "You can now feint your bow fire, restore half of the cost on feint, empower your next arrow after a feint.",
+      "upgradeNote": "Lvl 2: Restore full cost of the arrow on feint·Lvl 3: Gain 3x swap speed to your spirit weapon after a feint",
+      "accentColor": "255,85,178",
+      "bx": 908,
+      "by": 935
+    },
+    {
+      "id": "qa5",
+      "name": "Stille Silber",
+      "spokeId": "race",
+      "parent": "qa3",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 124
+      },
+      "desc": "Fire a single homing arrow.",
+      "upgradeNote": "Lvl 3: Disables reiatsu regeneration·Lvl 5: Disables transformations",
+      "accentColor": "255,85,178",
+      "bx": 796,
+      "by": 929
+    },
+    {
+      "id": "qa5a_node",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qa5",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 715,
+      "by": 918
+    },
+    {
+      "id": "qa6",
+      "name": "Bow Conjuration Upgrade",
+      "spokeId": "race",
+      "parent": "qa5a_node",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 156
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your Spirit Bow is more powerful, reflected in a brand new appearance",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 629,
+      "by": 920
+    },
+    {
+      "id": "qa7a",
+      "name": "Impaling Arrows",
+      "spokeId": "race",
+      "parent": "qa6",
+      "mutexWith": "qa7b",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 160
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your spirit bow's arrow now impale targets when charged for a bit",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 588,
+      "by": 879
+    },
+    {
+      "id": "qa7b",
+      "name": "Holy Arrows",
+      "spokeId": "race",
+      "parent": "qa6",
+      "mutexWith": "qa7a",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 160
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your spirit bow's arrow now smite opponents with holy light once they are pierced.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 585,
+      "by": 972
+    },
+    {
+      "id": "qa8a",
+      "name": "Zangenpfeil",
+      "spokeId": "race",
+      "parent": "qa7a",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 190
+      },
+      "desc": "Fire an arrow capable of pinning opponents to it, and shredding through their internals. Enemies will experience bleeding both internal and external when struck.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 523,
+      "by": 883
+    },
+    {
+      "id": "qa8b",
+      "name": "Blitz Feuer",
+      "spokeId": "race",
+      "parent": "qa7b",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 190
+      },
+      "desc": "Fire an arrow that calls upon the holy king's magic. Ricochets off walls, creates lightning explosions on ricochet or impact.",
+      "upgradeNote": "Lvl 3: Your arrow no longer despawns on hit, and can ricochet off living targets as well.",
+      "accentColor": "255,85,178",
+      "bx": 510,
+      "by": 957
+    },
+    {
+      "id": "qa5b_node",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qa5",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 769,
+      "by": 857
+    },
+    {
+      "id": "qa9",
+      "name": "Leichter Sturm",
+      "spokeId": "race",
+      "parent": "qa5b_node",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 190
+      },
+      "desc": "Release a storm of arrows from your bow.",
+      "upgradeNote": "Lvl 5: Turnable for twice as long",
+      "accentColor": "255,85,178",
+      "bx": 750,
+      "by": 797
+    },
+    {
+      "id": "qa9_node",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "qa9",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 665,
+      "by": 773
+    },
+    {
+      "id": "qa10a",
+      "name": "Fallzwang",
+      "spokeId": "race",
+      "parent": "qa9_node",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 300
+      },
+      "desc": "Summon a bow that will fire an arrow to send airborne opponents back to the ground. (Target must be airborne)",
+      "upgradeNote": "Lvl 6: Your arrow judges true, it must be parried to be avoided.",
+      "accentColor": "255,85,178",
+      "bx": 637,
+      "by": 702
+    },
+    {
+      "id": "qa10b",
+      "name": "Heilig Verbegun",
+      "spokeId": "race",
+      "parent": "qa9_node",
+      "costSP": 12,
+      "costCash": 0,
+      "req": {
+        "kido": 350
+      },
+      "desc": "Conjure an arrow and throw it",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 582,
+      "by": 788
+    }
+  ],
+  "race_hollow": [
+    {
+      "id": "hb_speed",
+      "name": "Cero: Speed Variant",
+      "spokeId": "race",
+      "parent": "rc2",
+      "mutexWith": "hb_power,hb_ultra,hb_rapid",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 95
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Reduces startup speed of cero massively, and slightly reduces its damage.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 986,
+      "by": 1125
+    },
+    {
+      "id": "hb_power",
+      "name": "Cero: Power Variant",
+      "spokeId": "race",
+      "parent": "rc3",
+      "mutexWith": "hb_speed,hb_rapid",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 95
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increases Cero damage and startup time.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 829,
+      "by": 1259
+    },
+    {
+      "id": "hb_ultra",
+      "name": "Cero: Ultra Power Variant",
+      "spokeId": "race",
+      "parent": "hb_power",
+      "mutexWith": "hb_speed,hb_rapid",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 225
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increases cero damage and size MASSIVELY. Increases startup time and cooldown.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 755,
+      "by": 1294
+    },
+    {
+      "id": "hb_rapid",
+      "name": "Cero: Rapid Fire",
+      "spokeId": "race",
+      "parent": "hb_unpred",
+      "mutexWith": "hb_power,hb_speed",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 220
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Your cero can now be fired in bursts of 3. However, the damage is reduced appropriately.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 574,
+      "by": 1327
+    },
+    {
+      "id": "hb_hierro",
+      "name": "Hierro",
+      "spokeId": "race",
+      "parent": "rc3",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 82
+      },
+      "desc": "An automatic defensive technique that makes the user's skin harder than steel.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 793,
+      "by": 1200
+    },
+    {
+      "id": "hb_bblastr",
+      "name": "Bala Blaster",
+      "spokeId": "race",
+      "parent": "hb_hierro",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 110
+      },
+      "desc": "Charge a Bala-like attack to create an explosion in front of you.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 739,
+      "by": 1118
+    },
+    {
+      "id": "hb_bripcrd",
+      "name": "Bala Ripcord",
+      "spokeId": "race",
+      "parent": "hb_bblastr",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 182
+      },
+      "desc": "Fire a bala infused with reiatsu tethers, if landed onto an opponent directly, yank them towards you using the tethers.",
+      "upgradeNote": "Lvl 6: Bala ripcord goes through block",
+      "accentColor": "255,85,178",
+      "bx": 808,
+      "by": 1054
+    },
+    {
+      "id": "hb_dsnode",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "hb_bblastr",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 682,
+      "by": 1064
+    },
+    {
+      "id": "hb_dsaucer",
+      "name": "Death Saucers",
+      "spokeId": "race",
+      "parent": "hb_dsnode",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "kido": 240
+      },
+      "desc": "Condense your Bala into 2 sharp, tracking saucers and send them flying.",
+      "upgradeNote": "Lvl 7: Landing the move on an enemy with low health will slice them in half",
+      "accentColor": "255,85,178",
+      "bx": 630,
+      "by": 1011
+    },
+    {
+      "id": "hb_dsnode2",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "hb_dsaucer",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 608,
+      "by": 935
+    },
+    {
+      "id": "hb_fngcero",
+      "name": "Finger Cero",
+      "spokeId": "race",
+      "parent": "hb_hierro",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 128
+      },
+      "desc": "A faster laser-like version of Cero that comes from your finger.",
+      "upgradeNote": "Lvl 3: You can rushdown off Finger Cero",
+      "accentColor": "255,85,178",
+      "bx": 701,
+      "by": 1201
+    },
+    {
+      "id": "hb_unpred",
+      "name": "Unpredictable Cero",
+      "spokeId": "race",
+      "parent": "hb_fngcero",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 160
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Press Counter while charging cero to delay it by 0.75 seconds, at the cost of lowering damage.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 638,
+      "by": 1263
+    },
+    {
+      "id": "hb_fcnode",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "hb_fngcero",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 598,
+      "by": 1189
+    },
+    {
+      "id": "hb_hcutr",
+      "name": "Hollow Cutter",
+      "spokeId": "race",
+      "parent": "hb_fcnode",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 152
+      },
+      "desc": "Concentrated reishi projectile slash.",
+      "upgradeNote": "Lvl 3: Gain Cero-Enhancement on your blade when landing Hollow Cutter.",
+      "accentColor": "255,85,178",
+      "bx": 511,
+      "by": 1167
+    },
+    {
+      "id": "hb_crmor",
+      "name": "Cero Armor",
+      "spokeId": "race",
+      "parent": "hb_hcutr",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "kido": 164
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Using cero while hierro is active allows you to absorb an extra hit before your cero is cancelled.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 405,
+      "by": 1153
+    },
+    {
+      "id": "hb_ca_nd1",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "hb_crmor",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 389,
+      "by": 1241
+    },
+    {
+      "id": "hb_cdestr",
+      "name": "Cero Destripador",
+      "spokeId": "race",
+      "parent": "hb_ca_nd1",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 310
+      },
+      "desc": "Fire sky-splitting lasers from your eyes.",
+      "upgradeNote": "Lvl 5: (NOT MADE) Landing your laser will cause you to leap into the air and land an extra hit",
+      "accentColor": "255,85,178",
+      "bx": 305,
+      "by": 1305
+    },
+    {
+      "id": "hb_hsregen",
+      "name": "High Speed Regeneration",
+      "spokeId": "race",
+      "parent": "hb_cdestr",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 380
+      },
+      "passive": true,
+      "desc": "If you take a burst of damage in quick succession, discard a injured limb for a new one healing yourself a portion of damage taken based on skill level.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 215,
+      "by": 1331
+    },
+    {
+      "id": "hb_bswarm",
+      "name": "Bala Swarm",
+      "spokeId": "race",
+      "parent": "hb_crmor",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 220
+      },
+      "desc": "Fire a rapid volley of Bala shots.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 310,
+      "by": 1146
+    },
+    {
+      "id": "hb_bsw_nd",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "hb_bswarm",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 247,
+      "by": 1073
+    },
+    {
+      "id": "hb_chbarr",
+      "name": "Chaotic Barrier",
+      "spokeId": "race",
+      "parent": "hb_bswarm",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 290
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "If you take 30+ damage in quick succession raise a kido barrier for 2 seconds reducing 100% of the next attacks damage",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 225,
+      "by": 1183
+    },
+    {
+      "id": "hb_cabsrp",
+      "name": "Cero Absorption",
+      "spokeId": "race",
+      "parent": "hb_crmor",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {
+        "kido": 172
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Right-clicking before your cero fires will cancel it and absorb its energy into your weapon granting you enhanced damage for 3 swings",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 410,
+      "by": 1058
+    },
+    {
+      "id": "hb_zclutch",
+      "name": "Zero Clutch",
+      "spokeId": "race",
+      "parent": "hb_cabsrp",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 260
+      },
+      "desc": "Grab your opponent by the neck, choke them, then finish with a finger cero to the dome",
+      "upgradeNote": "Lvl 6: Zero clutch autoexecutes at low hp",
+      "accentColor": "255,85,178",
+      "bx": 444,
+      "by": 976
+    },
+    {
+      "id": "hb_pcrash",
+      "name": "Psycho Crash",
+      "spokeId": "race",
+      "parent": "hb_cabsrp",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 325
+      },
+      "zStepIncompat": true,
+      "desc": "Perform an overhead punch, if landed, infuse your sword with cero energy, then slam down an energy burst, ignores ragdoll iframes.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 351,
+      "by": 990
+    }
+  ],
+  "race_shinigami": [
+    {
+      "id": "sk_skm1",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_sai",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 840,
+      "by": 1239
+    },
+    {
+      "id": "sk_tsuzuri",
+      "name": "Tsuzuri Raiden",
+      "spokeId": "race",
+      "parent": "sk_skm1",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 76
+      },
+      "desc": "Increase stun and damage.",
+      "upgradeNote": "Lvl 4: Having Tsuzuri Raiden buffs all forms of lightning damage·Lvl 6: Parrying attacks with Tsuzuri Raiden active will restore more 12.5% posture",
+      "accentColor": "255,85,178",
+      "bx": 760,
+      "by": 1274
+    },
+    {
+      "id": "sk_fushibi",
+      "name": "Fushibi",
+      "spokeId": "race",
+      "parent": "sk_tsuzuri",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 116
+      },
+      "desc": "Stun the enemy with a net of kido before it explodes",
+      "upgradeNote": "Lvl 3: Fushibi disables the dash/flashstep of those caught in the web initially for a brief duration",
+      "accentColor": "255,85,178",
+      "bx": 693,
+      "by": 1312
+    },
+    {
+      "id": "sk_skm2",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_fushibi",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 687,
+      "by": 1383
+    },
+    {
+      "id": "sk_sokatsui",
+      "name": "Sokatsui",
+      "spokeId": "race",
+      "parent": "sk_fushibi",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 156
+      },
+      "desc": "Conjure a blinding continuous energy beam in front of you.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 598,
+      "by": 1327
+    },
+    {
+      "id": "sk_reia_enhance",
+      "name": "Reiatsu Enhancement",
+      "spokeId": "race",
+      "parent": "sk_sokatsui",
+      "costSP": 3,
+      "costCash": 0,
+      "req": {
+        "kido": 180
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Parrying a kido-type attack will absorb its energy into your blade empowering your next melee attack.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 540,
+      "by": 1367
+    },
+    {
+      "id": "sk_skm7",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_reia_enhance",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 472,
+      "by": 1402
+    },
+    {
+      "id": "sk_haien",
+      "name": "Haien",
+      "spokeId": "race",
+      "parent": "sk_skm7",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 225
+      },
+      "desc": "A blast of purple energy which incinerates a target upon contact. Requires Weapon Equipped.",
+      "upgradeNote": "Lvl 5: Purple flames linger after the attack hits·Lvl 6: Your purple flame no longer damages you",
+      "accentColor": "255,85,178",
+      "bx": 400,
+      "by": 1426
+    },
+    {
+      "id": "sk_skm10",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_haien",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 345,
+      "by": 1400
+    },
+    {
+      "id": "sk_gaki_rekko",
+      "name": "Gaki Rekkō",
+      "spokeId": "race",
+      "reqWeapon": true,
+      "parent": "sk_skm10",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "kido": 275
+      },
+      "desc": "Fast green lasers that deal solid damage and posture damage. Requires Weapon Equipped.",
+      "upgradeNote": "Lvl 2: Projectiles will autotrack to enemies slightly outside the move's range",
+      "accentColor": "255,85,178",
+      "bx": 276,
+      "by": 1430
+    },
+    {
+      "id": "sk_heaven_culling",
+      "name": "Heaven Culling-Sear",
+      "spokeId": "race",
+      "parent": "sk_gaki_rekko",
+      "costSP": 12,
+      "costCash": 0,
+      "req": {
+        "kido": 360
+      },
+      "desc": "Summon heavenly beams to smite your opponents. Extremely high DMG, but very slow startup and very high reiatsu cost",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 188,
+      "by": 1370
+    },
+    {
+      "id": "sk_shinten",
+      "name": "Shinten Raiho",
+      "spokeId": "race",
+      "parent": "sk_sokatsui",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 190
+      },
+      "desc": "Create a lightning field in front of you.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 539,
+      "by": 1287
+    },
+    {
+      "id": "sk_skm9",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_shinten",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 475,
+      "by": 1261
+    },
+    {
+      "id": "sk_raikoho",
+      "name": "Raikoho",
+      "spokeId": "race",
+      "parent": "sk_skm9",
+      "costSP": 8,
+      "costCash": 0,
+      "req": {
+        "kido": 225
+      },
+      "desc": "A chargeable lightning projectile which implodes upon impact, sucking entities in.",
+      "upgradeNote": "Lvl 3: Rushdown potential off knockback·Lvl 5: After-shock that allows for follow up",
+      "accentColor": "255,85,178",
+      "bx": 395,
+      "by": 1226
+    },
+    {
+      "id": "sk_skm3",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_raikoho",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 330,
+      "by": 1214
+    },
+    {
+      "id": "sk_elec_energy",
+      "name": "Electrical Energy",
+      "spokeId": "race",
+      "parent": "sk_skm3",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "kido": 245
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Moves that deal electric damage are now more potent.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 280,
+      "by": 1168
+    },
+    {
+      "id": "sk_zangerin",
+      "name": "Zangerin",
+      "spokeId": "race",
+      "parent": "sk_raikoho",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 290
+      },
+      "desc": "Counter with a lightning slash projectile.",
+      "upgradeNote": "Lvl 3: Zangerin can be used without countering by having Tsuzuri Raiden active",
+      "accentColor": "255,85,178",
+      "bx": 344,
+      "by": 1271
+    },
+    {
+      "id": "sk_skm4",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_sai",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 970,
+      "by": 1116
+    },
+    {
+      "id": "sk_sho",
+      "name": "Sho",
+      "spokeId": "race",
+      "parent": "sk_skm4",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "kido": 84
+      },
+      "desc": "Knockback opponents, even when they are knocked.",
+      "upgradeNote": "Lvl 3: Sho prevents enemies from getting up from a knocked state while active·Lvl 4: Sho can wallbang enemies·Lvl 6: Seals reiatsu while active",
+      "accentColor": "255,85,178",
+      "bx": 919,
+      "by": 1059
+    },
+    {
+      "id": "sk_bind_resist",
+      "name": "Bind Resist",
+      "spokeId": "race",
+      "parent": "sk_sai",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {
+        "kido": 90
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Reduce the duration of kido-based binding techniques used on you, additionally provides small dmg reduction against any kido-based attacks.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 856,
+      "by": 1124
+    },
+    {
+      "id": "sk_skm6",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_bind_resist",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 805,
+      "by": 1077
+    },
+    {
+      "id": "sk_sekienton",
+      "name": "Sekienton",
+      "spokeId": "race",
+      "parent": "sk_bind_resist",
+      "costSP": 7,
+      "costCash": 0,
+      "req": {
+        "kido": 120
+      },
+      "desc": "Red smoke which stuns and deals minor damage. Hitting an opponent with the edge of the move, or hitting a crumpled opponent, will send them flying into the air.",
+      "upgradeNote": "Lvl 6: You can rushdown after sending an opponent into the air",
+      "accentColor": "255,85,178",
+      "bx": 797,
+      "by": 1169
+    },
+    {
+      "id": "sk_skm5",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_sekienton",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 728,
+      "by": 1183
+    },
+    {
+      "id": "sk_horin",
+      "name": "Horin",
+      "spokeId": "race",
+      "parent": "sk_skm5",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 220
+      },
+      "desc": "A kido rope that pulls in a targetted enemy. Works on ragdolled opponents.",
+      "upgradeNote": "Lvl 8: Horin goes through block",
+      "accentColor": "255,85,178",
+      "bx": 646,
+      "by": 1169
+    },
+    {
+      "id": "sk_rikujo",
+      "name": "Rikujokoro",
+      "spokeId": "race",
+      "parent": "sk_skm6",
+      "costSP": 9,
+      "costCash": 0,
+      "req": {
+        "kido": 140
+      },
+      "desc": "Summon 6 beams of light to pierce an opponent and temporarily restrict their movement.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 754,
+      "by": 1021
+    },
+    {
+      "id": "sk_geki",
+      "name": "Geki",
+      "spokeId": "race",
+      "parent": "sk_rikujo",
+      "costSP": 6,
+      "costCash": 0,
+      "req": {
+        "kido": 185
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "Upon guardbreak, bind the enemy in red energy. Extends guardbreak time a moderate duration. (60s CD)",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 679,
+      "by": 1060
+    },
+    {
+      "id": "sk_skm8",
+      "name": "Kido Node",
+      "spokeId": "race",
+      "parent": "sk_rikujo",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "passive": true,
+      "desc": "Increase Kido scaling.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 691,
+      "by": 973
+    },
+    {
+      "id": "sk_react_barrier",
+      "name": "Reactive Barrier",
+      "spokeId": "race",
+      "parent": "sk_skm8",
+      "costSP": 5,
+      "costCash": 0,
+      "req": {
+        "kido": 240
+      },
+      "noLevel": true,
+      "passive": true,
+      "desc": "If you take 40+ damage in quick succession raise a kido barrier for 2 seconds reducing 100% of the next attacks damage",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 621,
+      "by": 932
+    },
+    {
+      "id": "sk_hainawa",
+      "name": "Hainawa",
+      "spokeId": "race",
+      "parent": "sk_react_barrier",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "kido": 280
+      },
+      "desc": "Lightning tendrils which steal reiatsu from your opponent.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 542,
+      "by": 953
+    },
+    {
+      "id": "sk_goryu",
+      "name": "Goryū Tenmetsu",
+      "spokeId": "race",
+      "parent": "sk_hainawa",
+      "costSP": 12,
+      "costCash": 0,
+      "req": {
+        "kido": 350
+      },
+      "desc": "Summon dragons behind you that you can send one-by-one to your mouse position.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 424,
+      "by": 893
+    },
+    {
+      "id": "sk_prism_seal",
+      "name": "Prism Seal (Disabled)",
+      "spokeId": "race",
+      "parent": "sk_hainawa",
+      "costSP": 11,
+      "costCash": 0,
+      "req": {
+        "kido": 370
+      },
+      "desc": "Place 3 points to create a triangular-shaped barrier. Enemies inside the barrier will take damage over its duration.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 448,
+      "by": 993
+    },
+    {
+      "id": "sk_trap_spell",
+      "name": "Trap Spell",
+      "spokeId": "race",
+      "parent": "sk_react_barrier",
+      "costSP": 10,
+      "costCash": 0,
+      "req": {
+        "kido": 350
+      },
+      "desc": "Create a motion detecting trap.",
+      "upgradeNote": null,
+      "accentColor": "255,85,178",
+      "bx": 604,
+      "by": 853
+    }
+  ],
+  "sensory": [
+    {
+      "id": "snMorale",
+      "name": "Morale Starter",
+      "spokeId": "sense",
+      "parent": "sn4",
+      "costSP": 4,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "desc": "Give buffs to others, while debuffing monsters.",
+      "upgradeNote": null,
+      "accentColor": "255,170,60",
+      "bx": 1540,
+      "by": 892
+    },
+    {
+      "id": "snInnerFire",
+      "name": "Inner Fire",
+      "spokeId": "sense",
+      "parent": "sn4",
+      "costSP": 2,
+      "costCash": 0,
+      "req": {},
+      "noLevel": true,
+      "desc": "Increase your haste and reiatsu regen.",
+      "upgradeNote": null,
+      "accentColor": "255,170,60",
+      "bx": 1662,
+      "by": 973
+    }
+  ]
+}

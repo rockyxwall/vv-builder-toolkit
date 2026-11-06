@@ -1,0 +1,80 @@
+{
+  "essences": [
+    {
+      "id": "reserves",
+      "name": "Reserves",
+      "accent": "#4dd2ff",
+      "desc": "Increases maximum reiatsu capacity."
+    },
+    {
+      "id": "haste",
+      "name": "Haste",
+      "accent": "#34d399",
+      "desc": "Decreases skill cooldowns. Slightly increases passive reiatsu regen."
+    },
+    {
+      "id": "potency",
+      "name": "Potency",
+      "accent": "#f87171",
+      "desc": "Increases stat scaling. Slightly increases melee posture damage."
+    },
+    {
+      "id": "mettle",
+      "name": "Mettle",
+      "accent": "#fbbf24",
+      "desc": "Increases maximum posture."
+    },
+    {
+      "id": "shunpo",
+      "name": "Shunpo",
+      "accent": "#a78bfa",
+      "desc": "Increases shunpo stamina and shunpo speed."
+    },
+    {
+      "id": "flowing_gradient",
+      "name": "Flowing Gradient",
+      "accent": "#ff3c50",
+      "desc": "Strength skill essence unlocked via Battle for Dangai vote. Amplifies fluid momentum on heavy strikes."
+    },
+    {
+      "id": "slaying_drive",
+      "name": "Slaying Drive",
+      "accent": "#00d2be",
+      "desc": "Speed skill essence introduced in v5.2. Boosts chase velocity, rapid engagement, and relentless combo tempo."
+    }
+  ],
+  "attributes": [
+    {
+      "id": "hakuda",
+      "name": "Hakuda",
+      "pos": "bottom",
+      "color": "#ff8214",
+      "accent": "#ff8214",
+      "desc": "Affects hakuda skill damage."
+    },
+    {
+      "id": "strength",
+      "name": "Strength",
+      "pos": "left",
+      "color": "#ff3c50",
+      "accent": "#ff3c50",
+      "desc": "Affects weapon skill damage."
+    },
+    {
+      "id": "kido",
+      "name": "Kido",
+      "pos": "right",
+      "color": "#ff50b4",
+      "accent": "#ff50b4",
+      "desc": "Affects reiatsu-based damage."
+    },
+    {
+      "id": "speed",
+      "name": "Speed",
+      "pos": "top",
+      "color": "#32b4ff",
+      "accent": "#32b4ff",
+      "desc": "Affects shunpo speed and weakly affects shunpo stamina."
+    }
+  ]
+}
