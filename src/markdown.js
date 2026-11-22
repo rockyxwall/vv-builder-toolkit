@@ -1,207 +1,251 @@
-function formatReq(req) {
-  if (!req || Object.keys(req).length === 0) return 'None';
-  return Object.entries(req)
-    .map(([stat, val]) => `${stat.toUpperCase()} ${val}`)
-    .join(', ');
-}
+/**
+ * src/markdown.js
+ * Generates comprehensive, human-readable VV_BUILDER_GUIDE.md documentation
+ * from the 12 official datasets extracted from https://vvcharmmerges.pages.dev/builder.
+ */
 
-function formatStats(stats) {
-  if (!stats) return '-';
-  const parts = [];
-  if (stats.reiCost !== null && stats.reiCost !== undefined) parts.push(`Rei: ${stats.reiCost}`);
-  if (stats.cd !== null && stats.cd !== undefined) parts.push(`CD: ${stats.cd}s`);
-  if (stats.dmg !== null && stats.dmg !== undefined) parts.push(`Dmg: ${stats.dmg}`);
-  if (stats.posture !== null && stats.posture !== undefined) parts.push(`Posture: ${stats.posture}`);
-  return parts.length ? parts.join(', ') : '-';
-}
+function generateMarkdown(masterData) {
+  const {
+    charms = [],
+    synergies = [],
+    skillTree = [],
+    items = [],
+    modifiers = [],
+    abilities = [],
+    essences = [],
+    weapons = [],
+    zanpakutoParts = [],
+    clans = [],
+    traits = [],
+    buffs = {}
+  } = masterData;
 
-function generateMarkdown(data) {
   const lines = [];
 
-  const patchTag = data.meta.patchVersion ? ` (Updated for ${data.meta.patchVersion})` : '';
-  lines.push(`# VV Builder — Comprehensive Game Reference & Catalog${patchTag}`);
+  lines.push('# VV: Ultimatum Builder & Catalog Reference');
   lines.push('');
-  lines.push(`> Extracted from [VV Builder](https://www.vvbuilder.online/) on ${data.meta.extractedAt || 'latest'}${data.meta.lastUpdatedWithPatch ? ` and patched with official update logs up to ${data.meta.lastUpdatedWithPatch}` : ''}.`);
+  lines.push('> Official companion guide and data reference for [vvcharmmerges.pages.dev/builder](https://vvcharmmerges.pages.dev/builder).');
+  lines.push(`> Last updated: ${new Date().toISOString().split('T')[0]} | Source: Official Live Endpoints`);
   lines.push('');
-  lines.push('## Table of Contents');
-  lines.push('- [1. Core Build System, Stat Milestones & Combat Mechanics](#1-core-build-system-stat-milestones--combat-mechanics)');
-  lines.push('- [2. Active Promo Codes & World Boss Schedule](#2-active-promo-codes--world-boss-schedule)');
-  lines.push('- [3. Ultimates & Special Modes](#3-ultimates--special-modes)');
-  lines.push('- [4. Race Skills](#4-race-skills)');
-  lines.push('- [5. Skill Tree Spokes & Nodes](#5-skill-tree-spokes--nodes)');
-  lines.push('- [6. Equipment Catalog](#6-equipment-catalog)');
-  lines.push('- [7. Clan Buffs & Rarities](#7-clan-buffs--rarities)');
-  lines.push('- [8. Spirit Charms](#8-spirit-charms)');
-  lines.push('- [9. Hollow Traits](#9-hollow-traits)');
-  lines.push('- [10. Essences & Attributes](#10-essences--attributes)');
+  lines.push('---');
+  lines.push('');
+  lines.push('## 📑 Table of Contents');
+  lines.push('');
+  lines.push('1. [System Mechanics & Mathematical Formulas](#1-system-mechanics--mathematical-formulas)');
+  lines.push('2. [Spirit Charms Catalog (73 Charms)](#2-spirit-charms-catalog-73-charms)');
+  lines.push('3. [Charm Merge Synergies Matrix](#3-charm-merge-synergies-matrix)');
+  lines.push('4. [Skill Tree & Node Branches (260 Nodes)](#4-skill-tree--node-branches-260-nodes)');
+  lines.push('5. [Equipment Catalog & Modifiers (146 Items)](#5-equipment-catalog--modifiers-146-items)');
+  lines.push('6. [Weapons & Zanpakuto Modular Parts](#6-weapons--zanpakuto-modular-parts)');
+  lines.push('7. [Abilities & Essences](#7-abilities--essences)');
+  lines.push('8. [Clans & Hollow Traits](#8-clans--hollow-traits)');
+  lines.push('9. [Buffs, Ascension Tiers & Shrines](#9-buffs-ascension-tiers--shrines)');
   lines.push('');
   lines.push('---');
   lines.push('');
 
-  // 1. Core Build System & Stat Milestones
-  lines.push('## 1. Core Build System, Stat Milestones & Combat Mechanics');
-  lines.push('- **Total Build Point Budget**: 400 BP Cap');
-  lines.push('- **Races**: Shinigami, Hollow / Arrancar, Quincy');
-  lines.push('- **Equipment Slots**: Body, Head, Face, Utility, Misc (Plus 2 Cosmetic Vanity Slots)');
+  // 1. System Mechanics
+  lines.push('## 1. System Mechanics & Mathematical Formulas');
   lines.push('');
-  lines.push('### Stat Investment Milestones & Scaling');
-  lines.push('- **Build Point Cross-Scaling**: Every 10 points invested into Build Points grants **+1 to all other stats**.');
-  lines.push('- **175 Stat Investment**: Reserve, Haste, Potency, Mettle, and Shunpo each unlock unique, powerful tier-1 passives at 175 investment.');
-  lines.push('- **400 Stat Investment**: Reserve, Haste, Potency, Mettle, and Shunpo each unlock major tier-2 ultimate passives at 400 investment.');
-  lines.push('- **Attribute 400 Passives**: Strength, Speed, Kido, and Hakuda all have game-defining 400-investment passives to reward specialized mono-attribute builds.');
-  lines.push('- **Free Build Reset**: Available once per account without any level cap.');
+  lines.push('The builder enforces exact client-side game formulas:');
   lines.push('');
-  lines.push('### Core Combat Systems');
-  lines.push('- **Traversing**: Hold `Q` outside of combat to rapidly traverse the map via Flashsteps / Sonido / Hirenkyaku with reduced resource consumption.');
-  lines.push('- **Anti-Gank System**: Taking heavy damage from non-allied opponents builds Anti-Gank stacks (+scaling damage reduction, posture damage reduction, posture regen, and increased aura heal).');
-  lines.push('- **Combo Falloff**: Being locked in a true combo for an extended duration significantly reduces follow-up damage until released from stun.');
-  lines.push('- **Safe Transmutation**: Detransmutating an accessory safely refunds the original transmutated accessory instead of destroying it.');
+  lines.push('### Point Budgets');
+  lines.push('- **Attribute Points (AP)**: `400 AP` max across `Speed`, `Strength`, `Kido`, `Hakuda`.');
+  lines.push('- **Build Points (BP / Semi-Stats)**: `400 BP` max across `Reserves`, `Haste`, `Potency`, `Mettle`, `Shunpo`.');
+  lines.push('- **Skill Points (SP)**: `100 SP` starting budget (Upgrades cost `2 SP` each).');
+  lines.push('- **Ascension Fragments**: `6 Fragments` (Upgrades cost `1 Fragment` each).');
+  lines.push('- **Mastery Cap**: At most **2 skills** can reach Level 7 or 8.');
+  lines.push('');
+  lines.push('### Semi-Stat Cross-Bonus Formula');
+  lines.push('Allocating points to any semi-stat grants free bonus points to the other 4 semi-stats:');
+  lines.push('$$\\text{Bonus}(stat) = \\left\\lfloor \\frac{\\sum_{other} BP_{other}}{10} \\right\\rfloor$$');
+  lines.push('$$\\text{EffectiveSemiStat}(stat) = BP_{stat} + \\text{Bonus}(stat)$$');
+  lines.push('');
+  lines.push('### Core Derived Stats (Level 100)');
+  lines.push('- **Health**: Base 220 (Vasto Lorde) / 200 (Others) + `Level * 2.275` + Flat Gear Buffs + Faction Rank (+2.1%).');
+  lines.push('  - *Charm Notch Penalty*: `3` Clean Free Notches. Excess notches inflict `-6% Max HP` per notch (`-4%` for Kurotsuchi clan).');
+  lines.push('- **Reiatsu**: `55 + (Level * 0.15) + (EffectiveReserves / 100 * 4.5) + Flat Reiatsu`.');
+  lines.push('- **Posture**: `92 + (EffectiveMettle / 100 * 5.0) + Flat Posture`.');
+  lines.push('- **Shunpo Stamina**: `30 + (Level * 0.55) + (SpeedAP * 0.06) + (EffectiveShunpo * 0.07) + Flat Stamina`.');
+  lines.push('- **Shunpo Speed**: `50 + (EffectiveShunpo * 0.03) + (SpeedAP * 0.015) + ((Level - 1) * 0.1) + Flat Speed`.');
+  lines.push('- **Cooldown Reduction**: `(EffectiveHaste * 0.042) + Buffs`, capped at `30%`.');
+  lines.push('');
+  lines.push('### Damage Scaling & 20% Soft-Cap');
+  lines.push('Kido, Weapon, and Hakuda damages feature a **20% soft-cap** (above 20%, additional damage is scaled by 50%):');
+  lines.push('- **Kido**: `AP_Kido * Coeff + (EffectivePotency * AP_Kido * 0.000025) / 100 + Buffs`. (Coeff is `0.00008`, or `0.00011` with Energized trait).');
+  lines.push('- **Weapon**: `AP_Strength * 0.01 + EffectivePotency * AP_Strength * 0.00002 + Buffs`.');
+  lines.push('- **Hakuda**: `AP_Hakuda * 0.01 + EffectivePotency * AP_Hakuda * 0.00002 + Buffs`.');
+  lines.push('');
+  lines.push('---');
   lines.push('');
 
-  // 2. Active Promo Codes & World Boss Schedule
-  if (data.gameMeta) {
-    lines.push('## 2. Active Promo Codes & World Boss Schedule');
-    lines.push('');
-    lines.push('### Active Promo Codes');
-    lines.push('| Code | Reward / Effect | Status / Instructions |');
-    lines.push('|---|---|---|');
-    for (const item of (data.gameMeta.codes || [])) {
-      lines.push(`| \`${item.code}\` | **${item.reward}** | ${item.status} |`);
-    }
-    lines.push('');
-    lines.push('### World Boss Spawn Schedule');
-    lines.push('| Boss Name | Spawn Time | Key Drops | Encounter Notes |');
-    lines.push('|---|---|---|---|');
-    for (const b of (data.gameMeta.worldBossSchedule || [])) {
-      lines.push(`| **${b.name}** | \`${b.spawnTime}\` | ${b.drops} | ${b.note} |`);
-    }
-    lines.push('> **Damage Credit Rule**: 5%+ damage qualifies for drops and EXP (green name); 10%+ damage guarantees credit even if you die (light blue name).');
-    lines.push('');
-  }
-
-  // 3. Ultimates & Special Modes
-  lines.push('## 3. Ultimates & Special Modes');
+  // 2. Charms Catalog
+  lines.push(`## 2. Spirit Charms Catalog (${charms.length} Charms)`);
   lines.push('');
-  lines.push('| ID | Name | SP Cost | Requirements | Race Restriction / Acquisition |');
+  lines.push('| ID | Name | Tier | Primary Stats | Perks / Description |');
   lines.push('|---|---|---|---|---|');
-  for (const ult of data.ultimates) {
-    const race = ult.raceLabel || ult.race || 'All Races';
-    lines.push(`| \`${ult.id}\` | **${ult.name}** | ${ult.sp} | ${formatReq(ult.req)} | ${race} |`);
+  for (const c of charms) {
+    const statsStr = (c.stats || []).map(s => `${s.id}: ${s.baseValue}`).join(', ') || '-';
+    const descClean = (c.description || '').replace(/\r?\n|\r/g, ' ').slice(0, 150);
+    lines.push(`| \`${c.id}\` | **${c.name}** | Tier ${c.tier} | ${statsStr} | ${descClean}... |`);
   }
   lines.push('');
-
-  // 4. Race Skills
-  lines.push('## 4. Race Skills');
-  for (const [race, skills] of Object.entries(data.raceSkills)) {
-    lines.push(`### ${race}`);
-    lines.push('');
-    lines.push('| Skill | SP Cost | Requirements | Description | Upgrade / Level Note |');
-    lines.push('|---|---|---|---|---|');
-    for (const s of skills) {
-      const desc = (s.desc || '').replace(/\|/g, '\\|');
-      const note = (s.upgradeNote || '-').replace(/\|/g, '\\|');
-      lines.push(`| **${s.name}** (\`${s.id}\`) | ${s.costSP ?? 0} | ${formatReq(s.req)} | ${desc} | ${note} |`);
-    }
-    lines.push('');
-  }
-
-  // 5. Skill Tree Spokes & Nodes
-  lines.push('## 5. Skill Tree Spokes & Nodes');
-  for (const [spokeId, nodes] of Object.entries(data.spokeNodes)) {
-    const title = spokeId.replace(/_/g, ' ').toUpperCase();
-    lines.push(`### Spoke: ${title} (${nodes.length} Nodes)`);
-    lines.push('');
-    lines.push('| Node ID | Name | Parent | Cost / SP | Requirements / Effects |');
-    lines.push('|---|---|---|---|---|');
-    for (const n of nodes) {
-      const parent = n.parent ? `\`${n.parent}\`` : '*(Root/Base)*';
-      const cost = n.costSP !== undefined ? `${n.costSP} SP` : (n.sp !== undefined ? `${n.sp} SP` : '-');
-      const req = n.req ? formatReq(n.req) : (n.desc || n.effect || '-');
-      lines.push(`| \`${n.id}\` | **${n.name || n.id}** | ${parent} | ${cost} | ${req.replace(/\|/g, '\\|')} |`);
-    }
-    lines.push('');
-  }
-
-  // 6. Equipment Catalog
-  lines.push('## 6. Equipment Catalog');
-  for (const [slot, items] of Object.entries(data.equipment)) {
-    lines.push(`### Slot: ${slot} (${items.length} Items)`);
-    lines.push('');
-    lines.push('| Item Name | ID | Rarity | Stat Bonuses / Special Perks |');
-    lines.push('|---|---|---|---|');
-    for (const it of items) {
-      const rarity = it.rarity || 'Common';
-      const perks = (Array.isArray(it.passives) ? it.passives.join('; ') : (it.desc || it.effect || it.stats || '-')).toString().replace(/\|/g, '\\|');
-      lines.push(`| **${it.name}** | \`${it.id}\` | ${rarity} | ${perks} |`);
-    }
-    lines.push('');
-  }
-
-  // 7. Clan Buffs
-  lines.push('## 7. Clan Buffs & Rarities');
-  for (const [race, clanList] of Object.entries(data.clans)) {
-    lines.push(`### ${race} Clans (${clanList.length})`);
-    lines.push('');
-    lines.push('| Clan Name | ID | Rarity | Clan Perk / Passives |');
-    lines.push('|---|---|---|---|');
-    for (const cl of clanList) {
-      const rarity = cl.rarity || 'Common';
-      const perks = (Array.isArray(cl.buffs) ? cl.buffs.join('; ') : (cl.desc || cl.buff || cl.perks || '-')).toString().replace(/\|/g, '\\|');
-      lines.push(`| **${cl.name}** | \`${cl.id}\` | ${rarity} | ${perks} |`);
-    }
-    lines.push('');
-  }
-
-  // 8. Spirit Charms
-  lines.push(`## 8. Spirit Charms (${data.charms.length} Total)`);
+  lines.push('---');
   lines.push('');
-  lines.push('| Charm Name | ID | Tier | Description / Effect |');
+
+  // 3. Charm Synergies
+  lines.push(`## 3. Charm Merge Synergies Matrix (${synergies.length} Pairs)`);
+  lines.push('');
+  lines.push('When merging two charms into a single slot, the designated stat scales according to their synergy rating:');
+  lines.push('');
+  lines.push('### Top Outstanding & Good Combinations');
+  lines.push('');
+  lines.push('| Charm A | Charm B | Synergy Rating A → B | Synergy Rating B → A |');
   lines.push('|---|---|---|---|');
-  for (const ch of data.charms) {
-    const title = ch.title || ch.name || ch.id;
-    const tier = ch.tier || '-';
-    let details = ch.desc || '';
-    if (Array.isArray(ch.buffs) && ch.buffs.length > 0) {
-      details += ` Buffs: ${ch.buffs.join('; ')}`;
-    }
-    if (Array.isArray(ch.nerfs) && ch.nerfs.length > 0) {
-      details += ` Nerfs: ${ch.nerfs.join('; ')}`;
-    }
-    lines.push(`| **${title}** | \`${ch.id}\` | ${tier} | ${details.replace(/\|/g, '\\|')} |`);
+  const topSynergies = synergies.filter(s => s.ratingAtoB === 'Outstanding' || s.ratingBtoA === 'Outstanding' || s.ratingAtoB === 'Good');
+  for (const s of topSynergies.slice(0, 50)) {
+    lines.push(`| \`${s.charmA}\` | \`${s.charmB}\` | **${s.ratingAtoB}** | **${s.ratingBtoA}** |`);
   }
   lines.push('');
-
-  // 9. Hollow Traits
-  lines.push(`## 9. Hollow Traits (${data.traits.length} Total)`);
+  lines.push(`*(Showing top 50 of ${topSynergies.length} top synergies)*`);
   lines.push('');
-  lines.push('| Trait Name | ID | Notable Feature / Details |');
+  lines.push('---');
+  lines.push('');
+
+  // 4. Skill Tree
+  lines.push(`## 4. Skill Tree & Node Branches (${skillTree.length} Nodes)`);
+  lines.push('');
+  lines.push('| Node ID | Name | Branch / Spoke | Type | Max Level | Unlock Cost | Requirements |');
+  lines.push('|---|---|---|---|---|---|---|');
+  for (const n of skillTree.slice(0, 60)) {
+    const reqStr = n.requires && n.requires.stats ? Object.entries(n.requires.stats).map(([k, v]) => `${k.toUpperCase()} ${v}`).join(', ') : 'None';
+    const costStr = n.unlockCost && n.unlockCost.skillPoints ? `${n.unlockCost.skillPoints} SP` : 'Free';
+    lines.push(`| \`${n.id}\` | **${n.name}** | ${n.spoke || n.type || '-'} | ${n.nodeType || '-'} | Lv ${n.maxLevel || 1} | ${costStr} | ${reqStr} |`);
+  }
+  lines.push('');
+  lines.push(`*(Showing 60 of ${skillTree.length} total skill tree nodes. Full graph available in data/skill-tree.json)*`);
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  // 5. Equipment Catalog
+  lines.push(`## 5. Equipment Catalog & Modifiers (${items.length} Items)`);
+  lines.push('');
+  lines.push('| Item ID | Name | Slot | Rarity | Level Req | Key Buffs |');
+  lines.push('|---|---|---|---|---|---|');
+  for (const it of items) {
+    const buffsStr = (it.buffs || []).join('; ') || '-';
+    lines.push(`| \`${it.id}\` | **${it.name}** | ${it.slot} | ${it.rarity || 'Common'} | Lv ${it.requiredLevel || 1} | ${buffsStr} |`);
+  }
+  lines.push('');
+  lines.push('### Equipment Modifiers');
+  lines.push('| Modifier ID | Name | Stat Scaled | Available Slots |');
+  lines.push('|---|---|---|---|');
+  for (const m of modifiers) {
+    const slots = Object.keys(m.buffs || {}).join(', ');
+    lines.push(`| \`${m.id}\` | **${m.name}** | ${m.stat || '-'} | ${slots} |`);
+  }
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  // 6. Weapons & Zanpakuto
+  lines.push(`## 6. Weapons & Zanpakuto Modular Parts (${weapons.length} Weapons, ${zanpakutoParts.length} Parts)`);
+  lines.push('');
+  lines.push('### Weapons');
+  lines.push('| ID | Name | Damage | Type | Attack Speed | Posture Damage | Crit CD |');
+  lines.push('|---|---|---|---|---|---|---|');
+  for (const w of weapons) {
+    lines.push(`| \`${w.id}\` | **${w.name}** | ${w.damage} | ${w.damageType || 'weapon'} | ${w.attackSpeed} | ${w.postureDamage} | ${w.criticalCooldown}s |`);
+  }
+  lines.push('');
+  lines.push('### Zanpakuto Parts');
+  lines.push('| ID | Name | Part Type | Rarity | Buffs |');
+  lines.push('|---|---|---|---|---|');
+  for (const zp of zanpakutoParts) {
+    lines.push(`| \`${zp.id}\` | **${zp.name}** | ${zp.partType} | ${zp.rarity || 'Common'} | ${(zp.buffs || []).join('; ')} |`);
+  }
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  // 7. Abilities & Essences
+  lines.push(`## 7. Abilities & Essences (${abilities.length} Abilities, ${essences.length} Essences)`);
+  lines.push('');
+  lines.push('### Race Abilities');
+  lines.push('| ID | Name | Race | Rarity | Variants |');
+  lines.push('|---|---|---|---|---|');
+  for (const a of abilities) {
+    const vars = (a.variants || []).map(v => v.name || v.id).join(', ') || 'Standard';
+    lines.push(`| \`${a.id}\` | **${a.name}** | ${a.race} | ${a.rarity || 'Common'} | ${vars} |`);
+  }
+  lines.push('');
+  lines.push('### Essences');
+  lines.push('| ID | Name | Race Req | Cost | Stat Prerequisites |');
+  lines.push('|---|---|---|---|---|');
+  for (const e of essences) {
+    const reqStr = (e.requiredStats || []).map(r => `${r.stat.toUpperCase()} ${r.value}`).join(', ') || 'None';
+    lines.push(`| \`${e.id}\` | **${e.name || e.id}** | ${e.requiredRace || 'Any'} | ${e.cost || '-'} | ${reqStr} |`);
+  }
+  lines.push('');
+  lines.push('---');
+  lines.push('');
+
+  // 8. Clans & Hollow Traits
+  lines.push(`## 8. Clans & Hollow Traits (${clans.length} Clans, ${traits.length} Traits)`);
+  lines.push('');
+  lines.push('### Clans');
+  lines.push('| ID | Name | Race | Rarity | Drop % | Buffs |');
+  lines.push('|---|---|---|---|---|---|');
+  for (const cl of clans) {
+    lines.push(`| \`${cl.id}\` | **${cl.name}** | ${cl.race} | ${cl.rarity} | ${cl.chance}% | ${(cl.buffs || []).join('; ')} |`);
+  }
+  lines.push('');
+  lines.push('### Hollow Traits');
+  lines.push('| ID | Name | Active Buffs & Effects |');
   lines.push('|---|---|---|');
-  for (const tr of data.traits) {
-    const notable = (tr.notable || tr.desc || '-').toString().replace(/\|/g, '\\|');
-    lines.push(`| **${tr.name}** | \`${tr.id}\` | ${notable} |`);
+  for (const tr of traits) {
+    lines.push(`| \`${tr.id}\` | **${tr.name}** | ${(tr.buffs || []).join('; ')} |`);
   }
+  lines.push('');
+  lines.push('---');
   lines.push('');
 
-  // 10. Essences & Attributes
-  lines.push('## 10. Essences & Attributes');
+  // 9. Buffs, Ascension Tiers & Shrines
+  lines.push('## 9. Buffs, Ascension Tiers & Shrines');
   lines.push('');
-  lines.push(`### Essences (${data.essences.length} Total)`);
-  lines.push('| Essence Name | ID | Accent Color | Description |');
-  lines.push('|---|---|---|---|');
-  for (const es of data.essences) {
-    lines.push(`| **${es.name}** | \`${es.id}\` | \`${es.accent || '-'}\` | ${es.desc || '-'} |`);
+  if (buffs.ascensionTiers) {
+    lines.push('### Ascension Tiers');
+    lines.push('| ID | Name | Modifiers |');
+    lines.push('|---|---|---|');
+    for (const asc of buffs.ascensionTiers) {
+      const mods = (asc.modifiers || []).map(m => `${m.stat}: +${m.amount}${m.isPercent ? '%' : ''}`).join(', ');
+      lines.push(`| \`${asc.id}\` | **${asc.name}** | ${mods} |`);
+    }
+    lines.push('');
   }
-  lines.push('');
 
-  lines.push(`### Core Attributes (${data.attributes.length} Total)`);
-  lines.push('| Attribute Name | ID | UI Position | Description |');
-  lines.push('|---|---|---|---|');
-  for (const att of data.attributes) {
-    lines.push(`| **${att.name || att.id}** | \`${att.id}\` | ${att.pos || '-'} | ${att.desc || '-'} |`);
+  if (buffs.gauntlets) {
+    lines.push('### Gauntlets');
+    lines.push('| ID | Name | Modifiers |');
+    lines.push('|---|---|---|');
+    for (const g of buffs.gauntlets) {
+      const mods = (g.modifiers || []).map(m => `${m.stat}: +${m.amount}${m.isPercent ? '%' : ''}`).join(', ');
+      lines.push(`| \`${g.id}\` | **${g.name}** | ${mods} |`);
+    }
+    lines.push('');
   }
+
+  lines.push('---');
+  lines.push('');
+  lines.push('## 🔗 Online Share Links');
+  lines.push('Builds created by this toolkit generate official Cloudflare Worker share URLs compatible with the live web app:');
+  lines.push('`https://vvcharmmerges.pages.dev/builder?build=<id>`');
   lines.push('');
 
   return lines.join('\n');
 }
 
-module.exports = { generateMarkdown };
+module.exports = {
+  generateMarkdown
+};

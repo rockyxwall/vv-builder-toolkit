@@ -1,0 +1,277 @@
+[
+  {
+    "id": "katana-sword",
+    "name": "Katana / Sword",
+    "attackSpeed": "Fast",
+    "attackDuration": "Average",
+    "attackStun": "Short",
+    "attackRange": "Average",
+    "damage": 13,
+    "postureDamage": 13,
+    "riposteCritical": true,
+    "criticalCooldown": 7
+  },
+  {
+    "id": "greataxe",
+    "name": "Greataxe",
+    "attackSpeed": "Slow",
+    "attackDuration": "Long",
+    "attackStun": "Very Long",
+    "attackRange": "Long",
+    "damage": 17.3,
+    "postureDamage": 16.2,
+    "riposteCritical": true,
+    "criticalCooldown": 8.5,
+    "restrictedToRaces": [
+      "soul-reaper",
+      "hollow"
+    ]
+  },
+  {
+    "id": "scythe",
+    "name": "Scythe",
+    "attackSpeed": "Slow",
+    "attackDuration": "Long",
+    "attackStun": "Average",
+    "attackRange": "Very Long",
+    "damage": 15,
+    "postureDamage": 14,
+    "riposteCritical": true,
+    "criticalCooldown": 6,
+    "restrictedToRaces": [
+      "soul-reaper",
+      "hollow"
+    ]
+  },
+  {
+    "id": "hammer",
+    "name": "Hammer",
+    "attackSpeed": "Very Slow",
+    "attackDuration": "Average",
+    "attackStun": "Very Long",
+    "attackRange": "Long",
+    "damage": 16,
+    "postureDamage": 17,
+    "riposteCritical": true,
+    "criticalCooldown": 8
+  },
+  {
+    "id": "odachi-longsword",
+    "name": "Odachi / Longsword",
+    "attackSpeed": "Fast",
+    "attackDuration": "Average",
+    "attackStun": "Long",
+    "attackRange": "Very Long",
+    "damage": 12.6,
+    "postureDamage": 12.6,
+    "riposteCritical": true,
+    "criticalCooldown": 8.25
+  },
+  {
+    "id": "greatsword",
+    "name": "Greatsword",
+    "attackSpeed": "Very Slow",
+    "attackDuration": "Very Long",
+    "attackStun": "Extremely Long",
+    "attackRange": "Very Long",
+    "damage": 18,
+    "postureDamage": 17,
+    "riposteCritical": true,
+    "criticalCooldown": 7.5
+  },
+  {
+    "id": "spear",
+    "name": "Spear",
+    "attackSpeed": "Average",
+    "attackDuration": "Very Long",
+    "attackStun": "Average",
+    "attackRange": "Extremely Long",
+    "damage": 12.25,
+    "postureDamage": 15,
+    "riposteCritical": true,
+    "criticalCooldown": 6.5
+  },
+  {
+    "id": "club",
+    "name": "Club",
+    "attackSpeed": "Very Slow",
+    "attackDuration": "Very Long",
+    "attackStun": "Extremely Long",
+    "attackRange": "Very Long",
+    "damage": 17,
+    "postureDamage": 18,
+    "riposteCritical": true,
+    "criticalCooldown": 7.5,
+    "restrictedToRaces": [
+      "quincy",
+      "soul-reaper"
+    ]
+  },
+  {
+    "id": "tanto",
+    "name": "Tanto",
+    "attackSpeed": "Fast",
+    "attackDuration": "Average",
+    "attackStun": "Short",
+    "attackRange": "Short",
+    "damage": 12.6,
+    "postureDamage": 12.6,
+    "riposteCritical": true,
+    "criticalCooldown": 9,
+    "restrictedToRaces": [
+      "soul-reaper"
+    ]
+  },
+  {
+    "id": "dual-blades",
+    "name": "Dual Blades",
+    "attackSpeed": "Average",
+    "attackDuration": "Short",
+    "attackStun": "Extremely Long",
+    "attackRange": "Long",
+    "damage": 16,
+    "postureDamage": 15,
+    "riposteCritical": false,
+    "criticalCooldown": 5,
+    "restrictedToRaces": [
+      "soul-reaper"
+    ]
+  },
+  {
+    "id": "lance",
+    "name": "Lance",
+    "attackSpeed": "Extremely Slow",
+    "attackDuration": "Very Long",
+    "attackStun": "Extremely Long",
+    "attackRange": "Extremely Long",
+    "damage": 17,
+    "postureDamage": 18,
+    "riposteCritical": true,
+    "criticalCooldown": 10,
+    "restrictedToRaces": [
+      "hollow"
+    ]
+  },
+  {
+    "id": "minigun",
+    "name": "Minigun",
+    "attackSpeed": "Very Slow",
+    "attackDuration": "Extremely Long",
+    "attackStun": "Extremely Long",
+    "attackRange": "Very Long",
+    "damage": 15,
+    "postureDamage": 15,
+    "riposteCritical": false,
+    "criticalCooldown": 7,
+    "restrictedToRaces": [
+      "hollow"
+    ]
+  },
+  {
+    "id": "rapier",
+    "name": "Rapier",
+    "attackSpeed": "Average",
+    "attackDuration": "Average",
+    "attackStun": "Short",
+    "attackRange": "Long",
+    "damage": 13.5,
+    "postureDamage": 13.5,
+    "riposteCritical": false,
+    "criticalCooldown": 7.2,
+    "restrictedToRaces": [
+      "quincy"
+    ]
+  },
+  {
+    "id": "rifle",
+    "name": "Rifle",
+    "attackSpeed": "Average",
+    "attackDuration": "Very Long",
+    "attackStun": "Short",
+    "attackRange": "Long",
+    "damage": 12.8,
+    "postureDamage": 12.8,
+    "riposteCritical": true,
+    "criticalCooldown": 10,
+    "restrictedToRaces": [
+      "quincy"
+    ]
+  },
+  {
+    "id": "greatsword-sweep",
+    "name": "Greatsword (Sweep)",
+    "attackSpeed": "Slow",
+    "attackDuration": "Very Long",
+    "attackStun": "Long",
+    "attackRange": "Very Long",
+    "damage": 15.5,
+    "postureDamage": 15.5,
+    "riposteCritical": false,
+    "criticalCooldown": 7.5
+  },
+  {
+    "id": "boxing",
+    "name": "Boxing",
+    "attackSpeed": "Average",
+    "attackDuration": "Short",
+    "attackStun": "Extremely Short",
+    "attackRange": "Extremely Short",
+    "damage": 12.75,
+    "postureDamage": 12.5,
+    "riposteCritical": false,
+    "criticalCooldown": 12,
+    "damageType": "hakuda"
+  },
+  {
+    "id": "fists",
+    "name": "Fists",
+    "attackSpeed": "Average",
+    "attackDuration": "Very Short",
+    "attackStun": "Short",
+    "attackRange": "Very Short",
+    "damage": 12.25,
+    "postureDamage": 12.25,
+    "riposteCritical": true,
+    "criticalCooldown": 7.75,
+    "damageType": "hakuda"
+  },
+  {
+    "id": "karate",
+    "name": "Karate",
+    "attackSpeed": "Slow",
+    "attackDuration": "Short",
+    "attackStun": "Short",
+    "attackRange": "Very Short",
+    "damage": 13,
+    "postureDamage": 12.25,
+    "riposteCritical": true,
+    "criticalCooldown": 10,
+    "damageType": "hakuda"
+  },
+  {
+    "id": "muay-thai",
+    "name": "Muay Thai",
+    "attackSpeed": "Average",
+    "attackDuration": "Short",
+    "attackStun": "Short",
+    "attackRange": "Very Short",
+    "damage": 12.75,
+    "postureDamage": 13,
+    "riposteCritical": false,
+    "criticalCooldown": 8,
+    "damageType": "hakuda"
+  },
+  {
+    "id": "wrestling",
+    "name": "Wrestling",
+    "attackSpeed": "Slow",
+    "attackDuration": "Long",
+    "attackStun": "Long",
+    "attackRange": "Short",
+    "damage": 15.5,
+    "postureDamage": 15.5,
+    "riposteCritical": true,
+    "criticalCooldown": 7.5,
+    "damageType": "hakuda"
+  }
+]

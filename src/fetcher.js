@@ -2,16 +2,29 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://www.vvbuilder.online';
+const BASE_URL = 'https://vvcharmmerges.pages.dev';
 const CACHE_DIR = path.join(__dirname, '..', '.cache');
-const CACHE_FILE = path.join(CACHE_DIR, 'bundle.js');
-const HASH_FILE = path.join(CACHE_DIR, 'bundle_hash.txt');
+
+const ENDPOINTS = [
+  'charms.json',
+  'synergies.json',
+  'skill-tree.json',
+  'traits.json',
+  'clans.json',
+  'items.json',
+  'modifiers.json',
+  'abilities.json',
+  'essences.json',
+  'buffs.json',
+  'weapons.json',
+  'zanpakuto-parts.json'
+];
 
 function fetchUrl(url) {
   return new Promise((resolve, reject) => {
     const req = https.get(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
       }
     }, (res) => {
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
@@ -32,44 +45,42 @@ function fetchUrl(url) {
   });
 }
 
-async function getClientBundle(forceRefresh = false) {
+async function fetchDataset(filename, forceRefresh = false) {
   fs.mkdirSync(CACHE_DIR, { recursive: true });
+  const cacheFile = path.join(CACHE_DIR, filename);
 
-  try {
-    console.log(`[Fetcher] Checking ${BASE_URL} for active asset bundle...`);
-    const html = await fetchUrl(BASE_URL + '/');
-    const match = html.match(/src=["'](\/assets\/index-[a-zA-Z0-9_-]+\.js)["']/);
-    if (!match) {
-      throw new Error('Unable to find bundle script src in HTML');
+  if (!forceRefresh && fs.existsSync(cacheFile)) {
+    try {
+      const cached = fs.readFileSync(cacheFile, 'utf8');
+      const parsed = JSON.parse(cached);
+      return parsed;
+    } catch {
+      // invalid cache, refetch
     }
-
-    const bundlePath = match[1];
-    const fullBundleUrl = BASE_URL + bundlePath;
-    console.log(`[Fetcher] Found bundle URL: ${fullBundleUrl}`);
-
-    let cachedHash = null;
-    if (fs.existsSync(HASH_FILE) && fs.existsSync(CACHE_FILE)) {
-      cachedHash = fs.readFileSync(HASH_FILE, 'utf8').trim();
-    }
-
-    if (!forceRefresh && cachedHash === bundlePath && fs.existsSync(CACHE_FILE)) {
-      console.log(`[Fetcher] Bundle hash unchanged (${bundlePath}), using cached bundle.`);
-      return fs.readFileSync(CACHE_FILE, 'utf8');
-    }
-
-    console.log(`[Fetcher] Downloading fresh bundle...`);
-    const bundleCode = await fetchUrl(fullBundleUrl);
-    fs.writeFileSync(CACHE_FILE, bundleCode, 'utf8');
-    fs.writeFileSync(HASH_FILE, bundlePath, 'utf8');
-    console.log(`[Fetcher] Saved bundle (${bundleCode.length} bytes) to cache.`);
-    return bundleCode;
-  } catch (err) {
-    if (fs.existsSync(CACHE_FILE)) {
-      console.warn(`[Fetcher] Network fetch failed (${err.message}). Falling back to cached bundle.`);
-      return fs.readFileSync(CACHE_FILE, 'utf8');
-    }
-    throw err;
   }
+
+  const url = `${BASE_URL}/${filename}`;
+  console.log(`[Fetcher] Downloading fresh ${filename} from ${url}...`);
+  const raw = await fetchUrl(url);
+  const parsed = JSON.parse(raw);
+  fs.writeFileSync(cacheFile, JSON.stringify(parsed, null, 2), 'utf8');
+  return parsed;
 }
 
-module.exports = { getClientBundle };
+async function fetchAllDatasets(forceRefresh = false) {
+  console.log(`[Fetcher] Fetching all 12 official datasets from ${BASE_URL}...`);
+  const results = {};
+  for (const file of ENDPOINTS) {
+    const key = file.replace('.json', '').replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+    results[key] = await fetchDataset(file, forceRefresh);
+  }
+  console.log(`[Fetcher] All 12 datasets downloaded successfully.`);
+  return results;
+}
+
+module.exports = {
+  BASE_URL,
+  ENDPOINTS,
+  fetchDataset,
+  fetchAllDatasets
+};

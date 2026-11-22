@@ -1,0 +1,1677 @@
+[
+  {
+    "id": "chaos-halo",
+    "name": "Chaos Halo",
+    "slot": "head",
+    "rarity": "Legendary",
+    "requiredLevel": 60,
+    "buffs": [
+      "+3% Kido Damage",
+      "+7 Max Reiatsu",
+      "+2.5 Max Health"
+    ]
+  },
+  {
+    "id": "kings-crown",
+    "name": "The King's Crown",
+    "slot": "head",
+    "rarity": "Legendary",
+    "requiredLevel": 35,
+    "buffs": [
+      "+2.1% Weapon Damage",
+      "+2.1% Hakuda Dmg",
+      "+2% Melee Def",
+      "+7 Max Health"
+    ]
+  },
+  {
+    "id": "war-torn-bandana",
+    "name": "War-Torn Bandana",
+    "slot": "head",
+    "rarity": "Legendary",
+    "requiredLevel": 70,
+    "buffs": [
+      "+2.5% Hakuda Damage",
+      "+3.5 Max Reiatsu",
+      "+7 Max Health"
+    ]
+  },
+  {
+    "id": "arctic-explorers-headwrap",
+    "name": "Arctic Explorer's Headwrap",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 55,
+    "buffs": [
+      "+5 Max Reiatsu",
+      "+0.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "gravewood-helm",
+    "name": "Gravewood Helm",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 80,
+    "buffs": [
+      "+2% Hakuda damage",
+      "+8 Max health"
+    ]
+  },
+  {
+    "id": "monster-hunters-helmet",
+    "name": "Monster Hunter's Helmet",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+3.5% Monster Damage",
+      "+2% Kido Defense",
+      "+5 Max Posture",
+      "+3 Max Health"
+    ]
+  },
+  {
+    "id": "desert-wanderers-turban",
+    "name": "Desert Wanderer's Turban",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 88,
+    "buffs": [
+      "+8 Max Health",
+      "+2 Shunpo Speed",
+      "+3.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "flower-samurais-straw-hat",
+    "name": "Flower Samurai's Straw Hat",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 21,
+    "buffs": [
+      "+1% Kido Dmg",
+      "+4 Max Rei",
+      "+3.5 Shunpo Stam"
+    ]
+  },
+  {
+    "id": "gunslingers-hat",
+    "name": "Gunslinger's Hat",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 80,
+    "buffs": [
+      "+3% Kido Damage",
+      "+5 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "sabertooths-headwear",
+    "name": "Sabertooth's Headwear",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+2.25% Weapon Damage",
+      "+3.5 Max Rei"
+    ]
+  },
+  {
+    "id": "snowhide-hunters-hat",
+    "name": "Snowhide Hunter's Hat",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2% Weapon Damage",
+      "+3 Max Health"
+    ]
+  },
+  {
+    "id": "umbral-cowl",
+    "name": "Umbral Cowl",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "+2.75% Kido Dmg",
+      "+3% Monster Dmg"
+    ]
+  },
+  {
+    "id": "vagabonds-scarf-regen",
+    "name": "Vagabond's Scarf (Regen)",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 15,
+    "buffs": [
+      "+10% Posture Regen"
+    ]
+  },
+  {
+    "id": "vagabonds-scarf-weapon",
+    "name": "Vagabond's Scarf (Weapon)",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 15,
+    "buffs": [
+      "+1.5% Weapon Damage"
+    ]
+  },
+  {
+    "id": "wolfmans-helm",
+    "name": "Wolfman's Helm",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 14,
+    "buffs": [
+      "+0.75% Melee Defense",
+      "+3 Max Health"
+    ]
+  },
+  {
+    "id": "wraith-helm",
+    "name": "Wraith Helm",
+    "slot": "head",
+    "rarity": "Rare",
+    "buffs": [
+      "+2% Melee Defense",
+      "+5 Max Health"
+    ]
+  },
+  {
+    "id": "researcher-hood",
+    "name": "Researcher's Hood",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+6 Max Health",
+      "+3% Melee Reiatsu Regen",
+      "+4% Posture Regen"
+    ]
+  },
+  {
+    "id": "exo-trooper-mask",
+    "name": "Exo-Trooper Mask",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+3% Kido Defense",
+      "+3 Max Posture",
+      "+7.5 Max Reiatsu",
+      "+0.5% Melee Defense",
+      "+5% Sensing Range"
+    ]
+  },
+  {
+    "id": "tattered-scarf",
+    "name": "Tattered Scarf",
+    "slot": "head",
+    "rarity": "Rare",
+    "requiredLevel": 55,
+    "buffs": [
+      "+0.5% Movement Speed",
+      "+5% Posture Regen",
+      "+2% Hakuda Damage"
+    ]
+  },
+  {
+    "id": "faded-beanie",
+    "name": "Faded Beanie",
+    "slot": "head",
+    "rarity": "Uncommon",
+    "requiredLevel": 65,
+    "buffs": [
+      "+4% Melee Defense",
+      "+2 Max Posture",
+      "+3% Kido Defense"
+    ]
+  },
+  {
+    "id": "ganju-bandana",
+    "name": "Ganju Bandana",
+    "slot": "head",
+    "rarity": "Uncommon",
+    "requiredLevel": 18,
+    "buffs": [
+      "+3.5 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "northern-ushanka-goggles",
+    "name": "Northern Ushanka (Goggles)",
+    "slot": "head",
+    "rarity": "Uncommon",
+    "requiredLevel": 40,
+    "buffs": [
+      "+6 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "northern-ushanka",
+    "name": "Northern Ushanka",
+    "slot": "head",
+    "rarity": "Uncommon",
+    "requiredLevel": 40,
+    "buffs": [
+      "+7 Max Health"
+    ]
+  },
+  {
+    "id": "vintage-leather-hood",
+    "name": "Vintage Leather Hood",
+    "slot": "head",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+3 Shunpo Speed",
+      "+8% Posture Regen"
+    ]
+  },
+  {
+    "id": "angled-white-headband",
+    "name": "Angled White Headband",
+    "slot": "head",
+    "rarity": "Common",
+    "buffs": []
+  },
+  {
+    "id": "beaded-necklace",
+    "name": "Beaded Necklace",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+0.75% Weapon Damage"
+    ]
+  },
+  {
+    "id": "fur-collar",
+    "name": "Fur Collar",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 9,
+    "buffs": [
+      "+3 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "sava-hat",
+    "name": "Sava Hat",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 10,
+    "buffs": [
+      "+1 Max Reiatsu",
+      "+1% Kido Damage"
+    ]
+  },
+  {
+    "id": "soldat-cap",
+    "name": "Soldat Cap",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+1 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "striped-blue-hat",
+    "name": "Striped Blue Hat",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 12,
+    "buffs": [
+      "+1 Max Reiatsu",
+      "+1% Kido Damage"
+    ]
+  },
+  {
+    "id": "striped-black-hat",
+    "name": "Striped Black Hat",
+    "slot": "head",
+    "rarity": "Common",
+    "buffs": [
+      "+2.5 Max Reiatsu",
+      "+1% Melee Defense"
+    ]
+  },
+  {
+    "id": "striped-green-hat",
+    "name": "Striped Green Hat",
+    "slot": "head",
+    "rarity": "Common",
+    "buffs": [
+      "+1.75% Kido Damage"
+    ]
+  },
+  {
+    "id": "striped-red-hat",
+    "name": "Striped Red Hat",
+    "slot": "head",
+    "rarity": "Common",
+    "buffs": [
+      "+1% Kido Damage",
+      "+4% Posture Regen"
+    ]
+  },
+  {
+    "id": "wide-brimmed-hat",
+    "name": "Wide-Brimmed Hat",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+2 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "wanderers-bandana",
+    "name": "Wanderer's Bandana",
+    "slot": "head",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+2% Posture Regen"
+    ]
+  },
+  {
+    "id": "pumpkin-mask",
+    "name": "Pumpkin Mask",
+    "slot": "head",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+9% Flame Damage",
+      "+8 Max Health",
+      "+4 Max Reiatsu",
+      "+1% Melee Defense",
+      "-5% Sensing Range",
+      "+6% Monster Damage",
+      "+3% Ultimate Gain"
+    ]
+  },
+  {
+    "id": "witchs-hat",
+    "name": "Witch's Hat",
+    "slot": "head",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+5.5 Max Reiatsu",
+      "+10% Melee Reiatsu Regen",
+      "+2.6% Aura Gain",
+      "+6.5% Posture Regen"
+    ]
+  },
+  {
+    "id": "spooky-drapes",
+    "name": "Spooky Drapes",
+    "slot": "head",
+    "rarity": "Limited",
+    "requiredLevel": 30,
+    "buffs": [
+      "+4% Movement Speed",
+      "+6% Kido Defense",
+      "+5% Cooldown Reduction",
+      "-5% Sensing Range"
+    ]
+  },
+  {
+    "id": "dullahans-curse",
+    "name": "Dullahan's Curse",
+    "slot": "head",
+    "rarity": "Limited",
+    "requiredLevel": 0,
+    "buffs": [
+      "+10% Luck",
+      "+10% Flame Damage",
+      "+7.5% Monster Damage",
+      "+5% Movement Speed"
+    ]
+  },
+  {
+    "id": "pharaohs-headdress",
+    "name": "Pharaoh's HeadDress",
+    "slot": "head",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+6.6 Max Health",
+      "-1.2% Movement Speed",
+      "+7 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "vampire-hunters-sunhat",
+    "name": "Vampire Hunter's Sunhat",
+    "slot": "head",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+6 Max Health",
+      "+2.3% Weapon Damage",
+      "+6% Monster Damage",
+      "+2 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "dead-eye-mk-0",
+    "name": "Dead-Eye Mk. 0",
+    "slot": "face",
+    "rarity": "Mythical",
+    "requiredLevel": 50,
+    "buffs": [
+      "+15% Cooldown reduction",
+      "+25% Sensing Range",
+      "+8 Max Reiatsu",
+      "+20% Melee Reiatsu Regen",
+      "+15% Posture Regen"
+    ]
+  },
+  {
+    "id": "arctic-explorers-goggles",
+    "name": "Arctic Explorer's Goggles",
+    "slot": "face",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.5% Kido Damage"
+    ]
+  },
+  {
+    "id": "chaos-shades",
+    "name": "Chaos Shades",
+    "slot": "face",
+    "rarity": "Rare",
+    "requiredLevel": 17,
+    "buffs": [
+      "+0.5% Weapon Damage",
+      "+4% Posture Regen",
+      "+2.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "marsh-stalker-headwrap",
+    "name": "Marsh Stalker Headwrap",
+    "slot": "face",
+    "rarity": "Rare",
+    "requiredLevel": 33,
+    "buffs": [
+      "+1% Hakuda Damage",
+      "+5 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "parasites-mask",
+    "name": "Parasite's Mask",
+    "slot": "face",
+    "rarity": "Rare",
+    "requiredLevel": 60,
+    "buffs": [
+      "+2.5% Kido Defense",
+      "+3.0% Monster Damage"
+    ]
+  },
+  {
+    "id": "wraith-mask",
+    "name": "Wraith Mask",
+    "slot": "face",
+    "rarity": "Rare",
+    "requiredLevel": 32,
+    "buffs": [
+      "+5 Max Health",
+      "+1.25% Weapon Damage"
+    ]
+  },
+  {
+    "id": "model-ocu-7-eyepiece",
+    "name": "Model OCU-7. Eyepiece",
+    "slot": "face",
+    "rarity": "Legendary",
+    "requiredLevel": 55,
+    "buffs": [
+      "+5% Ultimate Gain",
+      "+10% Sensing Range",
+      "+5 Shunpo Speed",
+      "+2% Kido Damage"
+    ]
+  },
+  {
+    "id": "shai-huluds-scarf",
+    "name": "Shai Hulud's Scarf",
+    "slot": "face",
+    "rarity": "Legendary",
+    "requiredLevel": 70,
+    "buffs": [
+      "+3% Hakuda Damage",
+      "+2% Movement Speed",
+      "+2 Max Reiatsu",
+      "+4% Monster Damage"
+    ]
+  },
+  {
+    "id": "white-flight-tape",
+    "name": "White Flight Tape",
+    "slot": "face",
+    "rarity": "Uncommon",
+    "requiredLevel": 25,
+    "buffs": [
+      "+2.75 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "black-visor",
+    "name": "Black Visor",
+    "slot": "face",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+0.5% Weapon Damage"
+    ]
+  },
+  {
+    "id": "black-goggles",
+    "name": "Black Goggles",
+    "slot": "face",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+1 Max Posture",
+      "+0.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "black-blindfold",
+    "name": "Black Blindfold",
+    "slot": "face",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+0.5% Kido Damage",
+      "+0.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "spiritless-robe",
+    "name": "Spiritless Robe",
+    "slot": "body",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+3% Weapon Damage",
+      "+3% Kido Damage",
+      "+7 Max Reiatsu",
+      "+6 Max Health",
+      "+20 Shunpo Speed",
+      "+10 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "monstrous-trousers",
+    "name": "Monstrous Trousers",
+    "slot": "body",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+4% Lightning Damage",
+      "+3.8% Melee Defense",
+      "+4% Posture Regen"
+    ]
+  },
+  {
+    "id": "battle-damaged-haori",
+    "name": "Battle-Damaged Haori",
+    "slot": "body",
+    "rarity": "Legendary",
+    "requiredLevel": 85,
+    "buffs": [
+      "+1.5% Weapon Damage",
+      "+4% Posture Regen",
+      "+13 Max Health"
+    ]
+  },
+  {
+    "id": "conquerors-trophy",
+    "name": "Conqueror's Trophy",
+    "slot": "body",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+3 Max Posture",
+      "+12 Max Health"
+    ]
+  },
+  {
+    "id": "saviors-cape",
+    "name": "Savior's Cape",
+    "slot": "body",
+    "rarity": "Legendary",
+    "requiredLevel": 90,
+    "buffs": [
+      "+2.3% Weapon Damage",
+      "+3 Max Reiatsu",
+      "+10 Max Health"
+    ]
+  },
+  {
+    "id": "zippermaw-puffer",
+    "name": "Zippermaw Puffer",
+    "slot": "body",
+    "rarity": "Legendary",
+    "requiredLevel": 70,
+    "buffs": [
+      "+20 Max Posture",
+      "+10% Posture Regen",
+      "+2% Movement Speed",
+      "+6 Max Health"
+    ]
+  },
+  {
+    "id": "arctic-explorers-cape",
+    "name": "Arctic Explorer's Cape",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 55,
+    "buffs": [
+      "+2% Kido Damage",
+      "+4 Max Health"
+    ]
+  },
+  {
+    "id": "desert-wanderers-cape",
+    "name": "Desert Wanderer's Cape",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 88,
+    "buffs": [
+      "+8 Max Health",
+      "+2 Shunpo Speed",
+      "+3.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "engineers-workwear-no7",
+    "name": "Engineer's Workwear Issue No. 7",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 85,
+    "buffs": [
+      "+5 Max Reiatsu",
+      "+3.25% Kido Defense",
+      "+2 Equipment Load"
+    ]
+  },
+  {
+    "id": "flower-samurais-cape",
+    "name": "Flower Samurai's Cape",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 21,
+    "buffs": [
+      "+1.75% Kido Damage",
+      "+5 Max Reiatsu",
+      "+0.25% Kido Defense",
+      "+5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "gravewood-warset",
+    "name": "Gravewood Warset",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 80,
+    "buffs": [
+      "+2.5% Hakuda Damage",
+      "+4 Max Health",
+      "+4 Max Reiatsu",
+      "+2% Melee Defense"
+    ]
+  },
+  {
+    "id": "gunslingers-tunic",
+    "name": "Gunslinger's Tunic",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 80,
+    "buffs": [
+      "+2% Kido Damage",
+      "+4 Max Reiatsu",
+      "+7 Max Health"
+    ]
+  },
+  {
+    "id": "monster-hunters-armor",
+    "name": "Monster Hunter's Armor",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+4.5% Monster Damage",
+      "+3% Kido Defense",
+      "+10 Max Posture",
+      "+5 Max Health"
+    ]
+  },
+  {
+    "id": "snowhide-hunters-tunic",
+    "name": "Snowhide Hunter's Tunic",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2% Weapon Damage",
+      "+2% Hakuda Damage",
+      "+1% Melee Defense",
+      "+2 Equipment Load"
+    ]
+  },
+  {
+    "id": "tattered-robe",
+    "name": "Tattered Robe",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 33,
+    "buffs": [
+      "+0.75% Movement Speed",
+      "+8 Shunpo Stamina",
+      "+5% Flame Damage",
+      "+3 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "vintage-plaid-jacket",
+    "name": "Vintage Plaid Jacket",
+    "slot": "body",
+    "rarity": "Rare",
+    "buffs": [
+      "+3 Shunpo Speed",
+      "+6% Posture Regen"
+    ]
+  },
+  {
+    "id": "vintage-leather-jacket",
+    "name": "Vintage Leather Jacket",
+    "slot": "body",
+    "rarity": "Rare",
+    "buffs": [
+      "+3 Shunpo Speed",
+      "+8% Posture Regen"
+    ]
+  },
+  {
+    "id": "warlords-mantle",
+    "name": "Warlord's Mantle",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 27,
+    "buffs": [
+      "+7 Max Health",
+      "+4 Max Posture",
+      "+1% Kido Defense"
+    ]
+  },
+  {
+    "id": "wraith-cape",
+    "name": "Wraith Cape",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 32,
+    "buffs": [
+      "+4 Max Health",
+      "+1.5% Weapon Damage"
+    ]
+  },
+  {
+    "id": "umbral-drapes",
+    "name": "Umbral Drapes",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "+8 Reiatsu",
+      "+2.5% Monster dmg"
+    ]
+  },
+  {
+    "id": "researcher-jacket",
+    "name": "Researcher's Jacket",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+10 Max Health",
+      "+8% Melee Reiatsu Regen",
+      "+4% Aura Gain",
+      "+6% Posture Regen"
+    ]
+  },
+  {
+    "id": "exo-trooper-combat-armor",
+    "name": "Exo-Trooper Combat Armor",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+9% Kido Defense",
+      "+1.5% Melee Defense",
+      "+8 Max Reiatsu",
+      "+3 Equipment Load",
+      "+5 Max Posture"
+    ]
+  },
+  {
+    "id": "frosted-steel-pauldrons",
+    "name": "Frosted Steel Pauldrons",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "requiredLevel": 50,
+    "buffs": [
+      "+1% Kido Damage",
+      "+1% Melee Defense",
+      "+6 Max Health"
+    ]
+  },
+  {
+    "id": "heavy-duty-vest",
+    "name": "Heavy Duty Vest",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+3% Melee Defense",
+      "+1% Kido Defense"
+    ]
+  },
+  {
+    "id": "leather-strap",
+    "name": "Leather Strap",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+0.5% Weapon Damage",
+      "+2.5 Max Posture"
+    ]
+  },
+  {
+    "id": "marsh-stalker-covering",
+    "name": "Marsh Stalker Covering",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "requiredLevel": 33,
+    "buffs": [
+      "+2% Hakuda Damage",
+      "+7.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "regal-frosted-cape",
+    "name": "Regal Frosted Cape",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "requiredLevel": 50,
+    "buffs": [
+      "+6 Max Reiatsu",
+      "+8 Max Health"
+    ]
+  },
+  {
+    "id": "samurais-armor",
+    "name": "Samurai's Armor",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "requiredLevel": 30,
+    "buffs": [
+      "+3 Max Posture",
+      "+2% Posture Regen",
+      "+1.5% Weapon Damage",
+      "+7 Max Health"
+    ]
+  },
+  {
+    "id": "tattered-frosted-cape",
+    "name": "Tattered Frosted Cape",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "requiredLevel": 50,
+    "buffs": [
+      "+1.5% Weapon Damage"
+    ]
+  },
+  {
+    "id": "wide-frosted-cape",
+    "name": "Wide Frosted Cape",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2.25% Kido Damage"
+    ]
+  },
+  {
+    "id": "white-flight-jacket",
+    "name": "White Flight Jacket",
+    "slot": "body",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+2.5 Max Health",
+      "+1% Kido Damage"
+    ]
+  },
+  {
+    "id": "doughy-scarf",
+    "name": "Doughy Scarf",
+    "slot": "body",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+0.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "spiritless-trousers",
+    "name": "Spiritless Trousers",
+    "slot": "misc",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+2.5% Weapon Damage",
+      "+2.5% Kido Damage",
+      "+5 Max Reiatsu",
+      "+5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "monstrous-stitches",
+    "name": "Monstrous Stitches",
+    "slot": "misc",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+5.8% Melee Defense",
+      "+3.5% Lightning Damage",
+      "+3.5% Posture Regen"
+    ]
+  },
+  {
+    "id": "tattered-poncho",
+    "name": "Tattered Poncho",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 45,
+    "buffs": [
+      "+2% Kido Damage",
+      "+4 Max Reiatsu",
+      "+20% Posture Regen",
+      "+3.5% Movement Speed"
+    ]
+  },
+  {
+    "id": "drinking-gourd",
+    "name": "Drinking Gourd",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 70,
+    "buffs": [
+      "+8 Max Reiatsu",
+      "+2% Kido Defense"
+    ]
+  },
+  {
+    "id": "demons-white-gauntlets",
+    "name": "Demon's White Gauntlets",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 90,
+    "buffs": [
+      "+3.6% Hakuda Damage",
+      "+5 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "demons-red-gauntlets",
+    "name": "Demon's Red Gauntlets",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 90,
+    "buffs": [
+      "+3.6% Hakuda Damage",
+      "+8 Max Health"
+    ]
+  },
+  {
+    "id": "devils-royal-gauntlets",
+    "name": "Devil's Royal Gauntlets",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+3.5% Hakuda Damage"
+    ]
+  },
+  {
+    "id": "devils-red-gauntlets",
+    "name": "Devil's Red Gauntlets",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2.5% Hakuda Damage",
+      "+4 Max Health"
+    ]
+  },
+  {
+    "id": "devils-blue-gauntlets",
+    "name": "Devil's Blue Gauntlets",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2.5% Hakuda Damage",
+      "+1% Kido Defense"
+    ]
+  },
+  {
+    "id": "devils-purple-gauntlets",
+    "name": "Devil's Purple Gauntlets",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2.5% Hakuda Damage",
+      "+3 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "monkey-head",
+    "name": "Monkey Head",
+    "slot": "misc",
+    "rarity": "Legendary",
+    "requiredLevel": 60,
+    "buffs": [
+      "+1.5% Weapon Damage",
+      "+4 Max Health",
+      "+2.5 Max Reiatsu",
+      "+5% Posture Regen"
+    ]
+  },
+  {
+    "id": "desert-wanderers-sash",
+    "name": "Desert Wanderer's Sash",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 88,
+    "buffs": [
+      "+7.5 Max Health",
+      "+1.5 Shunpo Speed",
+      "+2.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "engineers-cape-no7",
+    "name": "Engineer's Cape Issue No. 7",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 85,
+    "buffs": [
+      "+4 Max Reiatsu",
+      "+3% Kido Defense"
+    ]
+  },
+  {
+    "id": "gunslingers-scarf",
+    "name": "Gunslinger's Scarf",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 80,
+    "buffs": [
+      "+1% Kido Damage",
+      "+3 Max Reiatsu",
+      "+3 Max Health"
+    ]
+  },
+  {
+    "id": "vintage-jeans",
+    "name": "Vintage Jeans",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 80,
+    "buffs": []
+  },
+  {
+    "id": "warriors-pauldron-right",
+    "name": "Warrior's Pauldron (Right)",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "+3 Max Health",
+      "+3% Melee Defense"
+    ]
+  },
+  {
+    "id": "warriors-pauldron-left",
+    "name": "Warrior's Pauldron (Left)",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "+9 Max Health",
+      "+2% Melee Defense"
+    ]
+  },
+  {
+    "id": "wolfmans-greaves",
+    "name": "Wolfman's Greaves",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 14,
+    "buffs": [
+      "+1% Melee Def",
+      "+2 Max Rei",
+      "+0.25% Weapon Damage",
+      "+0.25 Hakuda Dmg"
+    ]
+  },
+  {
+    "id": "wraith-pads",
+    "name": "Wraith Pads",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 32,
+    "buffs": [
+      "+5 Max Health",
+      "+4 Max Posture"
+    ]
+  },
+  {
+    "id": "researcher-boots",
+    "name": "Researcher's Boots",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+5% Posture Regen",
+      "+5 Max Health",
+      "+5% Melee Reiatsu Regen",
+      "+1.5% Movement Speed"
+    ]
+  },
+  {
+    "id": "atlas-gauntlets",
+    "name": "Atlas Gauntlets",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+3% Hakuda Damage",
+      "+3.5% Kido Damage",
+      "+5 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "exo-trooper-shoulder-pads",
+    "name": "Exo-Trooper Shoulder Pads",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+1% Melee Defense",
+      "+4.5% Kido Defense",
+      "+5 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "electrified-arm-chains",
+    "name": "Left/Right Electrified Arm Chains",
+    "slot": "misc",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+1.5% Posture Regen",
+      "+1.5% Kido Defense",
+      "+4% Lightning Damage"
+    ]
+  },
+  {
+    "id": "samurais-waist-guards",
+    "name": "Samurai's Waist Guards",
+    "slot": "misc",
+    "rarity": "Uncommon",
+    "requiredLevel": 30,
+    "buffs": [
+      "+3.5 Max Health",
+      "+1.5% Melee Defense",
+      "+1.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "steel-grey-pauldrons",
+    "name": "Steel Grey Pauldrons",
+    "slot": "misc",
+    "rarity": "Uncommon",
+    "requiredLevel": 25,
+    "buffs": [
+      "+4 Max Health",
+      "+0.5% Melee Defense",
+      "+2 Equipment Load"
+    ]
+  },
+  {
+    "id": "village-guards-gauntlets",
+    "name": "Village Guard's Gauntlets",
+    "slot": "misc",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+2.5% Hakuda Damage"
+    ]
+  },
+  {
+    "id": "white-flight-bottoms",
+    "name": "White Flight Bottoms",
+    "slot": "misc",
+    "rarity": "Uncommon",
+    "requiredLevel": 25,
+    "buffs": [
+      "+1.5 Max Posture",
+      "+1.5 Max Health",
+      "+0.25% Kido Defense"
+    ]
+  },
+  {
+    "id": "snowhide-hunters-mantle",
+    "name": "Snowhide Hunter's Mantle",
+    "slot": "misc",
+    "rarity": "Uncommon",
+    "buffs": []
+  },
+  {
+    "id": "dog-tags",
+    "name": "Dog Tags",
+    "slot": "misc",
+    "rarity": "Common",
+    "buffs": [
+      "+0.25% Weapon Damage",
+      "+1% Kido Defense"
+    ]
+  },
+  {
+    "id": "arm-chains",
+    "name": "Left/Right Arm Chains",
+    "slot": "misc",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+1.5% Posture Regen",
+      "+0.75% Kido Defense"
+    ]
+  },
+  {
+    "id": "arm-bandages",
+    "name": "Left/Right Arm Bandages",
+    "slot": "misc",
+    "rarity": "Common",
+    "requiredLevel": 20,
+    "buffs": [
+      "+1% Hakuda Damage",
+      "+0.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "northern-war-skirt",
+    "name": "Northern War Skirt",
+    "slot": "misc",
+    "rarity": "Common",
+    "requiredLevel": 50,
+    "buffs": [
+      "+2% Weapon Damage"
+    ]
+  },
+  {
+    "id": "waist-chains",
+    "name": "Waist Chains",
+    "slot": "misc",
+    "rarity": "Common",
+    "buffs": [
+      "+0.75% Kido Damage"
+    ]
+  },
+  {
+    "id": "wayfarers-satchel",
+    "name": "Wayfarer's Satchel",
+    "slot": "utility",
+    "rarity": "Legendary",
+    "requiredLevel": 0,
+    "buffs": [
+      "+20 Equipment Load"
+    ]
+  },
+  {
+    "id": "model-cr-9-gaspack",
+    "name": "Model CR-9. Gaspack",
+    "slot": "utility",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+12 Equipment Load",
+      "+100% Toxic Fumes Resistance",
+      "+5 Max Reiatsu",
+      "+2 Max Posture"
+    ]
+  },
+  {
+    "id": "researcher-utility-belt",
+    "name": "Researcher's Utility Belt",
+    "slot": "utility",
+    "rarity": "Rare",
+    "requiredLevel": 40,
+    "buffs": [
+      "+4 Equipment Load",
+      "+6% Melee Reiatsu Regen",
+      "+10% Posture Regen"
+    ]
+  },
+  {
+    "id": "respirator",
+    "name": "Respirator",
+    "slot": "utility",
+    "rarity": "Common",
+    "requiredLevel": 25,
+    "buffs": [
+      "+1 Equipment Load",
+      "+3 Max Reiatsu",
+      "+100% Toxic Fumes Resistance"
+    ]
+  },
+  {
+    "id": "utility-backpack",
+    "name": "Utility Backpack",
+    "slot": "utility",
+    "rarity": "Common",
+    "requiredLevel": 0,
+    "buffs": [
+      "+8 Equipment Load",
+      "+2 Max Posture"
+    ]
+  },
+  {
+    "id": "spiritless-chains",
+    "name": "Spiritless Chains",
+    "slot": "artifact",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+2% Weapon Damage",
+      "+2% Kido Damage",
+      "+5 Max Reiatsu",
+      "+5 Shunpo Stamina",
+      "+10% Movement Speed"
+    ]
+  },
+  {
+    "id": "the-monsters-screws",
+    "name": "The Monster's Screws",
+    "slot": "artifact",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+2.5% Lightning Damage",
+      "+4.3% Melee Defense",
+      "+2.5% Posture Regen"
+    ]
+  },
+  {
+    "id": "crest-of-the-ascended",
+    "name": "Crest of the Ascended",
+    "slot": "artifact",
+    "rarity": "Mythical",
+    "requiredLevel": 40,
+    "buffs": [
+      "+3.75% Weapon Damage",
+      "+3.75% Kido Damage",
+      "+3.75% Hakuda Damage",
+      "+5 Shunpo Stamina",
+      "+15 Max Health",
+      "+8 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "lucky-ring",
+    "name": "Lucky Ring",
+    "slot": "artifact",
+    "rarity": "Mythical",
+    "requiredLevel": 20,
+    "buffs": [
+      "+20% luck"
+    ]
+  },
+  {
+    "id": "supercharged-ring",
+    "name": "Supercharged Ring",
+    "slot": "artifact",
+    "rarity": "Legendary",
+    "requiredLevel": 50,
+    "buffs": [
+      "+20% Aura Gain",
+      "+20% Ultimate Gain"
+    ]
+  },
+  {
+    "id": "pendant-of-youth",
+    "name": "Pendant of Youth",
+    "slot": "artifact",
+    "rarity": "Legendary",
+    "requiredLevel": 90,
+    "buffs": [
+      "+10 Max Posture",
+      "+12.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "ashen-pendant",
+    "name": "Ashen Pendant",
+    "slot": "artifact",
+    "rarity": "Rare",
+    "requiredLevel": 90,
+    "buffs": [
+      "+5 Max Health",
+      "+4.5% Flame Damage"
+    ]
+  },
+  {
+    "id": "fancy-tie",
+    "name": "Fancy Tie",
+    "slot": "artifact",
+    "rarity": "Uncommon",
+    "requiredLevel": 45,
+    "buffs": [
+      "+0.25% Monster Damage",
+      "+2 Max Posture"
+    ]
+  },
+  {
+    "id": "flower-embraided-tie",
+    "name": "Flower Embraided Tie",
+    "slot": "artifact",
+    "rarity": "Uncommon",
+    "requiredLevel": 45,
+    "buffs": [
+      "+2 Max Reiatsu",
+      "+0.25% Kido Damage"
+    ]
+  },
+  {
+    "id": "hawaiian-tie",
+    "name": "Hawaiian Tie",
+    "slot": "artifact",
+    "rarity": "Uncommon",
+    "requiredLevel": 45,
+    "buffs": [
+      "+0.25% Hakuda Damage",
+      "+2 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "squared-tiled-tie",
+    "name": "Squared Tiled Tie",
+    "slot": "artifact",
+    "rarity": "Uncommon",
+    "requiredLevel": 45,
+    "buffs": [
+      "+0.25% Weapon Damage",
+      "+2 Max Health"
+    ]
+  },
+  {
+    "id": "ronin-attire",
+    "name": "Ronin Attire",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "2.5% Weapon Damage",
+      "+7.5 Shunpo Speed",
+      "+6 Max Posutre",
+      "+4% Movement Speed",
+      "+2.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "ancient-kings-armor",
+    "name": "Ancient King's Armor",
+    "slot": "body",
+    "rarity": "Rare",
+    "requiredLevel": 50,
+    "buffs": [
+      "+5% Melee Defense",
+      "+2.5% Monster Damage"
+    ]
+  },
+  {
+    "id": "pharaohs-royal-robes",
+    "name": "Pharaoh's Royal Robes",
+    "slot": "body",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+15 Max Health",
+      "-3.5% Movement Speed",
+      "+3.35 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "vampire-hunters-gear",
+    "name": "Vampire Hunter's Gear",
+    "slot": "body",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+13.4 Max Health",
+      "+1.9% Weapon Damage",
+      "+6.2% Monster Damage"
+    ]
+  },
+  {
+    "id": "hide-of-the-hundredth",
+    "name": "Hide of the Hundredth",
+    "slot": "body",
+    "rarity": "Mythical",
+    "requiredLevel": 100,
+    "buffs": [
+      "+15 Max Health",
+      "+3% Melee Defense",
+      "+10 Max Posture",
+      "+10 Equipment Load",
+      "+2% Hakuda Damage",
+      "-5% Movement Speed"
+    ]
+  },
+  {
+    "id": "ronin-mask",
+    "name": "Ronin Mask",
+    "slot": "face",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "+1.5% Weapon Damage",
+      "+2.5 Shunpo Speed",
+      "+4 Max Posture",
+      "+1.5% Movement Speed",
+      "+1.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "pharaohs-wrappings",
+    "name": "Pharaoh's Wrappings",
+    "slot": "face",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+5.5 Max Health",
+      "-2% Movement Speed",
+      "+6 Max Reiatsu"
+    ]
+  },
+  {
+    "id": "vampire-hunters-shades",
+    "name": "Vampire Hunter's Shades",
+    "slot": "face",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+5.2 Max Health",
+      "+1.3% Weapon Damage",
+      "+4.3% Monster Damage"
+    ]
+  },
+  {
+    "id": "screamers-face-mask",
+    "name": "Screamer's Face Mask",
+    "slot": "face",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+5 Max Health",
+      "+1% Weapon Damage"
+    ]
+  },
+  {
+    "id": "ronin-leggings",
+    "name": "Ronin Leggings",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 70,
+    "buffs": [
+      "+2% Weapon Damage",
+      "+5 Shunpo Speed",
+      "+4 Max Posture",
+      "+3% Movement Speed",
+      "+1.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "ancient-kings-greaves",
+    "name": "Ancient King's Greaves",
+    "slot": "misc",
+    "rarity": "Rare",
+    "requiredLevel": 50,
+    "buffs": [
+      "+3.5% Melee Defense",
+      "+2% Monster Damage"
+    ]
+  },
+  {
+    "id": "vampire-hunters-trench-coat",
+    "name": "Vampire Hunter's Trench Coat",
+    "slot": "misc",
+    "rarity": "Limited",
+    "requiredLevel": 40,
+    "buffs": [
+      "+4.3 Max Health",
+      "+1.6% Weapon Damage",
+      "+5.3% Posture Regen",
+      "+4% Monster Damage",
+      "+2.6 Max Reiatsu"
+    ]
+  }
+]

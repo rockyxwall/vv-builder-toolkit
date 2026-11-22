@@ -1,0 +1,161 @@
+{
+  "ascensionTiers": [
+    {
+      "id": "ascension-1",
+      "name": "Ascension 1",
+      "modifiers": [
+        {
+          "stat": "monster-damage",
+          "amount": 1.5,
+          "isPercent": true
+        },
+        {
+          "stat": "equipment-load",
+          "amount": 12,
+          "isPercent": false
+        },
+        {
+          "stat": "exp-gain",
+          "amount": 15,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": "ascension-2",
+      "name": "Ascension 2",
+      "modifiers": [
+        {
+          "stat": "monster-damage",
+          "amount": 2.5,
+          "isPercent": true
+        },
+        {
+          "stat": "equipment-load",
+          "amount": 16,
+          "isPercent": false
+        },
+        {
+          "stat": "exp-gain",
+          "amount": 21.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": "ascension-3",
+      "name": "Ascension 3",
+      "modifiers": [
+        {
+          "stat": "monster-damage",
+          "amount": 3.8,
+          "isPercent": true
+        },
+        {
+          "stat": "equipment-load",
+          "amount": 20,
+          "isPercent": false
+        },
+        {
+          "stat": "exp-gain",
+          "amount": 28,
+          "isPercent": true
+        }
+      ]
+    }
+  ],
+  "huecoShrine": {
+    "id": "hueco-shrine",
+    "name": "Hueco Shrine",
+    "maxUses": 100,
+    "modifiers": [
+      {
+        "stat": "monster-damage",
+        "factor": 7,
+        "isPercent": true
+      },
+      {
+        "stat": "shunpo-stamina",
+        "factor": 4,
+        "isPercent": false
+      },
+      {
+        "stat": "equipment-load",
+        "factor": 10,
+        "isPercent": false
+      }
+    ]
+  },
+  "gauntlets": [
+    {
+      "id": "bad-dream",
+      "name": "Bad Dream",
+      "modifiers": [
+        {
+          "stat": "equipment-load",
+          "amount": 3,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": "war-master",
+      "name": "War Master",
+      "modifiers": [
+        {
+          "stat": "weapon-damage",
+          "amount": 1,
+          "isPercent": true
+        },
+        {
+          "stat": "hakuda-damage",
+          "amount": 1,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": "beastslayer",
+      "name": "Beastslayer",
+      "modifiers": [
+        {
+          "stat": "monster-damage",
+          "amount": 2.5,
+          "isPercent": true
+        }
+      ]
+    },
+    {
+      "id": "the-unparalleled",
+      "name": "The Unparalleled",
+      "modifiers": [
+        {
+          "stat": "cooldown-reduction",
+          "amount": 1.8,
+          "isPercent": true
+        },
+        {
+          "stat": "shunpo-stamina",
+          "amount": 5,
+          "isPercent": false
+        }
+      ]
+    },
+    {
+      "id": "the-other-side",
+      "name": "The Other Side",
+      "modifiers": [
+        {
+          "stat": "reiatsu",
+          "amount": 5,
+          "isPercent": false
+        },
+        {
+          "stat": "health",
+          "amount": 2.5,
+          "isPercent": false
+        }
+      ]
+    }
+  ]
+}

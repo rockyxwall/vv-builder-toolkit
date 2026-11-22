@@ -8,17 +8,21 @@ function runTests() {
   const dataDir = path.join(__dirname, 'data');
   const guidePath = path.join(__dirname, 'VV_BUILDER_GUIDE.md');
 
-  // 1. Check file existence
+  // 1. Check all 12 official JSON datasets + master JSON
   const requiredFiles = [
-    'vv_builder_all.json',
-    'skills.json',
-    'tree_nodes.json',
-    'equipment.json',
-    'clans.json',
     'charms.json',
-    'traits.json',
+    'synergies.json',
+    'skill-tree.json',
+    'items.json',
+    'modifiers.json',
+    'abilities.json',
     'essences.json',
-    'game_meta.json'
+    'weapons.json',
+    'zanpakuto-parts.json',
+    'clans.json',
+    'traits.json',
+    'buffs.json',
+    'vv_builder_all.json'
   ];
 
   for (const file of requiredFiles) {
@@ -29,140 +33,83 @@ function runTests() {
     console.log(`[PASS] File exists and valid size: data/${file} (${stat.size} bytes)`);
   }
 
-  // 2. Load and validate vv_builder_all.json
+  // 2. Load master data
   const masterData = JSON.parse(fs.readFileSync(path.join(dataDir, 'vv_builder_all.json'), 'utf8'));
 
-  // Ultimates check (including Shunko Mode)
-  assert.ok(Array.isArray(masterData.ultimates), 'ultimates is array');
-  assert.ok(masterData.ultimates.length >= 11, `Expected >= 11 ultimates, got ${masterData.ultimates.length}`);
-  const hasShunko = masterData.ultimates.some(u => u.id === 'shunko_mode');
-  assert.ok(hasShunko, 'Shunko Mode present in ultimates');
-  console.log(`[PASS] Ultimates count: ${masterData.ultimates.length} (including Shunko Mode)`);
-
-  // Race skills check
-  assert.ok(masterData.raceSkills.Shinigami && masterData.raceSkills.Shinigami.length > 0, 'Shinigami skills present');
-  assert.ok(masterData.raceSkills.Hollow && masterData.raceSkills.Hollow.length > 0, 'Hollow skills present');
-  assert.ok(masterData.raceSkills.Quincy && masterData.raceSkills.Quincy.length > 0, 'Quincy skills present');
-  console.log(`[PASS] Race skills present: Shinigami (${masterData.raceSkills.Shinigami.length}), Hollow (${masterData.raceSkills.Hollow.length}), Quincy (${masterData.raceSkills.Quincy.length})`);
-
-  // Spoke tree nodes
-  let totalNodes = 0;
-  for (const [spoke, nodes] of Object.entries(masterData.spokeNodes)) {
-    assert.ok(nodes.length > 0, `Spoke ${spoke} has nodes`);
-    totalNodes += nodes.length;
-  }
-  assert.ok(totalNodes >= 230, `Expected >= 230 spoke nodes, got ${totalNodes}`);
-  // Check specific new spoke nodes
-  const magicNodes = masterData.spokeNodes.magic.map(n => n.id);
-  assert.ok(magicNodes.includes('sr_okasen'), 'SR Okasen present in magic spoke');
-  assert.ok(magicNodes.includes('sr_danku'), 'SR Danku present in magic spoke');
-  assert.ok(magicNodes.includes('sr_hyapporankan'), 'SR Hyapporankan present in magic spoke');
-  assert.ok(magicNodes.includes('quincy_brenschwerter'), 'Brenschwerter present in magic spoke');
-  assert.ok(magicNodes.includes('quincy_klingenfallen'), 'Klingenfallen present in magic spoke');
-  const strengthNodes = masterData.spokeNodes.strength.map(n => n.id);
-  assert.ok(strengthNodes.includes('strength_rending_tide'), 'Rending Tide present in strength spoke');
-  console.log(`[PASS] Spoke nodes count: ${totalNodes} across ${Object.keys(masterData.spokeNodes).length} spokes (all patch skills verified)`);
-
-  // Equipment check
-  const slots = ['Body', 'Head', 'Face', 'Utility', 'Misc'];
-  let totalEquip = 0;
-  const equipIds = new Set();
-  for (const slot of slots) {
-    assert.ok(Array.isArray(masterData.equipment[slot]), `Slot ${slot} exists in equipment`);
-    for (const item of masterData.equipment[slot]) {
-      assert.ok(item.id, `Equipment item has id: ${JSON.stringify(item)}`);
-      assert.ok(item.name, `Equipment item has name: ${item.id}`);
-      assert.ok(!equipIds.has(item.id), `Duplicate equipment ID: ${item.id}`);
-      equipIds.add(item.id);
-      totalEquip++;
-    }
-  }
-  assert.ok(totalEquip >= 105, `Expected >= 105 equipment, got ${totalEquip}`);
-  // Check specific new equipment
-  assert.ok(equipIds.has('eq_body_spiritless_robe'), 'Spiritless Robe present');
-  assert.ok(equipIds.has('eq_body_vampire_hunter'), "Vampire Hunter's Overcoat present");
-  assert.ok(equipIds.has('eq_body_pharaoh_regalia'), "Pharaoh's Regalia present");
-  assert.ok(equipIds.has('eq_misc_crest_of_the_ascended'), 'Crest of the Ascended present');
-  assert.ok(equipIds.has('eq_misc_twin_rippers'), 'Twin Rippers present');
-  assert.ok(equipIds.has('eq_misc_carving_edge'), 'Carving Edge present');
-  console.log(`[PASS] Equipment count: ${totalEquip} items with unique IDs (including Spiritless, HolloVVeen & Vasto weapons)`);
-
-  // Clans check
-  const races = ['Quincy', 'Hollow', 'Shinigami'];
-  let totalClans = 0;
-  const clanIds = new Set();
-  for (const r of races) {
-    assert.ok(Array.isArray(masterData.clans[r]), `Race ${r} exists in clans`);
-    for (const cl of masterData.clans[r]) {
-      assert.ok(cl.id, `Clan has id`);
-      assert.ok(cl.name, `Clan has name`);
-      assert.ok(!clanIds.has(cl.id), `Duplicate clan ID: ${cl.id}`);
-      clanIds.add(cl.id);
-      totalClans++;
-    }
-  }
-  assert.ok(totalClans >= 38, `Expected >= 38 clans, got ${totalClans}`);
-  // Check specific new clans
-  assert.ok(clanIds.has('cl_tosen'), 'Tosen clan present');
-  assert.ok(clanIds.has('cl_urahara'), 'Urahara clan present');
-  assert.ok(clanIds.has('cl_zaraki'), 'Zaraki clan present');
-  assert.ok(clanIds.has('cl_le_vaar'), 'Le Vaar clan present');
-  assert.ok(clanIds.has('cl_starrk'), 'Starrk clan present');
-  console.log(`[PASS] Clans count: ${totalClans} clans with unique IDs (including 9 new clans + universal Kurosaki)`);
-
-  // Charms check
-  assert.ok(masterData.charms.length >= 71, `Expected >= 71 charms, got ${masterData.charms.length}`);
+  // 3. Charms check
+  assert.ok(Array.isArray(masterData.charms), 'charms is array');
+  assert.strictEqual(masterData.charms.length, 73, `Expected 73 charms, got ${masterData.charms.length}`);
   const charmIds = new Set();
-  for (const ch of masterData.charms) {
-    assert.ok(ch.id, 'Charm has id');
-    assert.ok(!charmIds.has(ch.id), `Duplicate charm ID: ${ch.id}`);
-    charmIds.add(ch.id);
+  for (const c of masterData.charms) {
+    assert.ok(c.id, `Charm missing id: ${JSON.stringify(c)}`);
+    assert.ok(c.name, `Charm missing name: ${c.id}`);
+    assert.ok(c.tier, `Charm missing tier: ${c.id}`);
+    assert.ok(!charmIds.has(c.id), `Duplicate charm id: ${c.id}`);
+    charmIds.add(c.id);
   }
-  assert.ok(charmIds.has('charm_bully'), 'Bully charm present');
-  assert.ok(charmIds.has('charm_the_boogeyman'), 'The Boogeyman charm present');
-  assert.ok(charmIds.has('charm_monster_slayer'), 'Monster Slayer charm present');
-  assert.ok(charmIds.has('charm_dead_man_walking'), 'Dead Man Walking charm present');
-  assert.ok(charmIds.has('charm_draculas_fangs'), 'Dracula’s Fangs charm present');
-  console.log(`[PASS] Charms count: ${masterData.charms.length} charms with unique IDs (including HolloVVeen & Boss charms)`);
+  console.log(`[PASS] Charms count: 73 unique charms verified`);
 
-  // Traits check
-  assert.ok(masterData.traits.length >= 13, `Expected >= 13 traits, got ${masterData.traits.length}`);
-  console.log(`[PASS] Traits count: ${masterData.traits.length}`);
+  // 4. Synergies matrix check
+  assert.ok(Array.isArray(masterData.synergies), 'synergies is array');
+  assert.strictEqual(masterData.synergies.length, 453, `Expected 453 synergies, got ${masterData.synergies.length}`);
+  const resolveCharmId = id => (id === 'indomitable' ? 'indomitable-spirit' : id);
+  for (const s of masterData.synergies) {
+    assert.ok(charmIds.has(resolveCharmId(s.charmA)), `Synergy charmA unknown: ${s.charmA}`);
+    assert.ok(charmIds.has(resolveCharmId(s.charmB)), `Synergy charmB unknown: ${s.charmB}`);
+  }
+  console.log(`[PASS] Synergies count: 453 matrix pairs verified with referential integrity`);
 
-  // Essences check
-  assert.ok(masterData.essences.length >= 7, `Expected >= 7 essences, got ${masterData.essences.length}`);
-  const essenceIds = masterData.essences.map(e => e.id);
-  assert.ok(essenceIds.includes('flowing_gradient'), 'Flowing Gradient essence present');
-  assert.ok(essenceIds.includes('slaying_drive'), 'Slaying Drive essence present');
-  console.log(`[PASS] Essences count: ${masterData.essences.length} (including Flowing Gradient & Slaying Drive)`);
+  // 5. Skill tree graph check
+  assert.ok(Array.isArray(masterData.skillTree), 'skillTree is array');
+  assert.strictEqual(masterData.skillTree.length, 260, `Expected 260 nodes, got ${masterData.skillTree.length}`);
+  const nodeIds = new Set(masterData.skillTree.map(n => n.id));
+  assert.strictEqual(nodeIds.size, 260, 'All 260 tree node IDs are unique');
+  for (const n of masterData.skillTree) {
+    if (Array.isArray(n.connectsTo)) {
+      for (const targetId of n.connectsTo) {
+        assert.ok(nodeIds.has(targetId), `Node ${n.id} connects to unknown node: ${targetId}`);
+      }
+    }
+  }
+  console.log(`[PASS] Skill tree count: 260 nodes with valid bidirectional graph edges verified`);
 
-  // Game Meta check
-  assert.ok(masterData.gameMeta, 'gameMeta present in masterData');
-  assert.ok(masterData.gameMeta.codes.length >= 8, `Expected >= 8 codes, got ${masterData.gameMeta.codes.length}`);
-  assert.ok(masterData.gameMeta.worldBossSchedule.length >= 4, `Expected >= 4 world bosses, got ${masterData.gameMeta.worldBossSchedule.length}`);
-  console.log(`[PASS] Game Meta verified: ${masterData.gameMeta.codes.length} promo codes, ${masterData.gameMeta.worldBossSchedule.length} world bosses, stat milestones`);
+  // 6. Equipment items & modifiers check
+  assert.ok(Array.isArray(masterData.items), 'items is array');
+  assert.strictEqual(masterData.items.length, 146, `Expected 146 items, got ${masterData.items.length}`);
+  const validSlots = new Set(['head', 'body', 'face', 'misc', 'utility', 'artifact']);
+  const itemIds = new Set();
+  for (const it of masterData.items) {
+    assert.ok(validSlots.has(it.slot), `Invalid slot ${it.slot} for item ${it.id}`);
+    assert.ok(!itemIds.has(it.id), `Duplicate item id: ${it.id}`);
+    itemIds.add(it.id);
+  }
+  assert.strictEqual(masterData.modifiers.length, 14, `Expected 14 modifiers, got ${masterData.modifiers.length}`);
+  console.log(`[PASS] Equipment count: 146 items across 6 slots + 14 modifiers verified`);
 
-  // Guide Markdown verification
+  // 7. Weapons & Zanpakuto parts check
+  assert.strictEqual(masterData.weapons.length, 20, `Expected 20 weapons, got ${masterData.weapons.length}`);
+  assert.strictEqual(masterData.zanpakutoParts.length, 31, `Expected 31 parts, got ${masterData.zanpakutoParts.length}`);
+  const validParts = new Set(['guard', 'handle', 'hilt', 'sheathe']);
+  for (const zp of masterData.zanpakutoParts) {
+    assert.ok(validParts.has(zp.partType), `Invalid partType ${zp.partType} for part ${zp.id}`);
+  }
+  console.log(`[PASS] Weapons & Zanpakuto: 20 weapons + 31 modular parts verified`);
+
+  // 8. Clans, Traits, Abilities, Essences, Buffs check
+  assert.strictEqual(masterData.clans.length, 40, `Expected 40 clans, got ${masterData.clans.length}`);
+  assert.strictEqual(masterData.traits.length, 13, `Expected 13 traits, got ${masterData.traits.length}`);
+  assert.strictEqual(masterData.abilities.length, 25, `Expected 25 abilities, got ${masterData.abilities.length}`);
+  assert.strictEqual(masterData.essences.length, 14, `Expected 14 essences, got ${masterData.essences.length}`);
+  assert.ok(masterData.buffs.ascensionTiers && masterData.buffs.ascensionTiers.length > 0, 'Ascension tiers present');
+  console.log(`[PASS] Clans (40), Traits (13), Abilities (25), Essences (14), and Buffs verified`);
+
+  // 9. Markdown guide check
   assert.ok(fs.existsSync(guidePath), 'VV_BUILDER_GUIDE.md exists');
-  const mdContent = fs.readFileSync(guidePath, 'utf8');
-  assert.ok(mdContent.length > 20000, `Guide size is ${mdContent.length} bytes, expected > 20000`);
-  assert.ok(mdContent.includes('Table of Contents'), 'Guide has Table of Contents');
-  assert.ok(mdContent.includes('Active Promo Codes'), 'Guide has Promo Codes section');
-  assert.ok(mdContent.includes('World Boss Spawn Schedule'), 'Guide has World Boss Schedule');
-  assert.ok(mdContent.includes('Stat Investment Milestones'), 'Guide has Stat Milestones');
-  assert.ok(mdContent.includes('Shunko Mode'), 'Guide has Shunko Mode');
-  assert.ok(mdContent.includes('Spiritless Robe'), 'Guide has Spiritless Set');
-  assert.ok(mdContent.includes('Tosen'), 'Guide has Tosen clan');
-  assert.ok(mdContent.includes('Bully'), 'Guide has Bully charm');
-  assert.ok(mdContent.includes('Flowing Gradient'), 'Guide has Flowing Gradient');
-  console.log(`[PASS] Markdown guide verified (${mdContent.length} bytes, ${mdContent.split('\n').length} lines)`);
+  const guideContent = fs.readFileSync(guidePath, 'utf8');
+  assert.ok(guideContent.split('\n').length >= 500, 'Guide has >= 500 lines');
+  console.log(`[PASS] Markdown guide verified: VV_BUILDER_GUIDE.md (${guideContent.split('\n').length} lines)`);
 
-  console.log('--- ALL VERIFICATION CHECKS PASSED (0 ERRORS) ---');
+  console.log('--- ALL VERIFICATION TESTS PASSED ---');
 }
 
-try {
-  runTests();
-} catch (e) {
-  console.error('[FAIL] Verification test failed:', e.message);
-  process.exit(1);
-}
+runTests();

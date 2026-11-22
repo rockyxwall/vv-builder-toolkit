@@ -1,0 +1,300 @@
+[
+  {
+    "id": "star-guard",
+    "name": "Star Guard",
+    "partType": "guard",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.5% Weapon Damage",
+      "-20.0% Melee Reiatsu Regen"
+    ]
+  },
+  {
+    "id": "curved-guard",
+    "name": "Curved Guard",
+    "partType": "guard",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.0% Weapon Damage",
+      "-2.0% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "pincer-guard",
+    "name": "Pincer Guard",
+    "partType": "guard",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.0% Kido Damage",
+      "-2.0% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "saber-guard-alt",
+    "name": "Saber Guard Alt.",
+    "partType": "guard",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.0 Shunpo Stamina",
+      "+5.0 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "switch-guard",
+    "name": "Switch Guard",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+4.0 Posture",
+      "-2.0% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "wide-guard",
+    "name": "Wide Guard",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+3.0% Posture Damage (Wep.)",
+      "-2.0% Weapon Damage"
+    ]
+  },
+  {
+    "id": "saber-guard",
+    "name": "Saber Guard",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+2.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "sun-guard",
+    "name": "Sun Guard",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+0.5% Flame Damage"
+    ]
+  },
+  {
+    "id": "fur-guard",
+    "name": "Fur Guard",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+1.5% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "fur-guard-alt",
+    "name": "Fur Guard Alt.",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "-2.0% Weapon Damage",
+      "+6.0% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "claw-guard",
+    "name": "Claw Guard",
+    "partType": "guard",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+2.0 Posture"
+    ]
+  },
+  {
+    "id": "extrusion-guard",
+    "name": "Extrusion Guard",
+    "partType": "guard",
+    "rarity": "Common",
+    "buffs": [
+      "+4.0% Melee Reiatsu Regen",
+      "-1.0% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "twister-model",
+    "name": "Twister Model",
+    "partType": "handle",
+    "rarity": "Common",
+    "buffs": [
+      "+3.0% Posture Regen"
+    ]
+  },
+  {
+    "id": "centipede-model",
+    "name": "Centipede Model",
+    "partType": "handle",
+    "rarity": "Common",
+    "buffs": [
+      "+2.0 Posture",
+      "-0.5% Weapon Damage"
+    ]
+  },
+  {
+    "id": "diamond-model-alt",
+    "name": "Diamond Model Alt.",
+    "partType": "handle",
+    "rarity": "Common",
+    "buffs": [
+      "+2.0 Reiatsu"
+    ]
+  },
+  {
+    "id": "wave-model",
+    "name": "Wave Model",
+    "partType": "handle",
+    "rarity": "Common",
+    "buffs": [
+      "+3.5% Posture Regen",
+      "+1.0 Posture"
+    ]
+  },
+  {
+    "id": "sphere-hilt",
+    "name": "Sphere Hilt",
+    "partType": "hilt",
+    "rarity": "Rare",
+    "buffs": [
+      "+2% Posture Damage (Hakuda)",
+      "-2% Weapon Damage"
+    ]
+  },
+  {
+    "id": "extruded-hilt",
+    "name": "Extruded Hilt",
+    "partType": "hilt",
+    "rarity": "Rare",
+    "buffs": [
+      "+3% Posture Damage",
+      "-2% Weapon Damage"
+    ]
+  },
+  {
+    "id": "flat-hilt",
+    "name": "Flat Hilt",
+    "partType": "hilt",
+    "rarity": "Rare",
+    "buffs": [
+      "+7.5 Reiatsu",
+      "-2.0% Weapon Damage"
+    ]
+  },
+  {
+    "id": "wyvern-hilt",
+    "name": "Wyvern Hilt",
+    "partType": "hilt",
+    "rarity": "Rare",
+    "buffs": [
+      "+0.5% Weapon Damage",
+      "+1.2% Flame Damage",
+      "-0.2% Kido Defense"
+    ]
+  },
+  {
+    "id": "feathered-hilt",
+    "name": "Feathered Hilt",
+    "partType": "hilt",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+2.0% Posture Damage (Wep.)",
+      "-5.0 Reiatsu"
+    ]
+  },
+  {
+    "id": "standard-hilt-alt",
+    "name": "Standard Hilt Alt.",
+    "partType": "hilt",
+    "rarity": "Common",
+    "buffs": [
+      "+2.0% Melee Reiatsu Regen"
+    ]
+  },
+  {
+    "id": "segmented-bonds",
+    "name": "Segmented Bonds",
+    "partType": "sheathe",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.0% Posture Regen",
+      "+2.0% Melee Reiatsu Regen"
+    ]
+  },
+  {
+    "id": "heavy-bindings",
+    "name": "Heavy Bindings",
+    "partType": "sheathe",
+    "rarity": "Rare",
+    "buffs": [
+      "+2.0 Posture",
+      "+0.2% Melee Defense"
+    ]
+  },
+  {
+    "id": "iron-studs",
+    "name": "Iron Studs",
+    "partType": "sheathe",
+    "rarity": "Rare",
+    "buffs": [
+      "+1.0% Posture Damage (Wep.)",
+      "+0.5% Weapon Damage"
+    ]
+  },
+  {
+    "id": "serpent-coil",
+    "name": "Serpent Coil",
+    "partType": "sheathe",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+1.5 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "iron-cap",
+    "name": "Iron Cap",
+    "partType": "sheathe",
+    "rarity": "Uncommon",
+    "buffs": [
+      "+0.5% Melee Defense"
+    ]
+  },
+  {
+    "id": "lucky-charm",
+    "name": "Lucky Charm",
+    "partType": "sheathe",
+    "rarity": "Common",
+    "buffs": [
+      "+3.0% Melee Reiatsu Regen"
+    ]
+  },
+  {
+    "id": "upper-bond",
+    "name": "Upper Bond",
+    "partType": "sheathe",
+    "rarity": "Common",
+    "buffs": [
+      "+1.0 Posture"
+    ]
+  },
+  {
+    "id": "single-ring",
+    "name": "Single Ring",
+    "partType": "sheathe",
+    "rarity": "Common",
+    "buffs": [
+      "+1.5 Reiatsu"
+    ]
+  },
+  {
+    "id": "warriors-knot",
+    "name": "Warrior's Knot",
+    "partType": "sheathe",
+    "rarity": "Common",
+    "buffs": [
+      "+0.8% Posture Damage (Wep.)"
+    ]
+  }
+]

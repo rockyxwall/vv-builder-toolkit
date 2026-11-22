@@ -1,80 +1,180 @@
-{
-  "essences": [
-    {
-      "id": "reserves",
-      "name": "Reserves",
-      "accent": "#4dd2ff",
-      "desc": "Increases maximum reiatsu capacity."
-    },
-    {
-      "id": "haste",
-      "name": "Haste",
-      "accent": "#34d399",
-      "desc": "Decreases skill cooldowns. Slightly increases passive reiatsu regen."
-    },
-    {
-      "id": "potency",
-      "name": "Potency",
-      "accent": "#f87171",
-      "desc": "Increases stat scaling. Slightly increases melee posture damage."
-    },
-    {
-      "id": "mettle",
-      "name": "Mettle",
-      "accent": "#fbbf24",
-      "desc": "Increases maximum posture."
-    },
-    {
-      "id": "shunpo",
-      "name": "Shunpo",
-      "accent": "#a78bfa",
-      "desc": "Increases shunpo stamina and shunpo speed."
-    },
-    {
-      "id": "flowing_gradient",
-      "name": "Flowing Gradient",
-      "accent": "#ff3c50",
-      "desc": "Strength skill essence unlocked via Battle for Dangai vote. Amplifies fluid momentum on heavy strikes."
-    },
-    {
-      "id": "slaying_drive",
-      "name": "Slaying Drive",
-      "accent": "#00d2be",
-      "desc": "Speed skill essence introduced in v5.2. Boosts chase velocity, rapid engagement, and relentless combo tempo."
-    }
-  ],
-  "attributes": [
-    {
-      "id": "hakuda",
-      "name": "Hakuda",
-      "pos": "bottom",
-      "color": "#ff8214",
-      "accent": "#ff8214",
-      "desc": "Affects hakuda skill damage."
-    },
-    {
-      "id": "strength",
-      "name": "Strength",
-      "pos": "left",
-      "color": "#ff3c50",
-      "accent": "#ff3c50",
-      "desc": "Affects weapon skill damage."
-    },
-    {
-      "id": "kido",
-      "name": "Kido",
-      "pos": "right",
-      "color": "#ff50b4",
-      "accent": "#ff50b4",
-      "desc": "Affects reiatsu-based damage."
-    },
-    {
-      "id": "speed",
-      "name": "Speed",
-      "pos": "top",
-      "color": "#32b4ff",
-      "accent": "#32b4ff",
-      "desc": "Affects shunpo speed and weakly affects shunpo stamina."
-    }
-  ]
-}
+[
+  {
+    "id": "qual-kreis",
+    "name": "Qual Kreis",
+    "cost": 9,
+    "requiredStats": [
+      {
+        "stat": "kido",
+        "value": 360
+      }
+    ],
+    "requiredRace": "quincy"
+  },
+  {
+    "id": "kurohitsugi",
+    "name": "Kurohitsugi",
+    "cost": 9,
+    "requiredStats": [
+      {
+        "stat": "kido",
+        "value": 360
+      }
+    ],
+    "requiredRace": "soul-reaper",
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/kurohitsugi.webm"
+  },
+  {
+    "id": "gran-ray-cero",
+    "name": "Gran Rey Cero",
+    "cost": 9,
+    "requiredStats": [
+      {
+        "stat": "kido",
+        "value": 360
+      }
+    ],
+    "requiredRace": "hollow",
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/gran-ray-cero.webm"
+  },
+  {
+    "id": "flowing-gradient",
+    "name": "Flowing Gradient",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "strength",
+        "value": 300
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/flowing-gradient.webm"
+  },
+  {
+    "id": "precision-slicer",
+    "name": "Precision Slicer",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "speed",
+        "value": 275
+      }
+    ]
+  },
+  {
+    "id": "radiant-edge",
+    "name": "Radiant Edge",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "kido",
+        "value": 125
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/radiant-edge.webm"
+  },
+  {
+    "id": "enduring-heel",
+    "name": "Enduring Heel",
+    "cost": 0,
+    "requiredStats": [
+      {
+        "stat": "hakuda",
+        "value": 200
+      }
+    ]
+  },
+  {
+    "id": "gravity-thrust",
+    "name": "Gravity Thrust",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "kido",
+        "value": 160
+      }
+    ]
+  },
+  {
+    "id": "raging-grasp",
+    "name": "Raging Grasp",
+    "cost": 0,
+    "requiredStats": [
+      {
+        "stat": "strength",
+        "value": 250
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/raging-grasp.webm"
+  },
+  {
+    "id": "petal-flurry",
+    "name": "Petal Flurry",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "speed",
+        "value": 135
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/petal-flurry.webm"
+  },
+  {
+    "id": "splitting-standstill",
+    "name": "Splitting Standstill",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "speed",
+        "value": 300
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/splitting-standstill.webm"
+  },
+  {
+    "id": "one-inch-punch",
+    "name": "One Inch Punch",
+    "cost": 5,
+    "requiredStats": [
+      {
+        "stat": "hakuda",
+        "value": 160
+      },
+      {
+        "stat": "strength",
+        "value": 55
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/one-inch-punch.webm"
+  },
+  {
+    "id": "slicing-dropkick",
+    "name": "Slicing Dropkick",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "speed",
+        "value": 50
+      },
+      {
+        "stat": "strength",
+        "value": 50
+      }
+    ],
+    "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/slicing-dropkick.webm"
+  },
+  {
+    "id": "slaying-drive",
+    "name": "Slaying Drive",
+    "cost": 4,
+    "requiredStats": [
+      {
+        "stat": "speed",
+        "value": 90
+      },
+      {
+        "stat": "strength",
+        "value": 90
+      }
+    ]
+  }
+]

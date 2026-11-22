@@ -1,394 +1,476 @@
-{
-  "Quincy": [
-    {
-      "id": "cl_eisenhauer",
-      "name": "Eisenhauer",
-      "rarity": "Legendary",
-      "buffs": [
-        "Gain a metal arm",
-        "+3.0% Melee Defense",
-        "+5.0 Posture",
-        "+0.5% Hakuda DMG"
-      ]
-    },
-    {
-      "id": "cl_kurosaki",
-      "name": "Kurosaki (Universal)",
-      "rarity": "Legendary",
-      "buffs": [
-        "+2.0 Reiatsu",
-        "+2.0% Weapon DMG",
-        "+5.0 Shunpo Speed",
-        "Universal Clan available to all factions",
-        "Custom orange hair cosmetic"
-      ]
-    },
-    {
-      "id": "cl_parnkgjas",
-      "name": "Parnkgjas",
-      "rarity": "Rare",
-      "buffs": [
-        "+3.5% Kido Defense",
-        "+1.0% Melee Defense"
-      ]
-    },
-    {
-      "id": "cl_ishida",
-      "name": "Ishida",
-      "rarity": "Rare",
-      "buffs": [
-        "+2.0% Kido Damage",
-        "+5.0 Shunpo Stamina"
-      ]
-    },
-    {
-      "id": "cl_haschwalth",
-      "name": "Haschwalth",
-      "rarity": "Rare",
-      "buffs": [
-        "+2.5% Kido DMG"
-      ]
-    },
-    {
-      "id": "cl_kraus",
-      "name": "Kraus",
-      "rarity": "Uncommon",
-      "buffs": [
-        "+1.5% Melee Defense",
-        "+1.0% Kido Defense"
-      ]
-    },
-    {
-      "id": "cl_wernarr",
-      "name": "Wernarr",
-      "rarity": "Uncommon",
-      "buffs": [
-        "+5.0 Health",
-        "+2.5% Posture Regen"
-      ]
-    },
-    {
-      "id": "cl_schulte",
-      "name": "Schulte",
-      "rarity": "Common",
-      "buffs": [
-        "+5.0 Equipment Load"
-      ]
-    },
-    {
-      "id": "cl_richter",
-      "name": "Richter",
-      "rarity": "Common",
-      "buffs": [
-        "+1.0% Weapon DMG",
-        "+2.5 Posture"
-      ]
-    },
-    {
-      "id": "cl_le_vaar",
-      "name": "Le Vaar",
-      "rarity": "Legendary",
-      "buffs": [
-        "Increased roaming speed and secret technique roaming animation",
-        "+5.0 Shunpo Speed",
-        "+2.0% Weapon DMG"
-      ]
-    },
-    {
-      "id": "cl_de_masculine",
-      "name": "De Masculine",
-      "rarity": "Rare",
-      "buffs": [
-        "+3.0% Hakuda DMG",
-        "+4.0 Posture",
-        "+6.0 Max Health"
-      ]
-    },
-    {
-      "id": "cl_frosthauch",
-      "name": "Frosthauch",
-      "rarity": "Legendary",
-      "buffs": [
-        "Halloween themed clan cosmetic",
-        "+2.5% Melee Defense",
-        "+2.0 Max Reiatsu",
-        "+4.0 Max Posture"
-      ]
-    }
-  ],
-  "Hollow": [
-    {
-      "id": "cl_aaroniero",
-      "name": "Aaroniero",
-      "rarity": "Legendary",
-      "buffs": [
-        "+2.0% Kido DMG",
-        "+5.0 Reiatsu",
-        "+0.5% Kido Defense"
-      ]
-    },
-    {
-      "id": "cl_chelute",
-      "name": "Chelute",
-      "rarity": "Legendary",
-      "buffs": [
-        "+2.5% Weapon DMG",
-        "+5.0 Health",
-        "+1.0% Melee Defense"
-      ]
-    },
-    {
-      "id": "cl_cifer",
-      "name": "Cifer",
-      "rarity": "Legendary",
-      "buffs": [
-        "+20% Longer Ressureccion",
-        "+2.0% Kido DMG",
-        "+25.0% Melee Reiatsu Regen",
-        "+2.5 Shunpo Stamina"
-      ]
-    },
-    {
-      "id": "cl_jaegerjaquez",
-      "name": "Jaegerjaquez",
-      "rarity": "Rare",
-      "buffs": [
-        "+3.0% Hakuda DMG",
-        "+3.0 Shunpo Stamina"
-      ]
-    },
-    {
-      "id": "cl_antenor",
-      "name": "Antenor",
-      "rarity": "Rare",
-      "buffs": [
-        "+1.5% Lightning DMG",
-        "+7.5% Posture Regen"
-      ]
-    },
-    {
-      "id": "cl_kufang",
-      "name": "Kufang",
-      "rarity": "Rare",
-      "buffs": [
-        "+2.5% Weapon DMG",
-        "+0.5% Kido Defense"
-      ]
-    },
-    {
-      "id": "cl_lousienbairn",
-      "name": "Lousienbairn",
-      "rarity": "Uncommon",
-      "buffs": [
-        "+5.0 Health",
-        "+3.5 Posture"
-      ]
-    },
-    {
-      "id": "cl_gingerbuck",
-      "name": "Gingerbuck",
-      "rarity": "Uncommon",
-      "buffs": [
-        "+2.0% Melee Defense",
-        "+5.0 Posture"
-      ]
-    },
-    {
-      "id": "cl_murciellago",
-      "name": "Murciellago",
-      "rarity": "Common",
-      "buffs": [
-        "+5.0 Shunpo Stamina",
-        "+5.0 Shunpo Speed"
-      ]
-    },
-    {
-      "id": "cl_calius",
-      "name": "Calius",
-      "rarity": "Common",
-      "buffs": [
-        "+5.0 Equipment Load"
-      ]
-    },
-    {
-      "id": "cl_llargo",
-      "name": "Llargo",
-      "rarity": "Rare",
-      "buffs": [
-        "+3.0% Melee Defense",
-        "+6.0 Max Health",
-        "+4.0 Max Posture"
-      ]
-    },
-    {
-      "id": "cl_starrk",
-      "name": "Starrk",
-      "rarity": "Legendary",
-      "buffs": [
-        "Chest-firing Cero variant",
-        "Compatible with Starrk Dual Swords",
-        "+2.5% Weapon DMG",
-        "+2.0 Max Reiatsu"
-      ]
-    },
-    {
-      "id": "cl_kurosaki_hollow",
-      "name": "Kurosaki (Universal)",
-      "rarity": "Legendary",
-      "buffs": [
-        "Universal Clan available to all factions",
-        "Custom orange hair cosmetic",
-        "+2.0 Reiatsu",
-        "+2.0% Weapon DMG",
-        "+5.0 Shunpo Speed"
-      ]
-    }
-  ],
-  "Shinigami": [
-    {
-      "id": "cl_komamura",
-      "name": "Komamura",
-      "rarity": "Legendary",
-      "buffs": [
-        "You become a wolfman",
-        "+4% Melee Defense",
-        "+1% Weapon Damage",
-        "-2% Kido Defense"
-      ]
-    },
-    {
-      "id": "cl_kurotsuchi",
-      "name": "Kurotsuchi",
-      "rarity": "Legendary",
-      "buffs": [
-        "Spirit charm overflow takes less Health (4%)",
-        "+1.5% Kido Defense",
-        "+5.0 Reiatsu"
-      ]
-    },
-    {
-      "id": "cl_shihoin",
-      "name": "Shihoin",
-      "rarity": "Legendary",
-      "buffs": [
-        "+12.5 Shunpo Stamina",
-        "+5 Shunpo Speed",
-        "+0.5% Lightning Damage",
-        "+0.5% Hakuda Damage",
-        "Custom fast sprint animation, idle animation, cat ears and tail"
-      ]
-    },
-    {
-      "id": "cl_kuchiki",
-      "name": "Kuchiki",
-      "rarity": "Rare",
-      "buffs": [
-        "+3% Kido Damage"
-      ]
-    },
-    {
-      "id": "cl_yamamoto",
-      "name": "Yamamoto",
-      "rarity": "Rare",
-      "buffs": [
-        "+2% Weapon Damage",
-        "+5 Shunpo Stamina"
-      ]
-    },
-    {
-      "id": "cl_hitsugaya",
-      "name": "Hitsugaya",
-      "rarity": "Rare",
-      "buffs": [
-        "+3 Reiatsu",
-        "+2.5% Kido Defense"
-      ]
-    },
-    {
-      "id": "cl_abarai",
-      "name": "Abarai",
-      "rarity": "Uncommon",
-      "buffs": [
-        "+5 Health",
-        "+2.5% Posture Regen"
-      ]
-    },
-    {
-      "id": "cl_hisagi",
-      "name": "Hisagi",
-      "rarity": "Uncommon",
-      "buffs": [
-        "+1.2% Kido Damage",
-        "+3.0% Posture Regen"
-      ]
-    },
-    {
-      "id": "cl_madarame",
-      "name": "Madarame",
-      "rarity": "Common",
-      "buffs": [
-        "+5 Equipment Load"
-      ]
-    },
-    {
-      "id": "cl_matsumoto",
-      "name": "Matsumoto",
-      "rarity": "Common",
-      "buffs": [
-        "+5.0 Reiatsu"
-      ]
-    },
-    {
-      "id": "cl_tosen",
-      "name": "Tosen",
-      "rarity": "Rare",
-      "buffs": [
-        "Sensing allows viewing highlights of players and a flashstep trail",
-        "+5.0 Shunpo Speed",
-        "+2.0% Melee Defense"
-      ]
-    },
-    {
-      "id": "cl_sakahone",
-      "name": "Sakahone",
-      "rarity": "Rare",
-      "buffs": [
-        "+2.5% Kido Defense",
-        "+5.0 Posture",
-        "+8 Max Health"
-      ]
-    },
-    {
-      "id": "cl_urahara",
-      "name": "Urahara",
-      "rarity": "Legendary",
-      "buffs": [
-        "Larger perfect cast windows on SR Kido Skills",
-        "+2.5% Kido Damage",
-        "+2.0 Max Reiatsu"
-      ]
-    },
-    {
-      "id": "cl_zaraki",
-      "name": "Zaraki",
-      "rarity": "Legendary",
-      "buffs": [
-        "+3.5% Weapon Damage",
-        "+5.0 Max Posture",
-        "+10.0 Max Health"
-      ]
-    },
-    {
-      "id": "cl_kurosaki_shinigami",
-      "name": "Kurosaki (Universal)",
-      "rarity": "Legendary",
-      "buffs": [
-        "Universal Clan available to all factions",
-        "Custom orange hair cosmetic",
-        "+2.0 Reiatsu",
-        "+2.0% Weapon DMG",
-        "+5.0 Shunpo Speed"
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "eisenhauer",
+    "name": "Eisenhauer",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Gain a metal arm",
+      "+3.0% Melee Defense",
+      "+5.0 Posture",
+      "+0.5% Hakuda DMG"
+    ]
+  },
+  {
+    "id": "kurosaki",
+    "name": "Kurosaki",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "+2.0 Reiatsu",
+      "+2.0% Weapon DMG",
+      "+5.0 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "le-vaar",
+    "name": "Le Vaar",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Be able to proc poison damage upon dealing heavy amounts of damage, flourishing and guardbreaking enemies",
+      "Your traversal sprint is now 15% faster and has a new animation",
+      "Gain 5% extra poison damage",
+      "+5.0% Movement Speed",
+      "+15.0% Toxic Fumes Res."
+    ]
+  },
+  {
+    "id": "frosthauch",
+    "name": "Frosthauch",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "+3.0% Kido Defense",
+      "+2.8% Kido Damage"
+    ]
+  },
+  {
+    "id": "de-masculine",
+    "name": "De Masculine",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "You gain extra size",
+      "+5.0% Aura Gain",
+      "+5.0% Ultimate Gain"
+    ]
+  },
+  {
+    "id": "lloyd",
+    "name": "Lloyd",
+    "race": "quincy",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "Gives you a third eye (cosmetic)",
+      "Gain access to all Sensory passives free of cost",
+      "+5.0 Posture",
+      "+0.1 Max AP",
+      "+1.5% Cooldown Reduction"
+    ]
+  },
+  {
+    "id": "parnkgjas",
+    "name": "Parnkgjas",
+    "race": "quincy",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+3.5% Kido Defense",
+      "+1.0% Melee Defense"
+    ]
+  },
+  {
+    "id": "ishida",
+    "name": "Ishida",
+    "race": "quincy",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+2.0% Kido Damage",
+      "+5.0 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "haschwalth",
+    "name": "Haschwalth",
+    "race": "quincy",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+2.5% Kido DMG"
+    ]
+  },
+  {
+    "id": "kraus",
+    "name": "Kraus",
+    "race": "quincy",
+    "rarity": "Uncommon",
+    "chance": 30,
+    "buffs": [
+      "+1.5% Melee Defense",
+      "+1.0% Kido Defense"
+    ]
+  },
+  {
+    "id": "wernarr",
+    "name": "Wernarr",
+    "race": "quincy",
+    "rarity": "Uncommon",
+    "chance": 30,
+    "buffs": [
+      "+5.0 Health",
+      "+2.5% Posture Regen"
+    ]
+  },
+  {
+    "id": "schulte",
+    "name": "Schulte",
+    "race": "quincy",
+    "rarity": "Common",
+    "chance": 60,
+    "buffs": [
+      "+5.0 Equipment Load"
+    ]
+  },
+  {
+    "id": "richter",
+    "name": "Richter",
+    "race": "quincy",
+    "rarity": "Common",
+    "chance": 60,
+    "buffs": [
+      "+1.0% Weapon DMG",
+      "+2.5 Posture"
+    ]
+  },
+  {
+    "id": "komamura",
+    "name": "Komamura",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "You become a wolfman",
+      "+4% Melee Defense",
+      "+1% Weapon Damage",
+      "-2% Kido Defense"
+    ]
+  },
+  {
+    "id": "shihoin",
+    "name": "Shihoin",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "+12.5 Shunpo Stamina",
+      "+5 Shunpo Speed",
+      "+0.5% Lightning Damage",
+      "+0.5% Hakuda Damage"
+    ]
+  },
+  {
+    "id": "kurotsuchi",
+    "name": "Kurotsuchi",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Spirit charm overflow takes less health (4%)",
+      "+1.5% Kido Defense",
+      "+5 Reiatsu"
+    ]
+  },
+  {
+    "id": "kurosaki-soul-reaper",
+    "name": "Kurosaki",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Gain access to all Sensory passives free of cost",
+      "+2.0 Reiatsu",
+      "+2.0% Weapon Damage",
+      "+2.5% Movement Speed",
+      "+5.0 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "zaraki",
+    "name": "Zaraki",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "You gain extra size",
+      "+3.5% Aura Gain",
+      "+2.5% Weapon Damage",
+      "+3.0% Posture Damage (Wep.)"
+    ]
+  },
+  {
+    "id": "urahara",
+    "name": "Urahara",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "You now get a 20% bigger window for perfect casting SR kido abilities",
+      "+3.0% Melee Reiatsu Regen",
+      "+2.5% Kido Damage",
+      "+3.5 Reiatsu"
+    ]
+  },
+  {
+    "id": "kuchiki",
+    "name": "Kuchiki",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+3% Kido Damage"
+    ]
+  },
+  {
+    "id": "yamamoto",
+    "name": "Yamamoto",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+2% Weapon Damage",
+      "+5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "hitsugaya",
+    "name": "Hitsugaya",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+3 Reiatsu",
+      "+2.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "sakahone",
+    "name": "Sakahone",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "You execute enemies 25% faster",
+      "+2.1% Weapon Damage"
+    ]
+  },
+  {
+    "id": "tosen",
+    "name": "Tosen",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "Be able to see enemies during their Shunpo using sense",
+      "+15.0% Sensing Range",
+      "+4.5% Melee Reiatsu Regen"
+    ]
+  },
+  {
+    "id": "abarai",
+    "name": "Abarai",
+    "race": "soul-reaper",
+    "rarity": "Uncommon",
+    "chance": 30,
+    "buffs": [
+      "Gain bushier eyebrows (akin to Renji)",
+      "+5.0 Health",
+      "+2.5% Posture Regen"
+    ]
+  },
+  {
+    "id": "madarame",
+    "name": "Madarame",
+    "race": "soul-reaper",
+    "rarity": "Common",
+    "chance": 60,
+    "buffs": [
+      "+5 Equipment Load"
+    ]
+  },
+  {
+    "id": "matsumoto",
+    "name": "Matsumoto",
+    "race": "soul-reaper",
+    "rarity": "Common",
+    "chance": 60,
+    "buffs": [
+      "+5 Reiatsu"
+    ]
+  },
+  {
+    "id": "aaroniero",
+    "name": "Aaroniero",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Changes your head into a jar",
+      "+2% Kido DMG",
+      "+5.0 Reiatsu",
+      "+0.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "cifer",
+    "name": "Cifer",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Turns your skin completely white",
+      "+20% Longer Ressureccion",
+      "+2.0% Kido DMG",
+      "+25% Melee Reiatsu Regen",
+      "+2.5 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "chelute",
+    "name": "Chelute",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Changes your head into a skull",
+      "+2.5% Weapon Damage",
+      "+5.0 Health",
+      "+1.0% Melee Defense"
+    ]
+  },
+  {
+    "id": "kurosaki-hollow",
+    "name": "Kurosaki",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Gain access to all Sensory passives free of cost",
+      "+2.0 Reiatsu",
+      "+2.0% Weapon Damage",
+      "+2.5% Movement Speed",
+      "+5.0 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "starrk",
+    "name": "Starrk",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "chance": 1,
+    "buffs": [
+      "Your cero now fires from chest instead of your head",
+      "+5.0% Cooldown Reduction",
+      "+2.1 Shunpo Stamina",
+      "+2.1 Shunpo Speed",
+      "+2.1 Reiatsu"
+    ]
+  },
+  {
+    "id": "jaegerjaquez",
+    "name": "Jaegerjaquez",
+    "race": "hollow",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+3.0% Hakuda DMG",
+      "+3.0 Shunpo Stamina"
+    ]
+  },
+  {
+    "id": "antenor",
+    "name": "Antenor",
+    "race": "hollow",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+1.5% Lightning DMG",
+      "+7.5% Posture Regen"
+    ]
+  },
+  {
+    "id": "kufang",
+    "name": "Kufang",
+    "race": "hollow",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "+2.5% Weapon DMG",
+      "+0.5% Kido Defense"
+    ]
+  },
+  {
+    "id": "llargo",
+    "name": "Llargo",
+    "race": "hollow",
+    "rarity": "Rare",
+    "chance": 9,
+    "buffs": [
+      "You gain extra size",
+      "-4.0% Movement Speed",
+      "+0.1 Max AP",
+      "+2.0 Health",
+      "+2.5% Hakuda Damage"
+    ]
+  },
+  {
+    "id": "lousienbairn",
+    "name": "Lousienbairn",
+    "race": "hollow",
+    "rarity": "Uncommon",
+    "chance": 30,
+    "buffs": [
+      "+5.0 Health",
+      "+3.5 Posture"
+    ]
+  },
+  {
+    "id": "gingerbuck",
+    "name": "Gingerbuck",
+    "race": "hollow",
+    "rarity": "Uncommon",
+    "chance": 30,
+    "buffs": [
+      "+2.0% Melee Defense",
+      "+2.5 Posture"
+    ]
+  },
+  {
+    "id": "murciellago",
+    "name": "Murciellago",
+    "race": "hollow",
+    "rarity": "Common",
+    "chance": 60,
+    "buffs": [
+      "+5.0 Shunpo Stamina",
+      "+5.0 Shunpo Speed"
+    ]
+  },
+  {
+    "id": "calius",
+    "name": "Calius",
+    "race": "hollow",
+    "rarity": "Common",
+    "chance": 60,
+    "buffs": [
+      "+5.0 Equipment Load"
+    ]
+  }
+]

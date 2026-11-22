@@ -1,0 +1,2106 @@
+[
+  {
+    "id": "the-visionary",
+    "name": "The Visionary",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "meMyselfAndI",
+        "label": "Me, Myself, and I",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "When using \"Unlimited Arsenal\" a clone of you will spawn, also using the technique (Requires 75% or more inspiration)."
+          },
+          {
+            "level": 6,
+            "text": "When using \"Spikes\" a clone of you will spawn, also using the technique (Requires 75% or more inspiration)."
+          },
+          {
+            "level": 10,
+            "text": "The inspiration requirement is lowered from 90% to 75%."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "\"Spikes\" will ignore crumple and ragdoll."
+          },
+          {
+            "level": 7,
+            "text": "\"Spikes\" and \"Debris Prison\" cause bleed."
+          }
+        ]
+      },
+      {
+        "id": "imagination",
+        "label": "Imagination",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "While the \"Enlightened\" status effect is active, deal more damage with Kido skills."
+          },
+          {
+            "level": 8,
+            "text": "The execution threshold for \"Reality Bending\" is increased from 12.5% -> 16%."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-superstar",
+    "name": "The Superstar",
+    "race": "quincy",
+    "rarity": "Legendary",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 7,
+            "text": "All of The Superstar's damaging moves will give you a rushdown follow-up."
+          },
+          {
+            "level": 8,
+            "text": "Star Flash is capable of disintegrating opponents."
+          }
+        ]
+      },
+      {
+        "id": "superFanLevel",
+        "label": "Super Fan Level",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "When posture broken, your fan will swap places with you to protect you."
+          },
+          {
+            "level": 9,
+            "text": "When you are killed, your fan will give their life to save you."
+          }
+        ]
+      },
+      {
+        "id": "popularityRate",
+        "label": "Popularity Rate",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "At half popularity or more, each cheer heals you slightly."
+          },
+          {
+            "level": 8,
+            "text": "Your output boost per cheer lasts significantly longer."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-heat",
+    "name": "The Heat",
+    "race": "quincy",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [
+      {
+        "id": "darkheart",
+        "name": "Darkheart",
+        "chance": 5,
+        "description": "Your flames deal much less damage, but siphon Reiatsu instead. Also changes flame color to black."
+      }
+    ],
+    "customization": [
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "At high temperatures light your arms ablaze, enhancing ability damage and generating more heat over time. (requires 60% Heat Meter)"
+          },
+          {
+            "level": 8,
+            "text": "While your arms are ablaze, deal flame damage on melee attacks, increasing damage by 7.5%. (This gives a ~1.15 dmg multiplier to m1s)"
+          }
+        ]
+      },
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "At above average temperatures your moves cause full body incineration (burn damage is applied on moves)."
+          },
+          {
+            "level": 8,
+            "text": "Your turbulent heat can turn low health enemies into ash, requires temperature to be at 60% or higher."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Your first & second finger are compatible with rushdown."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "heatPassive",
+        "name": "Heat",
+        "description": "You are given an heat bar, which increases through hitting m1s or by using/hitting your ability's skills. This bar is used to change the moves and to proc some of the passives."
+      }
+    ],
+    "moves": [
+      {
+        "id": "heatFirstFinger",
+        "name": "First Finger - Control M1 (Below 50% Heat)",
+        "description": "Swipe upwards with your hands ablaze, knocking opponents into the air. Gives 15% heat on use, and an extra 25% on hit.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/heatFirstFinger.webm"
+      },
+      {
+        "id": "heatSecondFinger",
+        "name": "Second Finger - Control M1 (Above 50% heat)",
+        "description": "Fire a blast of heat from your finger. This consumes 50% of your heat bar, granting 25% back upon landing it.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/heatSecondFinger.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "heatThirdFinger",
+          "name": "Third Finger - Control M2 (Below 50% heat)",
+          "description": "Unleash 2 powerufl fire slashes. Gives 15% heat per slash, with each one grantting 25% extra heat uppon landing (Totals to 80%).",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/heatThirdFinger.webm"
+        },
+        {
+          "id": "heatFourthFinger",
+          "name": "Fourth Finger - Control M2 (Above 50% heat)",
+          "description": "Conjure a balista of flame (Fuga). Consumes 70% heat, granting 40% back if landed.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/heatFourthFinger.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the-necromancer",
+    "name": "The Necromancer",
+    "race": "quincy",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [
+      {
+        "id": "frost-lord",
+        "name": "Frost Lord",
+        "chance": 5,
+        "description": "Your army of the undead is made from frost, lowering their health but giving their attacks a small chance to freeze opponents. Changes the color of your undead to a lighter blue/white with frozen effects."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "You are immune to damage from summoned NPCs"
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Successfully sealing NPCs will heal you."
+          },
+          {
+            "level": 7,
+            "text": "Taking damage will redirect 30% of it towards any active NPCs"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 10,
+            "text": "Your NPCs will heal you when dealing damage (1% per 20 base damage)"
+          }
+        ]
+      },
+      {
+        "id": "healEfficiency",
+        "label": "Heal Efficiency",
+        "upgradeEffects": []
+      }
+    ],
+    "moves": [
+      {
+        "id": "necromancerPowerSeal",
+        "name": "Power Seal - Control M1",
+        "description": "After killing an enemy, you can seal them, replacing your current sealed npc",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/necromancerPowerSeal.webm"
+      },
+      {
+        "id": "necromancerArise",
+        "name": "Arise - Control M2",
+        "description": "Summons your currently sealed npc, attacking nearby enemies",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/necromancerArise.webm"
+      }
+    ]
+  },
+  {
+    "id": "the-dimensional",
+    "name": "The Dimensional",
+    "race": "quincy",
+    "rarity": "Uncommon",
+    "information": "",
+    "variants": [
+      {
+        "id": "2099",
+        "name": "2099",
+        "chance": 5,
+        "description": "Less drain during portals, deal slightly less damage from 'Tear the Skies'. Changes color to orange-purple."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Gain damage reduction for a short time period after manually activating 'Exit Gate'"
+          },
+          {
+            "level": 8,
+            "text": "You no longer suffer from output reduction when leaving 'Alternate Dimension'"
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "When out of combat, your 'Alternate Dimension' portal will drain for less reiatsu"
+          },
+          {
+            "level": 7,
+            "text": "When landing the initial attack from 'Alternate Dimension', you experience no reiatsu drain in your portal for a brief period."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "When an opponent who is very low on health is struck by 'Tear the Skies', they have their time/space warped and are stunned for much longer by hits of the blitz"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "dimensionalAlternateDimension",
+        "name": "Alternate Dimension - Control M1",
+        "description": "Throw a punch, then enter an alternate dimension, becoming invisible and invencible. While inside it, your reiatsu will be drained at a high speed, if you re-cast the move or your reiatsu runs out, you exit your dimension.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/dimensionalAlternateDimension.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "dimensionalTearTheSkies",
+          "name": "Tear the Skies - Control M2",
+          "description": "Teleport to an opponent before rapidly blitzing around.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/dimensionalTearTheSkies.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the-thunderbolt",
+    "name": "The Thunderbolt",
+    "race": "quincy",
+    "rarity": "Uncommon",
+    "information": "",
+    "variants": [
+      {
+        "id": "dragon-thunder",
+        "name": "Dragon Thunder",
+        "chance": 10,
+        "description": "\"Thunder Spear\" is slower, but has increased damage and range. Also changes color to pinkish-orange."
+      },
+      {
+        "id": "blue-jets",
+        "name": "Blue Jets",
+        "chance": 10,
+        "description": "\"Electric Blitz\" is faster, but has an increased reiatsu cost. Also changes color to blue."
+      }
+    ],
+    "customization": [
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Gain an empowered flash step periodically when at or above 25% conductivity, which increases your conductivity."
+          },
+          {
+            "level": 8,
+            "text": "Restart your heart using your lightning when in dire straits, allowing one extra hit."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 7,
+            "text": "Your high-damaging skills apply shock."
+          },
+          {
+            "level": 8,
+            "text": "Apply Electrocution (a high intensity stun) when high conductivity and landing a schrift skill."
+          }
+        ]
+      },
+      {
+        "id": "conductivity",
+        "label": "Conductivity",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "You can rushdown off of \"Thunder Spear\"."
+          },
+          {
+            "level": 8,
+            "text": "When taking a high burst of damage, spend 25% of Conductivity to reduce the damage."
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "thunderboltThunderSpear",
+        "name": "Thunder Spear - Control M1",
+        "description": "Throw a spear made of thunder at your opponent, knocking them away",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/thunderboltThunderSpear.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "thunderboltElectricBlitz",
+          "name": "Electric Blitz - Control M2",
+          "description": "Run forward while dischargin lightining at your opponent",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/thunderboltElectricBlitz.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the-blademaster",
+    "name": "The Blademaster",
+    "race": "quincy",
+    "rarity": "Common",
+    "information": "",
+    "variants": [
+      {
+        "id": "heavenly",
+        "name": "Heavenly",
+        "chance": 5,
+        "description": "Ability attacks gain lifesteal at the cost of damage (20% Less Damage, 30% Lifesteal on moves). Also changes colors from black and white to purple/green/yellow."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Cleaver's blade volley cuts for longer."
+          },
+          {
+            "level": 6,
+            "text": "Cleaver's cut aoe follows targets briefly now."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 7,
+            "text": "After landing \"Cleaver\" at least twice, begin a chant to empower \"Cleaver\" every time you land it, until you land three in a row, doubling your damage on the third cast."
+          },
+          {
+            "level": 10,
+            "text": "Completing the chant will also heal you slightly (around 30 health)."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Your techniques induce blood loss (increases bleed duration)."
+          },
+          {
+            "level": 9,
+            "text": "Bleeding the same enemy 3 times using blademaster moves will proc deep gash on them (effect unknown)."
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "blademasterCleaver",
+        "name": "Cleaver - Control M1",
+        "description": "Slice opponents in range with multiple slashes",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/blademasterCleaver.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "blademasterButcher",
+          "name": "Butcher - Control M2",
+          "description": "Grab your opponent, sending a barrage of slashes at them before tossing them away.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/blademasterButcher.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "the-iron",
+    "name": "The Iron",
+    "race": "quincy",
+    "rarity": "Common",
+    "information": "",
+    "variants": [
+      {
+        "id": "ruby",
+        "name": "Ruby",
+        "chance": 5,
+        "description": "Metal infusions cause bleeding and deal more impact damage, but they cause less stun. Also changes color to red."
+      },
+      {
+        "id": "opal",
+        "name": "Opal",
+        "chance": 5,
+        "description": "The final hit of \"Metal Spikes\" can catch opponents on fire, but the technique's cooldown is increased. Also changes color to orange."
+      },
+      {
+        "id": "amethyst",
+        "name": "Amethyst",
+        "chance": 5,
+        "description": "\"Demolition Man\" costs less reiatsu to cast, but \"False Arm\" has a slightly longer cooldown. Also changes color to purple."
+      },
+      {
+        "id": "emerald",
+        "name": "Emerald",
+        "chance": 5,
+        "description": "\"False Arm\" lasts an extra hit, but the active duration is decreased. Also changes color to green."
+      },
+      {
+        "id": "diamond",
+        "name": "Diamond",
+        "chance": 3,
+        "description": "\"Demolition Man's\" close ranged attack causes concussions, but deals much less damage. Also changes color to light blue."
+      },
+      {
+        "id": "sapphire",
+        "name": "Sapphire",
+        "chance": 5,
+        "description": "All ability techniques cost more reiatsu, but have shorter cooldowns. Also changes color to blue."
+      }
+    ],
+    "customization": [
+      {
+        "id": "metalworking",
+        "label": "Metalworking",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "\"False Arm\" lasts for a longer duration"
+          },
+          {
+            "level": 8,
+            "text": "If two \"Demolition Man\" projectiles land, infuse the opponent with metal"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "The third hit of \"Metal Spikes\" will infuse the opponent with metal"
+          },
+          {
+            "level": 6,
+            "text": "All iron-based attacks will cause bleeding"
+          }
+        ]
+      },
+      {
+        "id": "durability",
+        "label": "Durability",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "\"False Arm\" will break after 3 hits instead of 2"
+          },
+          {
+            "level": 7,
+            "text": "Whilst \"False Arm\" is active, take 10% less damage"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "ironFalseArm",
+        "name": "False Arm - Control M1",
+        "description": "Reinforce your hand with iron, increasing the next 2 hits of damage.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/ironFalseArm.webm"
+      },
+      {
+        "id": "ironDemolitionMan",
+        "name": "Demolition Man - Control M1",
+        "description": "While 'False Arm' is active, recasting the move will make you trow your iron coating as shrapnel (3 projectiles) at your opponent ",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/ironDemolitionMan.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "ironMetalSpikes",
+          "name": "Metal Spikes - Control M2",
+          "description": "Perform a three hit combo using spikes on your arms",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/ironMetalSpikes.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "blooming-madness",
+    "name": "Blooming Madness",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Both \"Shadow Game\" and \"Mountain Game\" will deal more damage to the opponent if they lose"
+          },
+          {
+            "level": 7,
+            "text": "\"Shadow Game\" and \"Mountain Game\" can execute opponents on a loss"
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 10,
+            "text": "Your normal critical attack is always \"Bushogoma\"",
+            "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessBushogoma.webm"
+          }
+        ]
+      },
+      {
+        "id": "rate",
+        "label": "Rate",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Both \"Shadow Game\" and \"Mountain Game\" have a longer duration."
+          },
+          {
+            "level": 7,
+            "text": "Build charge towards your ultimate, \"Irooni\", is much faster during Shikai mode."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "bloomingMadnessWeapon",
+        "name": "Weapon",
+        "description": "Having this ability will lock you to the dual swords weapon",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessWeapon.webm"
+      }
+    ],
+    "moves": [
+      {
+        "id": "bloomingMadnessShadowGame",
+        "name": "Shadow Game - Control M1",
+        "description": "Forces your oppoent into a game, having it's duration represented by a bar. In this game, both of you will have their shadows visible and the first one to step on another's shadow wins, hitting them with a barrage of slashes and ending the game.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessShadowGame.webm"
+      },
+      {
+        "id": "bloomingMadnessShadowSlash",
+        "name": "Shadow Slash - Control M1",
+        "description": "While in shadow game, pressing Control M1 will make you dive into your shadows, teleporting to your opponent and unleashing a powerful slash after",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessShadowSlash.webm"
+      },
+      {
+        "id": "bloomingMadnessShadowFall",
+        "name": "Shadow Fall - Control M2",
+        "description": "While in shadow game, pressing Control M2 will make you dive in your shadows, appearing in front of your opponent",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessShadowFall.webm"
+      },
+      {
+        "id": "bloomingMadnessMountainGame",
+        "name": "Mountain Game - Control M2",
+        "description": "Force you and your opponent into a game. Whoever is higher by the end of it winds, the loser being hit with a barrage of slashes.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessMountainGame.webm"
+      },
+      {
+        "id": "bloomingMadnessTakeoni",
+        "name": "Takeoni - Control M1",
+        "description": "While in mountain game, pressing Control M1 will make you leap forward, unleashing a powerful strike.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessTakeoni.webm"
+      },
+      {
+        "id": "bloomingMadnessFlashFlip",
+        "name": "Flash Flip - Control M2",
+        "description": "While in shadow game, pressing Control M2 will make you leap back into the air, gaining height over your opponent.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessFlashFlip.webm"
+      }
+    ],
+    "mode": {
+      "passives": [
+        {
+          "id": "bloomingMadnessBushogoma",
+          "name": "Bushogoma",
+          "description": "Your critical is now replaced by bushogoma (Scales with kido)",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessBushogoma.webm"
+        }
+      ],
+      "moves": [
+        {
+          "id": "bloomingMadnessIrooni",
+          "name": "Irooni - Control M2",
+          "description": "Landing enough hits in mode will make your character flash white, replacing your M2 with Irooni.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/bloomingMadnessIrooni.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "senbonzakura",
+    "name": "Senbonzakura",
+    "race": "soul-reaper",
+    "rarity": "Legendary",
+    "information": "",
+    "variants": [
+      {
+        "id": "normal",
+        "name": "Normal",
+        "chance": 50,
+        "description": "Changes your Shikai weapon to Odachi / Longsword"
+      },
+      {
+        "id": "katana",
+        "name": "Katana",
+        "chance": 50,
+        "description": "Changes your Shikai weapon to Katana"
+      }
+    ],
+    "customization": [
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "When your blade is halfway to reaching a blossom or higher, your petal-related abilities deal a petal aftercut."
+          },
+          {
+            "level": 6,
+            "text": "If your blade is fully blossomed, aftercuts will finish off low health opponents by slicing them to pieces."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 9,
+            "text": "You dance with elegance. When your blade is fully blossomed all neutral parries become perfect."
+          },
+          {
+            "level": 10,
+            "text": "All manual perfect parries extend the duration of your blossom mode slightly."
+          }
+        ]
+      },
+      {
+        "id": "rate",
+        "label": "Rate",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Send your petals after an opponent if you knock them back from a blade catch."
+          },
+          {
+            "level": 6,
+            "text": "Wave of Blossoms will downslam on hit and build much more blossom meter, if your meter is already above 30%"
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "senbonWeapon",
+        "name": "Weapon",
+        "description": "You are locked to using this abilities variant weapon (Longsword or Katana)"
+      }
+    ],
+    "moves": [
+      {
+        "id": "senbonPetalDance",
+        "name": "Petal Dance - Control M1",
+        "description": "Throws forward an circle of flowers, which deal continuous damage to anyone inside it.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonPetalDance.webm"
+      },
+      {
+        "id": "senbonBladescatter",
+        "name": "Bladescatter - Control M1",
+        "description": "While petal dance is out, pressing control m1 will divide the circle of flowers torward your cursor.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonBladescatter.webm"
+      },
+      {
+        "id": "senbonEncircle",
+        "name": "Encircle - Control M2",
+        "description": "While petal dance is out, pressing control m2 will move the circle of flowers to your cursor, making it bigger and dealing more damage.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonEncircle.webm"
+      },
+      {
+        "id": "senbonWaveOfBlossoms",
+        "name": "Wave of Blossoms - Control M2",
+        "description": "Send forward a powerful wave of petals, crumpling any opponents hit by it",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonWaveOfBlossoms.webm"
+      }
+    ],
+    "mode": {
+      "passives": [
+        {
+          "id": "senbonBlossomingPassive",
+          "name": "Blossoming",
+          "description": "Gain a bar which fills up by dealing damage. When full, you'll enter your sub-mode",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonMiniModePop.webm"
+        },
+        {
+          "id": "senbonbMiniModeWeapon",
+          "name": "Weapon",
+          "description": "While in the sub-mode, your m1's and critical are changed.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonMiniModeWeapon.webm"
+        }
+      ],
+      "moves": [
+        {
+          "id": "senbonFinalAct",
+          "name": "Final Act - Control M2",
+          "description": "While in the mini mode, rush forward, swinging twice then blink forward, creating a thousand cuts between (This move can only be used once per sub-mode pop).",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/senbonFinalAct.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "demon-light",
+    "name": "Demon Light",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "perseverance",
+        "label": "Perseverance",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Gain +3.5% output briefly after using \"Split Apart.\" This effect is doubled below 35% HP"
+          },
+          {
+            "level": 10,
+            "text": "Gain 10% damage reduction at all times when your shikai is active below 25% HP"
+          }
+        ]
+      },
+      {
+        "id": "virtusa",
+        "label": "Virtusa",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "The Last hit of any shikai weapon skill will make your next weapon swap much faster"
+          },
+          {
+            "level": 8,
+            "text": "The last hit of \"Three Piece Assault\" or the last two hits of \"Demon's Call\" will execute opponents"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "Enables rushdown on the last hit of \"Three Piece Assault\" and the Flail's critical attack"
+          },
+          {
+            "level": 7,
+            "text": "All slashes produced (not barrages) from ability techniques causes bleeding"
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "demonLightWeaponSpear",
+        "name": "Weapon - Spear",
+        "description": "Demon light locks you onto three types of weapons, which are alternated by using the move Split Apart. One of them being the spear, which remains unchanged from a normal one.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightWeaponSpear.webm"
+      },
+      {
+        "id": "demonLightWeaponFlail",
+        "name": "Weapon - Flail",
+        "description": "The second weapon is a Flail, which is a weapon exclusive to this ability. The critical pulls enemies to you.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightWeaponFlail.webm"
+      },
+      {
+        "id": "demonLightWeaponNunchucks",
+        "name": "Weapon - Nunchucks",
+        "description": "The third weapon are Nunchucks, which is a weapon exclusive to this ability. The critical does multiple slashes around you, with a powerful one at the end (Does not apply hit stun).",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightWeaponNunchucks.webm"
+      }
+    ],
+    "moves": [
+      {
+        "id": "demonLightSplitApart",
+        "name": "Split Apart",
+        "description": "Using this move will switch your weapons (Spear -> Flail -> Nunchucks).",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightSplitApart.webm"
+      },
+      {
+        "id": "demonLightThreePieceAssault",
+        "name": "Three Piece Assault - Control M2",
+        "description": "While having the spear, pressing Control M2 will unleash 3 consecutive strikes.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightThreePieceAssault.webm"
+      },
+      {
+        "id": "demonLightDoubleBullseye",
+        "name": "Double Bullseye - Control M2",
+        "description": "While having the flail, pressing Control M2 will send out 2 projectiles, which ricochet to nearby enemies.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightDoubleBullseye.webm"
+      },
+      {
+        "id": "demonLightDemonsCall",
+        "name": "Demon's Call - Control M2",
+        "description": "While having Nunchucks, pressing Control M2 will do a similar attack to your critical, however having an extra slash at the end",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/demonLightDemonsCall.webm"
+      }
+    ]
+  },
+  {
+    "id": "ink",
+    "name": "Ink",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Ink moves will apply an ink trail onto your blade which increases damage and stun dealt."
+          },
+          {
+            "level": 7,
+            "text": "'Sever' applies Inked on hit for 3 seconds."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Open a bursting ink puddle under your opponents who are blade caught."
+          },
+          {
+            "level": 7,
+            "text": "'Sever' will disable your player enemy skills for 6s."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Gain access to 'Brush Strike' after using Sever."
+          },
+          {
+            "level": 5,
+            "text": "'Brush Strike' is rushdown-compatible."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "waypoint",
+    "name": "Waypoint",
+    "race": "soul-reaper",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [
+      {
+        "id": "gateway",
+        "name": "Gateway",
+        "chance": 15,
+        "description": "Increased range, longer marker duration. Less damage from \"Rift\" and Mark Destination variant"
+      },
+      {
+        "id": "cosmic",
+        "name": "Cosmic",
+        "chance": 5,
+        "description": "Longer duration during rift, less range on teleports"
+      }
+    ],
+    "customization": [
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Landing \"Rift\" will mark the opponent, granted you don't have an active marker"
+          },
+          {
+            "level": 7,
+            "text": "Manual Rushdowns will create a marker from the start point automatically granted \"Mark Destination\" is off cooldown"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "You can feint your teleport, transporting a bomb to it (ground marker only)"
+          },
+          {
+            "level": 7,
+            "text": "You can perform a flip kick after teleporting to a opponent, if you use press Counter during \"Warp\" startup"
+          },
+          {
+            "level": 9,
+            "text": "Landing \"Rift\" when the opponent is nearby a marker will cause it to detonate"
+          }
+        ]
+      },
+      {
+        "id": "markerStrength",
+        "label": "Marker Strength",
+        "upgradeEffects": [
+          {
+            "level": 6,
+            "text": "Your waypoints are fully concealed, unless they're on a person"
+          },
+          {
+            "level": 10,
+            "text": "Reduce incoming damage while in range of your waypoints, this effect is more potent for ground markers"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "waypointMarkDestinationGround",
+        "name": "Mark Destination (Ground Variant) - Control M1",
+        "description": "Places a mark on the flor to return to later",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/waypointMarkDestinationGround.webm"
+      },
+      {
+        "id": "waypointMarkDestinationEnemy",
+        "name": "Mark Destination (Enemy Variant) - Control M1",
+        "description": "When used close to an enemy, punch the opponent leaving the mark on them, also knocking them away. The mark is not applied if the opponent blocks.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/waypointMarkDestinationEnemy.webm"
+      },
+      {
+        "id": "waypointWarp",
+        "name": "Warp - Control M1",
+        "description": "Teleports you back to your marker's position, as long as you are inside the mark's bubble.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/waypointWarp.webm"
+      },
+      {
+        "id": "waypointRift",
+        "name": "Rift - Control M2",
+        "description": "Summon an orb above the opponent, causing shrapnels to rain down (auto tracks)",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/waypointRift.webm"
+      }
+    ]
+  },
+  {
+    "id": "flame",
+    "name": "Flame",
+    "race": "soul-reaper",
+    "rarity": "Uncommon",
+    "information": "",
+    "variants": [
+      {
+        "id": "bluebell",
+        "name": "Bluebell",
+        "chance": 15,
+        "description": "Apply a burning DOT on flame damage instead of a flat increase. Also changes color to a light blue."
+      }
+    ],
+    "customization": [
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "You can incinerate the limbs of people at low health with flame moves, dealing extra damage."
+          },
+          {
+            "level": 6,
+            "text": "'Flame Surge' will incinerate people who are extremely low health."
+          }
+        ]
+      },
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Your shunpo leaves trails of fire behind you while reiatsu is above 70%, increasing speed"
+          },
+          {
+            "level": 6,
+            "text": "Increased shunpo speed while trails are active, and reiatsu threshold is reduced to 30%"
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "If flame damage is parried it will inflict 'Sweating' onto the enemy"
+          },
+          {
+            "level": 4,
+            "text": "While form is active: Light your blade aflame when your reiatsu is above 40%"
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "flameBurn",
+        "name": "Burn",
+        "description": "Your moves apply burn, increasing your move's damage"
+      }
+    ],
+    "moves": [
+      {
+        "id": "flameFlameSurge",
+        "name": "Flame Surge - Control M1",
+        "description": "Stab your sword into the ground, making it erupt later, sending your opponents flying (Allows rushdown).",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/flameFlameSurge.webm"
+      },
+      {
+        "id": "flameProminenceSlicer",
+        "name": "Prominence Slicer - Control M2",
+        "description": "Run forward, leaving a track of flames behind you, at the end, unleash a high damaging slash.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/flameProminenceSlicer.webm"
+      }
+    ]
+  },
+  {
+    "id": "ice",
+    "name": "Ice",
+    "race": "soul-reaper",
+    "rarity": "Uncommon",
+    "information": "",
+    "variants": [
+      {
+        "id": "red-ice",
+        "name": "Red Ice",
+        "chance": 30,
+        "description": "Lower damage, increased freeze time. Also changes color to red."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Dashing through attacks has a bigger window and will leave an ice clone (10s cd)"
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Using rushdown will create an ice shockwave around you that will freeze nearby enemies, with duration depending on their health. (FORM ONLY)"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "Using ice moves will leave a cold mist on your blade which inflicts more stun"
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "icePassive",
+        "name": "Ice",
+        "description": "Your moves freeze your opponents"
+      }
+    ],
+    "moves": [
+      {
+        "id": "iceFreeze",
+        "name": "Freeze - Control M1",
+        "description": "Swing down, leaving a trail of ice infront of you, freezing your opponent.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/iceFreeze.webm"
+      },
+      {
+        "id": "iceIcePillar",
+        "name": "Ice Pillar - Control M2",
+        "description": "Summons a pillar of ice where you stand, freezing any opponents caught in it.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/iceIcePillar.webm"
+      }
+    ]
+  },
+  {
+    "id": "wood",
+    "name": "Wood",
+    "race": "soul-reaper",
+    "rarity": "Common",
+    "information": "",
+    "variants": [
+      {
+        "id": "blackwood",
+        "name": "Black Wood",
+        "chance": 5,
+        "description": "Emergin Forest deals more damage, however Bark Armor has a slightly shorter duration"
+      },
+      {
+        "id": "birch",
+        "name": "Birch",
+        "chance": 10,
+        "description": "Emerging Forest and Bark Armor deal more damage and have a longer duration, but both have increased rei costs and cooldowns"
+      },
+      {
+        "id": "pink-ivory",
+        "name": "Pink Ivory",
+        "chance": 5,
+        "description": "Spawns more branches during Emerging Forest but increases the cooldown"
+      },
+      {
+        "id": "mahogony",
+        "name": "Mahogony",
+        "chance": 5,
+        "description": "Emerging Forest now costs more reiatsu, but has a shorter cooldown"
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "Unarmed attacks which hit your armor have a chance to cause opponents to bleed."
+          },
+          {
+            "level": 4,
+            "text": "Landing hits of \"Emerging Forest\" cause a brief slowing effect on the opponent."
+          }
+        ]
+      },
+      {
+        "id": "defensiveCapabilities",
+        "label": "Defensive Capabilities",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Armor created by your wood lasts much longer."
+          },
+          {
+            "level": 8,
+            "text": "This same armor has increased damage reduction."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "\"Emerging Forest\" can hit crumpled opponents."
+          },
+          {
+            "level": 7,
+            "text": "\"Emerging Forest\" spawns more pillars of wood.",
+            "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/woodDmgL7.webm"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "woodEmergingForest",
+        "name": "Emerging Forest - Control M1",
+        "description": "Launches 6 auto-tracking roots at your enemy.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/woodEmergingForest.webm"
+      },
+      {
+        "id": "woodBarkArmor",
+        "name": "Bark Armor - Control M2",
+        "description": "Involves the user in a wood armor, granting a 15% damage reduction for 18s",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/woodBarkArmor.webm"
+      }
+    ]
+  },
+  {
+    "id": "reversal",
+    "name": "Reversal",
+    "race": "soul-reaper",
+    "rarity": "Common",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Enemies can't block or parry your attacks from the front while in 'Reversal'"
+          },
+          {
+            "level": 6,
+            "text": "Apply 'Reversal' momentarily on rushdown. (non-manual, non-z step)"
+          },
+          {
+            "level": 7,
+            "text": "Apply 'Reversal' after successfully landing a manual rushdown. (FORM ONLY)"
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Apply 'Reversal' to countered opponents."
+          },
+          {
+            "level": 8,
+            "text": "'Self Mirror' has 2 charges."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "reversalPassive",
+        "name": "Reversal",
+        "description": "Your moves apply the 'Reversal' state, while affected by it, opponens have their screens turned upside down, and have their controls changed and inverted."
+      }
+    ],
+    "moves": [
+      {
+        "id": "reversalSelfMirror",
+        "name": "Self Mirror - Control M1",
+        "description": "Summon a clone which mimicks your movement, moving inverted horizontaly. If an opponent hits your clone, they are affected by the 'Reversal' effect",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/reversalSelfMirror.webm"
+      },
+      {
+        "id": "reversalInvertedWorld",
+        "name": "Inverted World - Control M2",
+        "description": "Launch forward a small mist which inflicts the 'Reversal' state onto enemies hit by it",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/reversalInvertedWorld.webm"
+      }
+    ]
+  },
+  {
+    "id": "praying-mantis",
+    "name": "Praying Mantis",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Chaining your M1 casts very quickly will ramp the damage."
+          },
+          {
+            "level": 7,
+            "text": "Landing your m1 casts will slightly refund some of the reiatsu spent"
+          }
+        ]
+      },
+      {
+        "id": "perception",
+        "label": "Perception",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Your Parry/Block radius increases to 360 while in mode"
+          },
+          {
+            "level": 8,
+            "text": "Perfect parries refund more posture at all times"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "\"Holy Wailing\" will hit crumpled opponents"
+          },
+          {
+            "level": 8,
+            "text": "You can do the final \"Hunting Dash\" recast without being in mode"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "mantisHuntingDash",
+        "name": "Hunting Dash (Base) - Control M1",
+        "description": "Dash forward, this move has a variant if you M1 during it.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/mantisHuntingDash.webm"
+      },
+      {
+        "id": "mantisHuntingDashM1",
+        "name": "Hunting Dash (Recast) - Control M1",
+        "description": "Recasting while running will make you do 2 slashes",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/mantisHuntingDashM1.webm"
+      }
+    ],
+    "mode": {
+      "passives": [
+        {
+          "id": "mantisWeapon",
+          "name": "Weapon",
+          "description": "Mantis mode will change your weapon to a 4 armed style, which uses your weapon module.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/mantisWeapon.webm"
+        }
+      ],
+      "moves": [
+        {
+          "id": "mantisHuntingDashMode",
+          "name": "Hunting Dash (Mode) - Control M1",
+          "description": "Same as base, but you have an extra recast window after the 2 slashes, which do an uppercut and slams down your opponent on the last one.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/mantisHuntingDashMode.webm"
+        },
+        {
+          "id": "mantisHolyWailing",
+          "name": "Holy Wailing - M2",
+          "description": "Slash twice before releasing a torrent of slashes",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/mantisHolyWailing.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "los-lobos",
+    "name": "Los Lobos",
+    "race": "hollow",
+    "rarity": "Legendary",
+    "information": "",
+    "variants": [],
+    "customization": [
+      {
+        "id": "rechargeRate",
+        "label": "Recharge Rate",
+        "upgradeEffects": []
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "You can use your right gun to split a left gun projectile into 3 smaller projectiles. This will take half a charge."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Killing someone with your 'Right Gun' will disintegrate them."
+          },
+          {
+            "level": 4,
+            "text": "Using 'light attack' after landing a successful air launcher will snipe them out of the air."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "overheat",
+        "name": "Overheat",
+        "description": "You are given an Overheat bar that holds up to 30 'Charges', which fills up by M1s, using left gun or right gun. If a move is used while overheat is full, you'll change stances automatically and play a reloading animation. You can also hold M3 (MMB) to switch stances, emptying the overheat bar.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosOverheat.webm"
+      },
+      {
+        "id": "weapon",
+        "name": "Weapon",
+        "description": "Your weapon is replaced by Reishi Guns (Matches your reiatsu color). The m1s fill 1.5 bars of overheat each, while the crit fills 3",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosWeapon.webm"
+      }
+    ],
+    "moves": [
+      {
+        "id": "leftGun",
+        "name": "Left Gun - Control M1",
+        "description": "While in left gun style, pressing control m1 will shoot an auto tracking ball, which spends 1 of your three left gun charges while also filling 5 overheat charges",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosLeftGun.webm"
+      },
+      {
+        "id": "rightGun",
+        "name": "Right Gun - Control M1",
+        "description": "While in right gun style, pressing control m1 will shoot a powerful cero-like blast, spending 1 of your right gun charge and filling 14 of the overheat bars.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosRightGun.webm"
+      }
+    ],
+    "mode": {
+      "passives": [
+        {
+          "id": "overheat",
+          "name": "Overheat",
+          "description": "You are given an Overheat bar that holds up to 30 'Charges', which fills up by M1s, using left gun or right gun. If a move is used while overheat is full, you'll change stances automatically and play a reloading animation. You can also hold M3 (MMB) to switch stances, emptying the overheat bar.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosOverheat.webm"
+        },
+        {
+          "id": "weapon",
+          "name": "Weapon",
+          "description": "Your weapon is replaced by Reishi Guns (Matches your reiatsu color). The first m1 will fill 3 bars of overheat, all subsequent ones will fill 4. Your critical fills 7 bars",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosWeapon.webm"
+        }
+      ],
+      "moves": [
+        {
+          "id": "soulPartition",
+          "name": "Soul Partition - Control M2",
+          "description": "Pressing Control M2 will summon 3 wolves behind you, giving you access to your ability other moves.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosSoulPartition.webm"
+        },
+        {
+          "id": "callOfTheWind",
+          "name": "Call Of The Wind - Control M1",
+          "description": "Pressing conntrol M1 while in soul partition will make a wolf jump to the closes enemy to your cursor (has a short activation range). If this is your last remaining wolf, you will exit out of the soul partition state and go back to your base moves.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosCallOfTheWind.webm"
+        },
+        {
+          "id": "calmilla",
+          "name": "Calmilla - Control M2",
+          "description": "Pressing control m2 while in soul partition will send out multiple slashes, dealing moderate damage. If you have any remaining wolves they will jump at the end of the move, dealing extra damage. This moves takes you out of the soul partition state.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosCalmilla.webm"
+        },
+        {
+          "id": "ceroMetralleta",
+          "name": "Cero Metralleta - Control M2",
+          "description": "After hitting enough hits(with your guns out) in mode, a wolf howl sound will play, replacing your m2 with the cero metralleta. This move can only be used once per pop",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/losLobosCeroMetralleta.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "anger",
+    "name": "Anger",
+    "race": "hollow",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [
+      {
+        "id": "gamma",
+        "name": "Gamma",
+        "chance": 20,
+        "description": "You now gain damage reduction based off AP, landing \"Berserker Slam\" will automatically give you AP, but the damage of \"Berserker Slam\" and \"Berserker Combo\" is reduced."
+      },
+      {
+        "id": "shifter",
+        "name": "Shifter",
+        "chance": 10,
+        "description": "You gain extra health regeneration at max AP and \"Onslaught\" and \"Berserker Combo\" gain increased movement speed. \"Onslaught\" also gets less windup, and less damage."
+      }
+    ],
+    "customization": [
+      {
+        "id": "physicality",
+        "label": "Physicality",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Your increased size grants you defense."
+          },
+          {
+            "level": 7,
+            "text": "You gain more size from more AP."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 2,
+            "text": "Gain special executions against low health enemies with \"Berserker Slam\" and \"Onslaught\"."
+          },
+          {
+            "level": 7,
+            "text": "Your increased size grants you offense."
+          }
+        ]
+      },
+      {
+        "id": "perception",
+        "label": "Perception",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Your recast after \"Berserker Slam\" has more forgiving timing."
+          },
+          {
+            "level": 10,
+            "text": "\"Berserker Slam\" and \"Onslaught\" ignore ragdoll and crumple states."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "angerSizeIncrease",
+        "name": "Size Increase",
+        "description": "You gain more size the more AP you have",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/angerSizeIncrease.webm"
+      }
+    ],
+    "moves": [
+      {
+        "id": "angerBerserkerSlam1",
+        "name": "Berserker Slam (Base) - Control M1",
+        "description": "Move forward and do a strong punch on the ground, this move has a second part if you m1 as soon as you hit the ground.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/angerBerserkerSlam1.webm"
+      },
+      {
+        "id": "angerBerserkerSlam2",
+        "name": "Berserker Slam (2nd Part) - Control M1",
+        "description": "Pressing M1 as soon as you punch the ground will make you throw a barrage of punches at your opponent.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/angerBerserkerSlam2.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "angerOnslaught",
+          "name": "Onslaught - Control M2",
+          "description": "Run forward, grabbing the first enemy you come in contact with, jumping and slaming him onto the ground (Crumples)",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/angerOnslaught.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "shark",
+    "name": "Shark",
+    "race": "hollow",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [
+      {
+        "id": "blood-in-the-water",
+        "name": "Blood In The Water",
+        "chance": 7,
+        "description": "All shark-related attacks are more damaging, however have increased cooldowns and reiatsu costs. Cosmetics: Changes water to be blood red. Also changes move colors to red."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Deal 1.2x damage to 'Wet' enemies."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Shark moves will eat the opponents reiatsu."
+          },
+          {
+            "level": 6,
+            "text": "Standing on puddles will increase reiatsu regeneration rate."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 6,
+            "text": "Your sharks inflict bleed."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "sharkWet",
+        "name": "Wet",
+        "description": "Slows down opponents movement speed",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/sharkWet.webm"
+      }
+    ],
+    "moves": [
+      {
+        "id": "sharkGracefulDive",
+        "name": "Graceful Dive - Control M1",
+        "description": "Dive into the ground, hitting for miniscule damage and leaving behind 3 puddles, before moving underground. After a few seconds (or on recast), you jump out with a slash, ragdolling enemies into the air and spawning 3 more puddles.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/sharkGracefulDive.webm"
+      },
+      {
+        "id": "sharkSharkBombAerial",
+        "name": "Shark Bomb (Aerial) - Control M2",
+        "description": "While in 'Graceful Dive', pressing Control M2 will make you jump out from below,summoning a shark in front of you which slams down your opponent",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/sharkSharkBombAerial.webm"
+      },
+      {
+        "id": "sharkTideSever",
+        "name": "Tide Sever - Control M2 (Close Range)",
+        "description": "Pressing Control M2 while close to an opponent will make you dash forward, slashing the opponent with water and spawning 2 puddles.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/sharkTideSever.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "sharkSharkBomb",
+          "name": "Shark Bomb - Control M2 (Long Range)",
+          "description": "While in mode, your control m2 at long range will summon a shark, which dashes toward your cursor. Applies the wet effect for 4s, also spawns puddles on use and on hit,",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/sharkSharkBomb.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "ritualist-fury",
+    "name": "Ritualist / Fury",
+    "race": "hollow",
+    "rarity": "Rare",
+    "information": "",
+    "variants": [
+      {
+        "id": "elastic",
+        "name": "Elastic",
+        "chance": 20,
+        "description": "\"Scales of Fury\" will pull opponents back in after flinging them away, at the cost of the move being less powerful."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Gain 'Empowered' after successfully landing \"Scale of Fury\" for 6 seconds."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": []
+      },
+      {
+        "id": "healEfficiency",
+        "label": "Health Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 1,
+            "text": "'Scale of Fury' gains lifesteal while form is active."
+          },
+          {
+            "level": 7,
+            "text": "All bleed damage will heal you slightly (1% per 20 bleed damage)"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "Gain access to \"Ritual\" while being Empowered.",
+            "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/furyRitual.webm"
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "furyScaleOfFury",
+        "name": "Scale Of Fury - Control M1",
+        "description": "Dash forward grabing your opponent, throwing them away after (Rushdown window).",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/furyScaleOfFury.webm"
+      }
+    ],
+    "mode": {
+      "passives": [
+        {
+          "id": "furyEmpowered",
+          "name": "Empowered",
+          "description": "While empowered, all your m1s proc bleed, also allows the use of 'Ritual'. Rushdowns from rushdown windows also proc bleed while empowered."
+        }
+      ],
+      "moves": [
+        {
+          "id": "furyEmpower",
+          "name": "Empower - Control M2",
+          "description": "Stab your self, dealing about a bar of damage (Iframes), then start healing right after. The healing increases based on your missing hp. This move also gives you the 'Empowered' effect for 24s",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/furyEmpower.webm"
+        },
+        {
+          "id": "furyRitual",
+          "name": "Ritual - Control M2",
+          "description": "While empowered, your m2 changes to 'Ritual'. Ritual is a move that heals you based on the amount of people you procced bleed on (by m1ing other people while empowered). The move also gives you TRUE dmg resistence for 9s after it ends.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/furyRitual.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "electro",
+    "name": "Electro",
+    "race": "hollow",
+    "rarity": "Uncommon",
+    "information": "",
+    "variants": [
+      {
+        "id": "lightning",
+        "name": "Lightning",
+        "chance": 27,
+        "description": ""
+      },
+      {
+        "id": "electruple",
+        "name": "Electruple",
+        "chance": 5,
+        "description": ""
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Electro skills cause the lightning status effect."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Discharge tracks the nearest enemy."
+          },
+          {
+            "level": 8,
+            "text": "Lightning is always active on your weapon (effect unknown)."
+          },
+          {
+            "level": 9,
+            "text": "Your parries have lightning properties (effect unknown)."
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 3,
+            "text": "God blaster is rushdown-compatible."
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "electroDischarge",
+        "name": "Discharge - Control M1",
+        "description": "Send forward an orb which shoots 4 times at close enemies.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/electroDischarge.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "electroGodBlaster",
+          "name": "God Blaster - Control M2",
+          "description": "Leap into the air and throw a focused ball of electricity at your cursor.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/electroGodBlaster.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "luminosity",
+    "name": "Luminosity",
+    "race": "hollow",
+    "rarity": "Uncommon",
+    "information": "",
+    "variants": [
+      {
+        "id": "energy",
+        "name": "Energy",
+        "chance": 10,
+        "description": "Less damage but gain reiatsu on hit. Also changes color to Blue."
+      },
+      {
+        "id": "ultraviolet",
+        "name": "Ultraviolet",
+        "chance": 10,
+        "description": "Attacks have fire properties on hit. Also changes color to Pink."
+      }
+    ],
+    "customization": [
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Fire an additional shot on your \"Finger Shot.\" For every 2 more points in this stat, shoot an additional shot, up to 3.",
+            "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/luminosityReiEff4.webm"
+          }
+        ]
+      },
+      {
+        "id": "damage",
+        "label": "Damage",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "\"Light Kick\" now ragdolls and knock up.",
+            "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/luminosityDmg5.webm"
+          }
+        ]
+      },
+      {
+        "id": "range",
+        "label": "Range",
+        "upgradeEffects": [
+          {
+            "level": 6,
+            "text": "After landing any \"Luminosity\" ability, create light orbs that circle you, each orb will pop when dealing melee damage."
+          },
+          {
+            "level": 9,
+            "text": "Create more orbs, and they last longer."
+          }
+        ]
+      }
+    ],
+    "moves": [
+      {
+        "id": "luminosityFingerShot",
+        "name": "Finger Shot - Control M1",
+        "description": "Shoot a beam of light from your finger.",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/luminosityFingerShot.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "luminosityLightKick",
+          "name": "Light Kick - Control M2",
+          "description": "Release a burst of energy before swiftly kicking your opponent.",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/luminosityLightKick.webm"
+        }
+      ]
+    }
+  },
+  {
+    "id": "frozen-haze",
+    "name": "Frozen Haze",
+    "race": "hollow",
+    "rarity": "Common",
+    "information": "",
+    "variants": [
+      {
+        "id": "cursed",
+        "name": "Cursed",
+        "chance": 15,
+        "description": "\"Lurk\" deals much more damage, however its status debuff is less effective. Also changes color to green."
+      },
+      {
+        "id": "rewritten",
+        "name": "Rewritten",
+        "chance": 5,
+        "description": "\"Haze\" Will also cause victims to forget their names; temporarily weakening them. However, the overall duration of effects is lowered. Also changes color to white."
+      }
+    ],
+    "customization": [
+      {
+        "id": "statusDuration",
+        "label": "Status Duration",
+        "upgradeEffects": [
+          {
+            "level": 4,
+            "text": "Using \"Haze\" will add skill-disabling properties to your weapon."
+          }
+        ]
+      },
+      {
+        "id": "reiatsuEfficiency",
+        "label": "Reiatsu Efficiency",
+        "upgradeEffects": [
+          {
+            "level": 5,
+            "text": "Using \"Haze\" will allow your basic attacks to disable skills."
+          },
+          {
+            "level": 6,
+            "text": "Your mist will disable shunpo/flashsteps."
+          },
+          {
+            "level": 10,
+            "text": "Your mist will lower opponents' damage output by 10%."
+          }
+        ]
+      }
+    ],
+    "passives": [
+      {
+        "id": "frozenHazeHazePassive",
+        "name": "Haze Effect",
+        "description": "Your moves apply the 'Haze' effect to your enemy, removing their ability to use skills."
+      }
+    ],
+    "moves": [
+      {
+        "id": "frozenHazeHaze",
+        "name": "Haze - Control M1",
+        "description": "Summon a cloud around will, applying haze on any opponent hit for 5s",
+        "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/frozenHazeHaze.webm"
+      }
+    ],
+    "mode": {
+      "moves": [
+        {
+          "id": "frozenHazeLurk",
+          "name": "Lurk - Control M2",
+          "description": "Delve into a sea of mist, rushing forward and hitting anyone in your way, applying haze for 5s",
+          "previewUrl": "https://build-share-worker.yurkt12.workers.dev/video/frozenHazeLurk.webm"
+        }
+      ]
+    }
+  }
+]

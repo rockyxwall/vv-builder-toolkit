@@ -1,64 +1,57 @@
 [
   {
-    "id": "ht_tentacles",
+    "id": "tentacles",
     "name": "Tentacles",
-    "notable": "Twin Tentacles",
-    "passives": [
+    "buffs": [
       "16% chance to inflict poison damage on melee attacks",
       "-1% Weapon damage"
     ]
   },
   {
-    "id": "ht_skinny",
+    "id": "skinny",
     "name": "Skinny",
-    "notable": "You're a skinnier hollow.",
-    "passives": [
+    "buffs": [
       "+7.5% Movement Speed",
       "-1.2% Melee Defense"
     ]
   },
   {
-    "id": "ht_wings",
+    "id": "wings",
     "name": "Wings",
-    "notable": "Large wings",
-    "passives": [
+    "buffs": [
       "+3% Movement Speed",
       "+5% Shunpo Stamina",
       "+3% Shunpo Speed"
     ]
   },
   {
-    "id": "ht_claws",
+    "id": "deadly-claws",
     "name": "Deadly Claws",
-    "notable": "Blunt base attacks become sharp",
-    "passives": [
+    "buffs": [
       "+3% Hakuda Damage",
       "+0.1 Max AP"
     ]
   },
   {
-    "id": "ht_iron_skin",
+    "id": "iron-skin",
     "name": "Iron Skin",
-    "notable": "You gain thick iron like skin, similar to an arrancar's Hierro.",
-    "passives": [
+    "buffs": [
       "+4% Melee Defense",
       "+35% Posture Regen"
     ]
   },
   {
-    "id": "ht_horns",
+    "id": "horns",
     "name": "Horns",
-    "notable": "You get horns",
-    "passives": [
+    "buffs": [
       "Increased cero width of 35%",
       "Increased cero length of 10%"
     ]
   },
   {
-    "id": "ht_exoskeleton",
+    "id": "exoskeleton",
     "name": "Exoskeleton",
-    "notable": "A stronger skeletal structure.",
-    "passives": [
+    "buffs": [
       "+2% Melee Defense",
       "+5 Posture",
       "15% Bigger healthpack from Resurrection",
@@ -66,10 +59,9 @@
     ]
   },
   {
-    "id": "ht_presence",
+    "id": "innocuous-presence",
     "name": "Innocuous Presence",
-    "notable": "No one really notices you.",
-    "passives": [
+    "buffs": [
       "Your name is hidden",
       "Your reiatsu signature is hidden",
       "Resurrection duration increased by 20s",
@@ -77,49 +69,44 @@
     ]
   },
   {
-    "id": "ht_scales",
+    "id": "back-scales",
     "name": "Back Scales",
-    "notable": "Insect-like vertebrae.",
-    "passives": [
+    "buffs": [
       "Cero Charges 12% Faster",
       "Resurrection duration increased by 45s",
       "Cero damage reduced by 5%"
     ]
   },
   {
-    "id": "ht_giant",
+    "id": "giant",
     "name": "Giant",
-    "notable": "You get bigger",
-    "passives": [
+    "buffs": [
       "+5% Melee Defense",
       "+2% Kido defense",
-      "You become 5% slower."
+      "-5% Movement Speed"
     ]
   },
   {
-    "id": "ht_energized",
+    "id": "energized",
     "name": "Energized",
-    "notable": "Explosive power bubbles beneath your skin.",
-    "passives": [
+    "buffs": [
       "+2% Kido Damage",
-      "Weapon damage slightly scales off your kido stat."
+      "Weapon (not fist) damage slightly scales off your kido stat"
     ]
   },
   {
-    "id": "ht_dense_muscles",
+    "id": "dense-muscles",
     "name": "Dense Muscles",
-    "notable": "Increased muscle density.",
-    "passives": [
+    "buffs": [
       "+1% Weapon Damage",
       "+1% Hakuda Damage",
-      "Ressureccion duration increased by 45s"
+      "Resurrection duration increased by 45s"
     ]
   },
   {
-    "id": "ht_tailbone",
+    "id": "tailbone",
     "name": "Tailbone",
-    "notable": "Long bony tail. LASER CEROS!",
-    "passives": [
+    "buffs": [
       "Increased cero damage by 20%",
       "Cero is 25% thinner"
     ]

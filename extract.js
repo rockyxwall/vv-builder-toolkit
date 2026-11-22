@@ -1,75 +1,50 @@
 const fs = require('fs');
 const path = require('path');
-const { getClientBundle } = require('./src/fetcher');
-const { parseAllData } = require('./src/parser');
-const { applyUpdates } = require('./src/patch_updates');
+const { fetchAllDatasets, ENDPOINTS } = require('./src/fetcher');
+const { buildRelationalIndexes } = require('./src/parser');
 const { generateMarkdown } = require('./src/markdown');
 
 async function main() {
   console.log('====================================================');
   console.log('   VV Builder Extractor & Catalog Generator');
+  console.log('   Target: https://vvcharmmerges.pages.dev/builder');
   console.log('====================================================');
 
   const dataDir = path.join(__dirname, 'data');
   fs.mkdirSync(dataDir, { recursive: true });
 
-  // 1. Fetch bundle
-  const bundleCode = await getClientBundle();
+  // 1. Fetch all 12 official datasets
+  const rawDatasets = await fetchAllDatasets(true);
 
-  // 2. Parse data
-  const data = parseAllData(bundleCode);
+  // 2. Build indexes and master dataset
+  console.log('[Extractor] Indexing and consolidating master dataset...');
+  const masterData = buildRelationalIndexes(rawDatasets);
 
-  // 3. Apply updates & patches from official game announcements
-  console.log('[Extractor] Merging game update patch logs (v5.0 - v5.2)...');
-  applyUpdates(data);
-
-  // 4. Write individual JSON datasets
-  console.log('[Extractor] Saving structured JSON datasets to ./data/ ...');
-
-  fs.writeFileSync(path.join(dataDir, 'vv_builder_all.json'), JSON.stringify(data, null, 2), 'utf8');
-
-  // Consolidated skills (ultimates + race skills)
-  const allSkills = {
-    ultimates: data.ultimates,
-    raceSkills: data.raceSkills
-  };
-  fs.writeFileSync(path.join(dataDir, 'skills.json'), JSON.stringify(allSkills, null, 2), 'utf8');
-
-  // Spoke tree nodes
-  fs.writeFileSync(path.join(dataDir, 'tree_nodes.json'), JSON.stringify(data.spokeNodes, null, 2), 'utf8');
-
-  // Equipment
-  fs.writeFileSync(path.join(dataDir, 'equipment.json'), JSON.stringify(data.equipment, null, 2), 'utf8');
-
-  // Clans
-  fs.writeFileSync(path.join(dataDir, 'clans.json'), JSON.stringify(data.clans, null, 2), 'utf8');
-
-  // Charms
-  fs.writeFileSync(path.join(dataDir, 'charms.json'), JSON.stringify(data.charms, null, 2), 'utf8');
-
-  // Traits
-  fs.writeFileSync(path.join(dataDir, 'traits.json'), JSON.stringify(data.traits, null, 2), 'utf8');
-
-  // Essences & Attributes
-  fs.writeFileSync(path.join(dataDir, 'essences.json'), JSON.stringify({
-    essences: data.essences,
-    attributes: data.attributes
-  }, null, 2), 'utf8');
-
-  // Game Meta (codes, boss schedules, mechanics)
-  if (data.gameMeta) {
-    fs.writeFileSync(path.join(dataDir, 'game_meta.json'), JSON.stringify(data.gameMeta, null, 2), 'utf8');
+  // 3. Write individual JSON datasets to ./data/
+  console.log('[Extractor] Writing individual JSON datasets to ./data/ ...');
+  for (const endpoint of ENDPOINTS) {
+    const key = endpoint.replace('.json', '').replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+    const targetFile = path.join(dataDir, endpoint);
+    fs.writeFileSync(targetFile, JSON.stringify(rawDatasets[key], null, 2), 'utf8');
   }
 
-  // 5. Generate Markdown guide
-  console.log('[Extractor] Generating human-readable VV_BUILDER_GUIDE.md ...');
-  const markdown = generateMarkdown(data);
+  // 4. Write consolidated master dataset
+  fs.writeFileSync(
+    path.join(dataDir, 'vv_builder_all.json'),
+    JSON.stringify(masterData, null, 2),
+    'utf8'
+  );
+
+  // 5. Generate human-readable Markdown guide
+  console.log('[Extractor] Generating comprehensive VV_BUILDER_GUIDE.md ...');
+  const markdown = generateMarkdown(masterData);
   const guidePath = path.join(__dirname, 'VV_BUILDER_GUIDE.md');
   fs.writeFileSync(guidePath, markdown, 'utf8');
 
   console.log('====================================================');
-  console.log(`[Success] Extraction & Update complete!`);
-  console.log(`  - JSON datasets written to: ./data/`);
+  console.log('[Success] Fresh extraction & catalog generation complete!');
+  console.log(`  - 12 JSON datasets written to: ./data/`);
+  console.log(`  - Consolidated master dataset: ./data/vv_builder_all.json (${(fs.statSync(path.join(dataDir, 'vv_builder_all.json')).size / 1024).toFixed(1)} KB)`);
   console.log(`  - Markdown guide written to: ./VV_BUILDER_GUIDE.md (${markdown.split('\n').length} lines)`);
   console.log('====================================================');
 }

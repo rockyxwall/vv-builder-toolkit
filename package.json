@@ -1,7 +1,7 @@
 {
   "name": "vv-builder-toolkit",
-  "version": "1.0.0",
-  "description": "High-efficiency data extraction, catalog generation, and build engine for VV Builder (VV Ultimatum).",
+  "version": "2.0.0",
+  "description": "Zero-hallucination data extraction, catalog generation, exact mathematical calculation engine, and build validator for VV Builder (https://vvcharmmerges.pages.dev/builder).",
   "main": "src/build_engine.js",
   "scripts": {
     "extract": "node extract.js",
@@ -11,11 +11,12 @@
   "keywords": [
     "vv-builder",
     "vv-ultimatum",
-    "scraper",
+    "charm-merges",
     "extractor",
     "build-engine",
+    "calc-engine",
     "catalog",
-    "share-code"
+    "synergies"
   ],
   "author": "rockyxwall",
   "license": "MIT"

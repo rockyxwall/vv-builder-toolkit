@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "ghostly",
+    "name": "Ghostly",
+    "stat": "Kido Defense",
+    "buffs": {
+      "head": [
+        {
+          "level": 9,
+          "buffs": [
+            "+0.3% Kido Defense"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.6% Kido Defense"
+          ]
+        },
+        {
+          "level": 80,
+          "buffs": [
+            "+0.6% Kido Defense"
+          ],
+          "seen": [
+            [
+              "+0.5% Kido Defense"
+            ],
+            [
+              "+0.6% Kido Defense"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 21,
+          "buffs": [
+            "+0.3% Kido Defense"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.4% Kido Defense"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.5% Kido Defense"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.2% Kido Defense"
+          ]
+        },
+        {
+          "level": 25,
+          "buffs": [
+            "+0.2% Kido Defense"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.3% Kido Defense"
+          ]
+        },
+        {
+          "level": 80,
+          "buffs": [
+            "+0.4% Kido Defense"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 50,
+          "buffs": [
+            "+0.1% Kido Defense"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "stat": "Max Posture",
+    "buffs": {
+      "head": [
+        {
+          "level": 10,
+          "buffs": [
+            "+1.4 Max Posture"
+          ]
+        },
+        {
+          "level": 15,
+          "buffs": [
+            "+1.5 Max Posture"
+          ]
+        },
+        {
+          "level": 25,
+          "buffs": [
+            "+1.5 Max Posture"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+1.8 Max Posture"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+2.5 Max Posture"
+          ],
+          "seen": [
+            [
+              "+2.4 Max Posture"
+            ],
+            [
+              "+2.5 Max Posture"
+            ]
+          ]
+        },
+        {
+          "level": 88,
+          "buffs": [
+            "+3.2 Max Posture"
+          ],
+          "seen": [
+            [
+              "+2.8 Max Posture"
+            ],
+            [
+              "+3.3 Max Posture"
+            ]
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 32,
+          "buffs": [
+            "+1 Max Posture"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 55,
+          "buffs": [
+            "+2.3 Max Posture"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 0,
+          "buffs": [
+            "+0.8 Max Posture"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+1.8 Max Posture"
+          ]
+        },
+        {
+          "level": 80,
+          "buffs": [
+            "+2 Max Posture"
+          ]
+        },
+        {
+          "level": 88,
+          "buffs": [
+            "+2.5 Max Posture"
+          ],
+          "seen": [
+            [
+              "+2.3 Max Posture"
+            ],
+            [
+              "+2.6 Max Posture"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sturdy",
+    "name": "Sturdy",
+    "stat": "Melee Defense",
+    "buffs": {
+      "head": [
+        {
+          "level": 14,
+          "buffs": [
+            "+0.2% Melee Defense"
+          ]
+        },
+        {
+          "level": 15,
+          "buffs": [
+            "+0.3% Melee Defense"
+          ],
+          "seen": [
+            [
+              "+0.3% Melee Defense"
+            ],
+            [
+              "+0.2% Melee Defense"
+            ]
+          ]
+        },
+        {
+          "level": 55,
+          "buffs": [
+            "+0.4% Melee Defense"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 0,
+          "buffs": [
+            "+0.2% Melee Defense"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.6% Melee Defense"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 50,
+          "buffs": [
+            "+0.3% Melee Defense"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.4% Melee Defense"
+          ]
+        },
+        {
+          "level": 88,
+          "buffs": [
+            "+0.5% Melee Defense"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 45,
+          "buffs": [
+            "+0.1% Melee Defense"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "spacious",
+    "name": "Spacious",
+    "stat": "Equipment Load",
+    "buffs": {
+      "body": [
+        {
+          "level": 32,
+          "buffs": [
+            "+2 Equipment Load"
+          ]
+        },
+        {
+          "level": 33,
+          "buffs": [
+            "+2 Equipment Load"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+2 Equipment Load"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+3 Equipment Load"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 32,
+          "buffs": [
+            "+1 Equipment Load"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 25,
+          "buffs": [
+            "+1 Equipment Load"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 90,
+          "buffs": [
+            "+1 Equipment Load"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "quick",
+    "name": "Quick",
+    "stat": "Posture Regen",
+    "buffs": {
+      "head": [
+        {
+          "level": 9,
+          "buffs": [
+            "+0.9% Posture Regen"
+          ]
+        },
+        {
+          "level": 32,
+          "buffs": [
+            "+1% Posture Regen"
+          ]
+        },
+        {
+          "level": 55,
+          "buffs": [
+            "+1.6% Posture Regen"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+1.9% Posture Regen"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 88,
+          "buffs": [
+            "+2.1% Posture Regen"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 0,
+          "buffs": [
+            "+0.6% Posture Regen"
+          ],
+          "seen": [
+            [
+              "+0.6% Posture Regen"
+            ],
+            [
+              "+0.6% Posture Regen"
+            ]
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+1.3% Posture Regen"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "swift",
+    "name": "Swift",
+    "stat": "Shunpo Speed",
+    "buffs": {
+      "head": [
+        {
+          "level": 70,
+          "buffs": [
+            "+1.1 Shunpo Speed"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.9 Shunpo Speed"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 70,
+          "buffs": [
+            "+0.8 Shunpo Speed"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.2 Shunpo Speed"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "tireless",
+    "name": "Tireless",
+    "stat": "Shunpo Stamina",
+    "buffs": {
+      "head": [
+        {
+          "level": 12,
+          "buffs": [
+            "+0.5 Shunpo Stamina"
+          ]
+        },
+        {
+          "level": 15,
+          "buffs": [
+            "+0.6 Shunpo Stamina"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+1.1 Shunpo Stamina"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 85,
+          "buffs": [
+            "+1.5 Shunpo Stamina"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 50,
+          "buffs": [
+            "+0.6 Shunpo Stamina"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.7 Shunpo Stamina"
+          ],
+          "seen": [
+            [
+              "+0.7 Shunpo Stamina"
+            ],
+            [
+              "+0.7 Shunpo Stamina"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "voluminous",
+    "name": "Voluminous",
+    "stat": "Max Reiatsu",
+    "buffs": {
+      "head": [
+        {
+          "level": 15,
+          "buffs": [
+            "+1 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+1.4 Max Reiatsu"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 27,
+          "buffs": [
+            "+1.7 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+1.8 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+2 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 85,
+          "buffs": [
+            "+3 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 100,
+          "buffs": [
+            "+3.3 Max Reiatsu"
+          ],
+          "seen": [
+            [
+              "+3.4 Max Reiatsu"
+            ],
+            [
+              "+3 Max Reiatsu"
+            ],
+            [
+              "+2.8 Max Reiatsu"
+            ],
+            [
+              "+3.1 Max Reiatsu"
+            ],
+            [
+              "+2.7 Max Reiatsu"
+            ],
+            [
+              "+3.3 Max Reiatsu"
+            ],
+            [
+              "+3.2 Max Reiatsu"
+            ]
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 14,
+          "buffs": [
+            "+0.9 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+1.2 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+1.4 Max Reiatsu"
+          ]
+        },
+        {
+          "level": 60,
+          "buffs": [
+            "+1.5 Max Reiatsu"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "deadly",
+    "name": "Deadly",
+    "stat": "Weapon Dmg",
+    "buffs": {
+      "head": [
+        {
+          "level": 15,
+          "buffs": [
+            "+0.3% Weapon Damage"
+          ],
+          "seen": [
+            [
+              "+0.3% Weapon Damage"
+            ],
+            [
+              "+0.2% Weapon Damage"
+            ]
+          ]
+        },
+        {
+          "level": 18,
+          "buffs": [
+            "+0.3% Weapon Damage"
+          ]
+        },
+        {
+          "level": 35,
+          "buffs": [
+            "+0.4% Weapon Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.5% Weapon Damage"
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 17,
+          "buffs": [
+            "+0.2% Weapon Damage"
+          ]
+        },
+        {
+          "level": 32,
+          "buffs": [
+            "+0.2% Weapon Damage"
+          ]
+        },
+        {
+          "level": 33,
+          "buffs": [
+            "+0.2% Weapon Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.2% Weapon Damage"
+          ]
+        },
+        {
+          "level": 60,
+          "buffs": [
+            "+0.3% Weapon Damage"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.5% Weapon Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.6% Weapon Damage"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.7% Weapon Damage"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.9% Weapon Damage"
+          ]
+        },
+        {
+          "level": 100,
+          "buffs": [
+            "+0.9% Weapon Damage"
+          ],
+          "seen": [
+            [
+              "+0.9% Weapon Damage"
+            ],
+            [
+              "+0.8% Weapon Damage"
+            ],
+            [
+              "+0.8% Weapon Damage"
+            ],
+            [
+              "+0.9% Weapon Damage"
+            ]
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.3% Weapon Damage"
+          ]
+        },
+        {
+          "level": 30,
+          "buffs": [
+            "+0.2% Weapon Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.3% Weapon Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.3% Weapon Damage"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.4% Weapon Damage"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 25,
+          "buffs": [
+            "+0.1% Weapon Damage"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.1% Weapon Damage"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "precise",
+    "name": "Precise",
+    "stat": "Kido Dmg",
+    "buffs": {
+      "head": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.4% Kido Damage"
+          ]
+        },
+        {
+          "level": 60,
+          "buffs": [
+            "+0.5% Kido Damage"
+          ]
+        },
+        {
+          "level": 80,
+          "buffs": [
+            "+0.6% Kido Damage"
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.2% Kido Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.3% Kido Damage"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 100,
+          "buffs": [
+            "+0.9% Kido Damage"
+          ],
+          "seen": [
+            [
+              "+0.9% Kido Damage"
+            ],
+            [
+              "+0.8% Kido Damage"
+            ],
+            [
+              "+0.8% Kido Damage"
+            ],
+            [
+              "+0.9% Kido Damage"
+            ]
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 0,
+          "buffs": [
+            "+0.1% Kido Damage"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 90,
+          "buffs": [
+            "+0.2% Kido Damage"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "vibrant",
+    "name": "Vibrant",
+    "stat": "Max Health",
+    "buffs": {
+      "head": [
+        {
+          "level": 0,
+          "buffs": [
+            "+1.9 Max Health"
+          ]
+        },
+        {
+          "level": 30,
+          "buffs": [
+            "+3.9 Max Health"
+          ],
+          "seen": [
+            [
+              "+3.5 Max Health"
+            ],
+            [
+              "+3.5 Max Health"
+            ],
+            [
+              "+3.1 Max Health"
+            ],
+            [
+              "+4 Max Health"
+            ],
+            [
+              "+3.8 Max Health"
+            ],
+            [
+              "+3.6 Max Health"
+            ],
+            [
+              "+3.9 Max Health"
+            ],
+            [
+              "+3.7 Max Health"
+            ],
+            [
+              "+3 Max Health"
+            ],
+            [
+              "+3.4 Max Health"
+            ],
+            [
+              "+4.1 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 60,
+          "buffs": [
+            "+5.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+5.2 Max Health"
+            ],
+            [
+              "+4.3 Max Health"
+            ],
+            [
+              "+5.1 Max Health"
+            ],
+            [
+              "+5 Max Health"
+            ],
+            [
+              "+5.6 Max Health"
+            ],
+            [
+              "+5.4 Max Health"
+            ],
+            [
+              "+5.3 Max Health"
+            ],
+            [
+              "+4.6 Max Health"
+            ],
+            [
+              "+4.4 Max Health"
+            ],
+            [
+              "+4.7 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+5.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+5.4 Max Health"
+            ],
+            [
+              "+5.3 Max Health"
+            ],
+            [
+              "+5.1 Max Health"
+            ],
+            [
+              "+5.2 Max Health"
+            ]
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 32,
+          "buffs": [
+            "+1.8 Max Health"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+2.9 Max Health"
+          ],
+          "seen": [
+            [
+              "+2.4 Max Health"
+            ],
+            [
+              "+2.3 Max Health"
+            ],
+            [
+              "+2.5 Max Health"
+            ],
+            [
+              "+2.7 Max Health"
+            ],
+            [
+              "+2.6 Max Health"
+            ],
+            [
+              "+2.8 Max Health"
+            ],
+            [
+              "+3 Max Health"
+            ]
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 40,
+          "buffs": [
+            "+5.2 Max Health"
+          ],
+          "seen": [
+            [
+              "+4.3 Max Health"
+            ],
+            [
+              "+4.8 Max Health"
+            ],
+            [
+              "+5.3 Max Health"
+            ],
+            [
+              "+5.1 Max Health"
+            ],
+            [
+              "+5.4 Max Health"
+            ],
+            [
+              "+4.3 Max Health"
+            ],
+            [
+              "+5 Max Health"
+            ],
+            [
+              "+4.4 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+5.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+4.7 Max Health"
+            ],
+            [
+              "+5.5 Max Health"
+            ],
+            [
+              "+5.3 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+5.4 Max Health"
+          ]
+        },
+        {
+          "level": 85,
+          "buffs": [
+            "+7.4 Max Health"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+7 Max Health"
+          ]
+        },
+        {
+          "level": 100,
+          "buffs": [
+            "+8.5 Max Health"
+          ],
+          "seen": [
+            [
+              "+8.2 Max Health"
+            ],
+            [
+              "+7.6 Max Health"
+            ],
+            [
+              "+8.1 Max Health"
+            ],
+            [
+              "+7.4 Max Health"
+            ],
+            [
+              "+8.8 Max Health"
+            ],
+            [
+              "+8.9 Max Health"
+            ],
+            [
+              "+7.8 Max Health"
+            ],
+            [
+              "+7.5 Max Health"
+            ],
+            [
+              "+8.2 Max Health"
+            ],
+            [
+              "+7.6 Max Health"
+            ],
+            [
+              "+7.1 Max Health"
+            ],
+            [
+              "+6.8 Max Health"
+            ],
+            [
+              "+8.6 Max Health"
+            ]
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 40,
+          "buffs": [
+            "+3.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+3.1 Max Health"
+            ],
+            [
+              "+2.6 Max Health"
+            ],
+            [
+              "+3.5 Max Health"
+            ],
+            [
+              "+3 Max Health"
+            ],
+            [
+              "+3.2 Max Health"
+            ],
+            [
+              "+3.1 Max Health"
+            ],
+            [
+              "+2.7 Max Health"
+            ],
+            [
+              "+2.8 Max Health"
+            ],
+            [
+              "+2.9 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+4.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+3.5 Max Health"
+            ],
+            [
+              "+4.5 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 88,
+          "buffs": [
+            "+4.1 Max Health"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 40,
+          "buffs": [
+            "+1.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+1.2 Max Health"
+            ],
+            [
+              "+1.1 Max Health"
+            ],
+            [
+              "+1.3 Max Health"
+            ]
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+1.9 Max Health"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 50,
+          "buffs": [
+            "+1.3 Max Health"
+          ],
+          "seen": [
+            [
+              "+1.2 Max Health"
+            ],
+            [
+              "+1.1 Max Health"
+            ],
+            [
+              "+1.4 Max Health"
+            ],
+            [
+              "+1.3 Max Health"
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "menacing",
+    "name": "Menacing",
+    "stat": "Hakuda Dmg",
+    "buffs": {
+      "head": [
+        {
+          "level": 15,
+          "buffs": [
+            "+0.3% Hakuda Damage"
+          ],
+          "seen": [
+            [
+              "+0.3% Hakuda Damage"
+            ],
+            [
+              "+0.2% Hakuda Damage"
+            ]
+          ]
+        },
+        {
+          "level": 18,
+          "buffs": [
+            "+0.3% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 35,
+          "buffs": [
+            "+0.4% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.5% Hakuda Damage"
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 17,
+          "buffs": [
+            "+0.2% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 32,
+          "buffs": [
+            "+0.2% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 33,
+          "buffs": [
+            "+0.2% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.2% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 60,
+          "buffs": [
+            "+0.3% Hakuda Damage"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.5% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.6% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.7% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.9% Hakuda Damage"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.3% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 30,
+          "buffs": [
+            "+0.2% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.3% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.3% Hakuda Damage"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.4% Hakuda Damage"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 25,
+          "buffs": [
+            "+0.1% Hakuda Damage"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.1% Hakuda Damage"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "beast-slayer",
+    "name": "Beast Slayer",
+    "stat": "Monster Dmg",
+    "buffs": {
+      "head": [
+        {
+          "level": 15,
+          "buffs": [
+            "+0.3% Monster Damage"
+          ],
+          "seen": [
+            [
+              "+0.3% Monster Damage"
+            ],
+            [
+              "+0.2% Monster Damage"
+            ]
+          ]
+        },
+        {
+          "level": 18,
+          "buffs": [
+            "+0.3% Monster Damage"
+          ]
+        },
+        {
+          "level": 35,
+          "buffs": [
+            "+0.4% Monster Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.5% Monster Damage"
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 17,
+          "buffs": [
+            "+0.2% Monster Damage"
+          ]
+        },
+        {
+          "level": 32,
+          "buffs": [
+            "+0.2% Monster Damage"
+          ]
+        },
+        {
+          "level": 33,
+          "buffs": [
+            "+0.2% Monster Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.2% Monster Damage"
+          ]
+        },
+        {
+          "level": 60,
+          "buffs": [
+            "+0.3% Monster Damage"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.5% Monster Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.6% Monster Damage"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+0.7% Monster Damage"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.9% Monster Damage"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.3% Monster Damage"
+          ]
+        },
+        {
+          "level": 30,
+          "buffs": [
+            "+0.2% Monster Damage"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+0.3% Monster Damage"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.3% Monster Damage"
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.4% Monster Damage"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 25,
+          "buffs": [
+            "+0.1% Monster Damage"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 20,
+          "buffs": [
+            "+0.1% Monster Damage"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "celestial",
+    "name": "Celestial",
+    "stat": "Max Rei, Health | Kido, Melee Def | Posture regen",
+    "buffs": {
+      "head": [
+        {
+          "level": 30,
+          "buffs": [
+            "+1.2 Max Reiatsu",
+            "+1.1 Max Health",
+            "+0.4% Kido Defense",
+            "+0.4% Posture Regen",
+            "+0.4% Melee Defense"
+          ]
+        },
+        {
+          "level": 65,
+          "buffs": [
+            "+1.7 Max Reiatsu",
+            "+1.6 Max Health",
+            "+0.6% Kido Defense",
+            "+0.5% Posture Regen",
+            "+0.6% Melee Defense"
+          ],
+          "seen": [
+            [
+              "+1.5 Max Reiatsu",
+              "+1.6 Max Health",
+              "+0.5% Kido Defense",
+              "+0.5% Posture Regen",
+              "+0.4% Melee Defense"
+            ],
+            [
+              "+1.8 Max Reiatsu",
+              "+1.4 Max Health",
+              "+0.6% Kido Defense",
+              "+0.4% Posture Regen",
+              "+0.6% Melee Defense"
+            ]
+          ]
+        },
+        {
+          "level": 88,
+          "buffs": [
+            "+1.7 Max Reiatsu",
+            "+1.8 Max Health",
+            "+0.7% Kido Defense",
+            "+0.7% Posture Regen",
+            "+0.7% Melee Defense"
+          ]
+        }
+      ],
+      "face": [
+        {
+          "level": 25,
+          "buffs": [
+            "+0.6 Max Reiatsu",
+            "+0.5 Max Health",
+            "+0.1% Kido Defense",
+            "+0.2% Posture Regen",
+            "+0.1% Melee Defense"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+1 Max Reiatsu",
+            "+0.9 Max Health",
+            "+0.3% Kido Defense",
+            "+0.3% Posture Regen",
+            "+0.3% Melee Defense"
+          ]
+        },
+        {
+          "level": 55,
+          "buffs": [
+            "+0.8 Max Reiatsu",
+            "+1 Max Health",
+            "+0.2% Kido Defense",
+            "+0.2% Posture Regen",
+            "+0.2% Melee Defense"
+          ]
+        }
+      ],
+      "body": [
+        {
+          "level": 40,
+          "buffs": [
+            "+1.7 Max Reiatsu",
+            "+1.9 Max Health",
+            "+0.5% Kido Defense",
+            "+0.4% Posture Regen",
+            "+0.5% Melee Defense"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+1.6 Max Reiatsu",
+            "+1.9 Max Health",
+            "+0.6% Kido Defense",
+            "+0.5% Posture Regen",
+            "+0.6% Melee Defense"
+          ]
+        },
+        {
+          "level": 70,
+          "buffs": [
+            "+1.8 Max Reiatsu",
+            "+2.2 Max Health",
+            "+0.7% Kido Defense",
+            "+0.7% Posture Regen",
+            "+0.6% Melee Defense"
+          ]
+        },
+        {
+          "level": 85,
+          "buffs": [
+            "+2.3 Max Reiatsu",
+            "+1.9 Max Health",
+            "+0.7% Kido Defense",
+            "+0.7% Posture Regen",
+            "+0.6% Melee Defense"
+          ]
+        }
+      ],
+      "misc": [
+        {
+          "level": 0,
+          "buffs": [
+            "+0.5 Max Reiatsu",
+            "+0.5 Max Health",
+            "+0.1% Kido Defense",
+            "+0.2% Posture Regen",
+            "+0.1% Melee Defense"
+          ]
+        },
+        {
+          "level": 25,
+          "buffs": [
+            "+0.9 Max Reiatsu",
+            "+0.9 Max Health",
+            "+0.2% Kido Defense",
+            "+0.3% Posture Regen",
+            "+0.2% Melee Defense"
+          ]
+        },
+        {
+          "level": 40,
+          "buffs": [
+            "+1 Max Reiatsu",
+            "+1 Max Health",
+            "+0.3% Kido Defense",
+            "+0.3% Posture Regen",
+            "+0.3% Melee Defense"
+          ],
+          "seen": [
+            [
+              "+1 Max Reiatsu",
+              "+1 Max Health",
+              "+0.3% Kido Defense",
+              "+0.3% Posture Regen",
+              "+0.3% Melee Defense"
+            ],
+            [
+              "+1 Max Reiatsu",
+              "+0.9 Max Health",
+              "+0.3% Kido Defense",
+              "+0.3% Posture Regen",
+              "+0.3% Melee Defense"
+            ]
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+1.2 Max Reiatsu",
+            "+1.3 Max Health",
+            "+0.3% Kido Defense",
+            "+0.3% Posture Regen",
+            "+0.3% Melee Defense"
+          ]
+        }
+      ],
+      "utility": [
+        {
+          "level": 25,
+          "buffs": [
+            "+0.3 Max Reiatsu",
+            "+0.3 Max Health",
+            "+0.1% Kido Defense",
+            "+0.1% Posture Regen",
+            "+0.1% Melee Defense"
+          ]
+        },
+        {
+          "level": 50,
+          "buffs": [
+            "+0.4 Max Reiatsu",
+            "+0.4 Max Health",
+            "+0.1% Kido Defense",
+            "+0.1% Posture Regen",
+            "+0.1% Melee Defense"
+          ]
+        }
+      ],
+      "artifact": [
+        {
+          "level": 40,
+          "buffs": [
+            "+0.4 Max Reiatsu",
+            "+0.4 Max Health",
+            "+0.1% Kido Defense",
+            "+0.1% Posture Regen",
+            "+0.1% Melee Defense"
+          ],
+          "seen": [
+            [
+              "+0.3 Max Reiatsu",
+              "+0.3 Max Health",
+              "+0.1% Kido Defense",
+              "+0.1% Posture Regen",
+              "+0.1% Melee Defense"
+            ],
+            [
+              "+0.3 Max Reiatsu",
+              "+0.4 Max Health",
+              "+0.1% Kido Defense",
+              "+0.1% Posture Regen",
+              "+0.1% Melee Defense"
+            ],
+            [
+              "+0.4 Max Reiatsu",
+              "+0.3 Max Health",
+              "+0.1% Kido Defense",
+              "+0.1% Posture Regen",
+              "+0.1% Melee Defense"
+            ]
+          ]
+        },
+        {
+          "level": 90,
+          "buffs": [
+            "+0.6 Max Reiatsu",
+            "+0.5 Max Health",
+            "+0.2% Kido Defense",
+            "+0.1% Posture Regen",
+            "+0.2% Melee Defense"
+          ]
+        }
+      ]
+    }
+  }
+]
